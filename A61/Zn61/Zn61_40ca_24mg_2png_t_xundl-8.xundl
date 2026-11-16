@@ -1,0 +1,113 @@
+ 61ZN    40CA(24MG,2PNG):T:XUNDL-8     2017QU05                           201710
+ 61ZN c  Compiled (unevaluated) dataset from 2017Qu05:                          
+ 61ZN2c  Phys. Rev. C 96, 044313 (2017)                                         
+ 61ZN c  Includes {+58}Ni(|a,n) reaction                                        
+ 61ZN c  Compiled by C.D. Nesaraja (ORNL)                                       
+ 61ZN c  20 October, 2017                                                       
+ 61ZN c  A recoil-distance Doppler-shift (RDDS) experiment                      
+ 61ZN2c  was performed at the FN-Tandem accelerator at the Institute for        
+ 61ZN3c  Nuclear Physics, University of Cologne to measure lifetimes of excited 
+ 61ZN4c  states in {+61}Zn using two different reactions.                       
+ 61ZN c  {+40}Ca({+24}Mg, 2pn|g): E({+24}Mg)= 77 MeV (energy was listed as      
+ 61ZN2c  67 MeV in the abstract) impinged a {+40}Ca target that was evaporated  
+ 61ZN3c  on gold backing. {+61}Zn recoils were stopped in a separate thick      
+ 61ZN4c  tantalum foil. Utilizing the Cologne plunger device, seven             
+ 61ZN5c  target-to-stopper distances were chosen in the range from 41.7 to      
+ 61ZN6c  140.6 |mm. An array of twelve HPGe detectors was used to detect        
+ 61ZN7c  the emitted |g rays. The detectors placed in rings at 0|' (1 detector),
+ 61ZN8c  45|'(6 detectors), and 143|' (5 detectors) with respect to the beam    
+ 61ZN9c  axis. Background radiation arising from X-rays was reduced by          
+ 61ZNac  shielding each detector with 2-mm-thick sheets of lead and copper.     
+ 61ZNbc  The analysis was performed by employing the differential decay curve   
+ 61ZNcc  method (DDCM) in coincidence mode which eliminated any                 
+ 61ZNdc  uncertainties imposed by unknown side feeding                          
+ 61ZN c  {+58}Ni(|a, n): E(|a)= 19 MeV impinged a {+58}Ni target.               
+ 61ZN2c  {+61}Zn recoils were stopped in the self-supporting target.            
+ 61ZN3c  A detector array consisting of 8 HPGe and 8 cerium-doped               
+ 61ZN4c  lanthanum bromide (LaBr3:Ce) detectors, mounted in the                 
+ 61ZN5c  frame of the HORUS array was used for |g ray detection. Six of the     
+ 61ZN6c  LaBr3:Ce detectors were surrounded by BGO veto detectors to suppress   
+ 61ZN7c  the Compton background. Copper sheets were used to reduce background   
+ 61ZN8c  from X-rays. Data were sorted into six correlation group matrices,     
+ 61ZN9c  each associated with detector pairs at angles |q{-1,2} with respect    
+ 61ZNbc  to the beam axis and a relative angle |F between the planes spanned    
+ 61ZNcc  by the detectors and the beam axis.                                    
+ 61ZN c  Measured: E|g, |g|g-coin, lifetime with the recoil-distance Doppler-   
+ 61ZN2c  shift (RDDS) method (|t in the order of picoseconds) and the           
+ 61ZN3c  electronic fast timing method (|t in the nanosecond region)            
+ 61ZN c  Deduced: Mixing ratios and reduced transition strengths                
+ 61ZN c  Theoretical Analysis: Comparison of measured lifetimes and level       
+ 61ZN2c  energies with shell model calculations (NUSHELLX@MSU) in the fp,       
+ 61ZN3c  f{-5/2}pg{-9/2}, and multishell fp-g{-9/2}d{-5/2} model spaces.        
+ 61ZN c  Level scheme is from 2006An31: Eur.Phys.J. A 30, 381 (2006)            
+ 61ZN2c  Energies were rounded off to the nearest keV.                          
+ 61ZN cG M$From 2017Qu05                                                        
+ 61ZN cG MR$From fits of theoretical |g|g angular correlations from             
+ 61ZN2cG CORLEONE code to relative experimental intensities in the              
+ 61ZN2cG correlation groups                                                     
+ 61ZN CL BAND(A)$ 9/2+ band                                                     
+ 61ZN CL BAND(B)$ 3/2- band                                                     
+ 61ZN CL BAND(C)$ 5/2- band                                                     
+ 61ZN CL BAND(D)$ 11/2+ band                                                    
+ 61ZN  L 0.0          3/2-                                                  B   
+ 61ZN  L 89        10 1/2-                                                      
+ 61ZN  G 89                                                                     
+ 61ZN  L 124        9 5/2-             3.19 NS   7                          C   
+ 61ZN cL T$From electronic fast-timing method with lifetime of 4.6 ns {I1}      
+ 61ZN2cL (2017Qu05). Compiler notes that a misprint in "Section V. Conclusions" 
+ 61ZN3cL of 2017Qu05, stating that 4.6 ns {1} is the half-life.                 
+ 61ZN4cL It should instead be the lifetime                                      
+ 61ZN  G 124                   M1+E2                                            
+ 61ZN cG MR$-0.007 {I33} or -3.7 {I+4-6}. No preference for the |d is given by  
+ 61ZN2cG the authors (2017Qu05). However, a value was given as -0.05 {I2}       
+ 61ZN3cG in Table II (2017Qu05) which is similar to the measured                
+ 61ZN4cG value in 1989Sc28: Phys.Rev. C40, 2310 (1989)                          
+ 61ZN cG                                                                        
+ 61ZN  L 998          7/2-                                                  B   
+ 61ZN cL E$997 keV in 2017Qu05                                                  
+ 61ZN  G 873                                                                    
+ 61ZN  G 997                   E2                                               
+ 61ZN  L 1266         9/2-             0.95 PS   11                         C   
+ 61ZN cL T$From RDDS method with lifetime of 1.37 ps {I14} (stat.){I+8-6}       
+ 61ZN2cL (syst.) (2017Qu05)                                                     
+ 61ZN  G 1141                  E2                                               
+ 61ZN cG $B(E2)=309 e{+2}fm{+4} {I+38-32} (2017Qu05)                            
+ 61ZN  L 2270         11/2-                                                 B   
+ 61ZN  G 1005                                                                   
+ 61ZN  G 1273                                                                   
+ 61ZN  L 2400         9/2+             4.39 PS   +30-24                     A   
+ 61ZN cL T$From RDDS method with lifetime of                                    
+ 61ZN2cL 6.34 ps {I13} (stat.){I+41-32} (syst.) (2017Qu05)                      
+ 61ZN  G 1403                  E1+M2     -0.07   4                              
+ 61ZN cG MR$Obtained by fixing |d=-1.9 {I1} for the 873|g in the fitting        
+ 61ZN2cG procedure.                                                             
+ 61ZN cG $B(E1)(W.u.)=0.00035 {I+3-2} (2017Qu05). The value                     
+ 61ZN2cG given by authors is a factor of 10 larger than that calculated         
+ 61ZN3cG by the compiler                                                        
+ 61ZN  G 2275                                                                   
+ 61ZN  L 2799         13/2-                                                 C   
+ 61ZN  G 1531                                                                   
+ 61ZN  L 3244         11/2+                                                 D   
+ 61ZN  G 1978                                                                   
+ 61ZN  L 3336         13/2+            1.69 PS   9                          A   
+ 61ZN cL T$From RDDS method with lifetime of 2.44 ps {I8} (stat.){I10} (syst.)  
+ 61ZN2cL (2017Qu05)                                                             
+ 61ZN  G 937                                                                    
+ 61ZN cG $B(E2)=465 e{+2}fm{+4} {I+26-23} (2017Qu05)                            
+ 61ZN  G 1066                                                                   
+ 61ZN  L 4264         15/2+                                                 D   
+ 61ZN  G 1019                                                                   
+ 61ZN  G 1466                                                                   
+ 61ZN  L 4415         17/2+            0.82 PS   13                         A   
+ 61ZN cL T$From RDDS method with lifetime of 1.19 ps {I18} (stat.){I+6-4}       
+ 61ZN2cL (syst.) (2017Qu05)                                                     
+ 61ZN  G 1079                  E2                                               
+ 61ZN cG $B(E2)=471 e{+2}fm{+4} {I+86-64} (2017Qu05)                            
+ 61ZN  L 4644         17/2-                                                 C   
+ 61ZN  G 1847                                                                   
+ 61ZN  L 5552         19/2+                                                 D   
+ 61ZN  G 908                                                                    
+ 61ZN  G 1289                                                                   
+ 61ZN  L 6090         21/2+                                                 A   
+ 61ZN  G 1675                                                                   
+                                                                                

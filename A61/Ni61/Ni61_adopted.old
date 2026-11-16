@@ -1,0 +1,1883 @@
+ 61NI    ADOPTED LEVELS, GAMMAS                                  ENSDF    202006
+ 61NI  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=20-Jan-2020$                    
+ 61NI  H TYP=FUL$AUT=KAZIMIERZ ZUBER, BALRAJ SINGH$CIT=NDS 125, 1 (2015)$       
+ 61NI2 H CUT=25-Jan-2015$                                                       
+ 61NI  Q -2237.8   107820.10 5 9860.57 22-6464.9826    2017WA10                 
+ 61NI cQ $S(2n)=19207.83 {I7}, S(2p)=18135.0 {I3} (2017Wa10)                    
+ 61NI c  isotopic identification of {+61}Ni by mass spectrograph method         
+ 61NI2c  by Aston: Nature 134, 178 (1934)                                       
+ 61NI c  1976Ch34: {+60}Ni(t,d),E=2.5-4.75 MeV. Measured |s(E(t),E(d),|q), semi.
+ 61NI2c  Deduced rms radii of g.s., 68-keV and 284-keV states, DWBA.            
+ 61NI c  1985Wo01: {+64}Ni({+18}O,{+21}O), E=150 MeV. Measured |s(E({+21}O)).   
+ 61NI c  2012VoZZ: {+56}Fe({+6}Li,p),E=15 MeV; measured |s(|q), deduced level   
+ 61NI2c  density                                                                
+ 61NI c  Hyperfine structures, NMR: 2003Bb02, 1997Ba98, 1990Ku08, 1988Le02.     
+ 61NI2c  See also 2017Ne04 review article for collinear laser spectroscopic     
+ 61NI3c  measurements at ISOLDE-CERN facility.                                  
+ 61NI c  Theoretical nuclear structure calculations: consult Nuclear Science    
+ 61NI2c  References database at www.nndc.bnl.gov/nsr/ for about 60 primary      
+ 61NI3c  publications dealing with nuclear structure calculations.              
+ 61NI cG E,RI$Values are from {+58}Fe(|a,n|g) (also                             
+ 61NI2cG heavy-ion reactions in this dataset), Coulomb excitation,              
+ 61NI3cG and {+60}Ni(n,|g),E=thermal, except as noted otherwise.                
+ 61NI cG M$From |g(|q) and linear polarization data from (|a,n|g) and           
+ 61NI2cG ({+7}Li,|an|g), except when indicated otherwise.                       
+ 61NI cG M(L)$From |DJ|p of initial and final levels                            
+ 61NI cG MR$From |g(|q) in (|a,n|g), except when noted otherwise.               
+ 61NI cG MR(D)$Calculated from B(E2) (see Coulomb excitation) and T{-1/2}       
+ 61NI cG E(E),RI(F)$From {+61}Cu |e decay                                       
+ 61NI cG E(Z),RI(z)$From (|a,n|g)                                               
+ 61NI cG E(G),RI(H)$From {+61}Ni(p,p'|g)                                        
+ 61NI cG E(X),RI(X)$|g from {+61}Ni(n,|g) E=thermal only                        
+ 61NI cG E(Y),RI(y)$|g from ({+7}Li,|an|g) only                                 
+ 61NI cL E$From a least-squares fit to the E|g data for levels populated        
+ 61NI2cL in |g-ray studies. Other levels are from reaction data, with values    
+ 61NI3cL from averages of available data                                        
+ 61NI cL E(X),J(X)$Probably corresponds to 7866.99, 1/2- and/or 7869.13, 1/2-   
+ 61NI2cL excitations in neutron resonances; p-wave resonance 47.6 keV from      
+ 61NI3cL 1978Be04                                                               
+ 61NI cL J(Y)$Thermal s-wave neutron capture in {+60}Ni g.s.                    
+ 61NI cL T$From {+58}Fe(|a,n|g), except as noted.                               
+ 61NI cL J(R)$From s-wave, p-wave or d-wave assignment from R-matrix analysis   
+ 61NI2cL in {+60}Ni(n,|g),(n,n):resonances                                      
+ 61NI  XA61CO B- DECAY (1.649 H)                                                
+ 61NI  XB61CU EC DECAY (3.336 H)                                                
+ 61NI  XC58FE(A,NG),48CA(18O,5NG)                                               
+ 61NI  XE59CO(3HE,P)                                                            
+ 61NI  XX59CO(7LI,ANG)                                                          
+ 61NI  XD59NI(T,P)                                                              
+ 61NI  XF60NI(N,G),(POL N,G) E=THERMAL                                          
+ 61NI  XG60NI(N,G) E=0.01-90 KEV                                                
+ 61NI  XH60NI(N,G),(N,N):RESONANCES                                             
+ 61NI  XI60NI(D,P),(POL D,P)                                                    
+ 61NI  XU60NI(A,3HE)                                                            
+ 61NI  XJ60NI(14C,13C),(13C,12C)                                                
+ 61NI  XK61NI(G,G')                                                             
+ 61NI  XL61NI(N,N'G)                                                            
+ 61NI  XM61NI(P,P')                                                             
+ 61NI  XN61NI(P,P'G)                                                            
+ 61NI  XO61NI(D,D')                                                             
+ 61NI  XV61NI(3HE,3HE')                                                         
+ 61NI  XPCOULOMB EXCITATION                                                     
+ 61NI  XQ62NI(P,D),(POL P,D)                                                    
+ 61NI  XR62NI(D,T),(POL D,T)                                                    
+ 61NI  XS62NI(3HE,A)                                                            
+ 61NI  XT63CU(D,A)                                                              
+ 61NI  XW64ZN(N,A)                                                              
+ 61NI  XY116SN(60NI,61NI)                                                       
+ 61NI PN                                                                     6  
+ 61NI  L 0.0         3/2-              STABLE                                   
+ 61NI2 L MOMM1=-0.75002 4 (1964Dr02,2014StZZ)                                   
+ 61NI2 L MOME2=+0.162 15 (1968Ch10,2016St14)                                    
+ 61NIX L XREF=ABCDEFGIJKLMNOPQRSTUVWXY                                          
+ 61NI cL $Evaluated rms charge radius=3.8225 fm {I19} (2013An02)                
+ 61NI cL $Evaluated |d<r{+2}>({+61}Ni,{+60}Ni)=+0.082 fm{+2} {I7} (2013An02)    
+ 61NI cL MOMM1$NMR (1964Dr02), recalculated in                                  
+ 61NI cL MOME2$Atomic beam, includes polarization correction (1968Ch10).        
+ 61NI2cL See also 2008Py02 evaluation                                           
+ 61NI cL J$spin from electron paramagnetic resonance (1958Wo52).                
+ 61NI2cL L(d,p)=L(p,d)=1; L+1/2 from A{-y} in (pol d,p) and (pol p,d)           
+ 61NI  L 67.414     7 5/2-             5.34 NS   16                             
+ 61NIX L XREF=ABCDEFGIJKLMNOPQRSTUWX                                            
+ 61NI2 L MOMM1=+0.480 6 (1971Go31,2014StZZ)                                     
+ 61NI2 L MOME2=-0.20 3 (1971Go31,2016St14)                                      
+ 61NI cL MOMM1,MOME2$Mossbauer effect (1971Go31).                               
+ 61NI2cL Other: Q=-0.08 {I7} (1976Ob01)                                         
+ 61NI cL J$L(d,p)=L(p,d)=L(d,t)=3; L-1/2 from A{-y}(|q) in (pol d,p), (pol p,d) 
+ 61NI cL T$from |b{++}|g(t) in {+61}Cu |e decay. Other: 5.1 ns {I3} (Coulomb    
+ 61NI2cL excitation)                                                            
+ 61NI  G 67.412    10 100      (M1+E2)   0.0076  5     0.137                D   
+ 61NIF G FLAG=EL                                                                
+ 61NIS G KC=0.1225 18$LC=0.01262 18$MC=0.001778 25$NC=7.38E-5 11                
+ 61NIB G BM1W=0.0119 4 $BE2W=0.27 4                                             
+ 61NI  L 282.958    7 1/2-             23 PS     3                              
+ 61NIX L XREF=BCDEFGIJLMNOPQRSTUW(*)XY                                          
+ 61NI cL J$L(d,p)=L(p,d)=L(d,t)=1; L-1/2 from A{-y}(|q) in (pol d,p), (pol p,d) 
+ 61NI cL T$weighted average of 22 ps {I4} (|b{++}|g(t) in {+61}Cu |e decay)     
+ 61NI2cL and 24 ps {I4} ({+58}Fe(|a,n|g)).                                      
+ 61NI  G 215.52    9  0.047  4   [E2]                  0.0311                   
+ 61NIB G BE2W=1.74 +30-24                                                       
+ 61NI cG E$weighted average from (n,|g) and |e decay                            
+ 61NI cG RI$from (n,|g)                                                         
+ 61NI  G 282.956   10 100.000 6 (M1+E2)  0.044   4     0.00330              D   
+ 61NIF G FLAG=LE                                                                
+ 61NI cG RI$from I(|g+ce)(215.55 + 282.856)=100                                 
+ 61NIB G BM1W=0.043 6 $BE2W=1.8 +5-4                                            
+ 61NI  L 656.015    71/2-              17 PS     4                              
+ 61NIX L XREF=BCDEFIJLMNOPQRSTUVW(*)X                                           
+ 61NI cL J$L(d,p)=L(d,t)=1; L-1/2 from A{-y}(|q) in (pol d,t), (pol p,d).       
+ 61NI2cL See 2012PeZX who question assignment of 1/2- for 656 level based       
+ 61NI3cL on branching ratio measurements and theory in {+61}Cu decay            
+ 61NI cL T$other: <21 ps from |b{++}|g(t) in {+61}Cu |e decay                   
+ 61NI  G 373.050   10 20.91  25(M1)                                         E   
+ 61NI cG M$|DJ=1, dipole from ADO ratio in ({+7}Li,|an|g)                       
+ 61NIB G BM1W=0.0039 +12-8                                                      
+ 61NI cG RI$weighted average from (n,|g) and |e decay                           
+ 61NI  G 588.605   10 11.42  24[E2]                                         E   
+ 61NIB G BE2W=2.9 +9-5                                                          
+ 61NI cG RI$weighted average from (n,|g) and |e decay                           
+ 61NI  G 656.008   10 100.0  11(M1+E2)   1.6     9                          D   
+ 61NIF G FLAG=EL                                                                
+ 61NIB G BM1W=1.0E-3 +13-5 $BE2W=10 +4-5                                        
+ 61NI  L 908.613   11 5/2-             0.7 PS    4                              
+ 61NIX L XREF=BCDE(*)FLMNPQRSTUX                                                
+ 61NI cL J$L(d,p)=L(p,d)=3; L-1/2 from (pol p,d)                                
+ 61NI  G 625.605   24 4.3    6 [E2]                                         E   
+ 61NIB G BE2W=20 +20-8                                                          
+ 61NI  G 841.211   17 20.2   11M1+E2     +1.83   20                         E   
+ 61NI cG RI$weighted average from (n,|g), |e decay and ({+7}Li,|an|g).          
+ 61NI2cG Others: 28.8 {I14} in (|a,n|g) and 55 in Coul. ex. seem discrepant     
+ 61NIF G FL=67.414                                                              
+ 61NIB G BM1W=0.0020 +21-8 $BE2W=17 +17-7                                       
+ 61NI  G 908.631   17 100.0  12 M1+E2    -0.18   5                          E   
+ 61NIB G BM1W=0.033 +32-12 $BE2W=2.3 +31-13                                     
+ 61NI  L 917.5     7 (7/2)-                                                     
+ 61NIX L XREF=AE(*)IO                                                           
+ 61NI cL J$M1+E2 |g to 5/2-; (E2) |g to 3/2-; log| {Ift}=4.8 from 7/2-          
+ 61NI  G 850.0     10 22.0   20 M1+E2    +1.83   20                             
+ 61NI cG E,RI$from |b{+-} decay only                                            
+ 61NI  G 917.5     10 100    7  (E2)                                            
+ 61NI cG E,RI$from |b{+-} decay only                                            
+ 61NI cG $|d(M3/E2)=-0.18 {I5}                                                  
+ 61NI  L 1015.24    8 7/2-             4.4 PS    6                              
+ 61NIX L XREF=BCDEFILMNOPQSTX                                                   
+ 61NI cL J$|g(|q) and |g(lin pol) in (|a,n|g); L(p,d)=(3);                      
+ 61NI2cL L+1/2 from (pol p,d); L(t,p)=2 from 3/2- target                        
+ 61NI cL T$from {+48}Ca({+18}O,5n|g) (1978Wa09). Others: 6 ps {I2} in           
+ 61NI2cL {+58}Fe(|a,n|g), {+53}Cr({+11}B,{+12}C), >1.7 ps in Coulomb excitation 
+ 61NI  G 947.87    9 100.0   13 M1+E2    +2.46   15                             
+ 61NI cG E$weighted average from (n,|g), |e decay, (|a,n|g), ({+7}Li,|an|g),    
+ 61NI2cG and Coul. ex.                                                          
+ 61NIB G BM1W=6.3E-4 +13-10 $BE2W=7.6 +12-9                                     
+ 61NI  G 1015.1    2  33.3   9  E2                                              
+ 61NI cG E$weighted average from (n,|g), (|a,n|g), ({+7}Li,|an|g), and Coul. ex.
+ 61NI cG RI$weighted average from (n,|g), |e decay, (|a,n|g), and ({+7}Li,|an|g)
+ 61NIB G BE2W=2.09 +33-26                                                       
+ 61NI  L 1099.640  12 3/2-             0.16 PS   4                              
+ 61NIX L XREF=BCDEFIJLMNOPRSTX                                                  
+ 61NI cL J$L(d,p)=1; L+1/2 from A{-y}(|q) in (pol d,t); L(t,p)=0+2              
+ 61NI2cL from 3/2- target                                                       
+ 61NI cL T$from {+61}Ni(n,n'|g). Others: 0.25 ps {I+47-11} in {+58}Fe(|a,n|g),  
+ 61NI2cL {+53}Cr({+11}B,p2n|g) and 0.18 ps {I8} in {+60}Ni(n,|g).               
+ 61NI  G 190.98    19  1.60  13                                                 
+ 61NI cG E$unweighted average from (n,|g) and |e decay                          
+ 61NI cG RI$weighted average from (n,|g) and |e decay                           
+ 61NI  G 443.5     1   1.04  4                                              E   
+ 61NIF G FLAG=F                                                                 
+ 61NI cG $|g from |e decay only                                                 
+ 61NI  G 816.692   13 100.0  10 M1+E2    +0.23   7                          E   
+ 61NIB G BM1W=0.123 +41-26 $BE2W=18 +14-9                                       
+ 61NI  G 1032.19   4 15.64   23                                                 
+ 61NI cG E$weighted average from (n,|g) and |e decay                            
+ 61NI cG E$weighted average from (n,|g), |e decay and (|a,n|g)                  
+ 61NI  G 1099.579  24 76.7   32 M1+E2                                           
+ 61NI cG E$weighted average from (n,|g), |e decay, (|a,n|g), ({+7}Li,|an|g),    
+ 61NI2cG and Coul. ex.                                                          
+ 61NI cG RI$unweighted average from (n,|g), |e decay and (|a,n|g). Weighted     
+ 61NI2cG average is 73.1 {I27} with large reduced |h{+2}=14.                    
+ 61NI cG M$from POL and ADO ratio in ({+7}Li,|an|g)                             
+ 61NIB G BM1W LT 0.056 $BE2W LT 83                                              
+ 61NI  L 1132.347  185/2-              0.32 PS   3                              
+ 61NIX L XREF=BCDEFILMNOPQRSTUVX                                                
+ 61NI cL J$L(d,p)=L(p,d)=3; (L-1/2) from (pol p,d); |g(|q) and |g(lin pol)      
+ 61NI2cL in (|a,n|g).                                                           
+ 61NI cL T$unweighted average of 0.29 ps {I5} ({+58}Fe(|a,n|g)) and 0.35 ps     
+ 61NI2cL {I4} (Coul. ex.). Other: 0.14 ps {I4} in {+61}Ni(n,n'|g).              
+ 61NI  G 117.5       12      6                                              E   
+ 61NIF G FLAG=F                                                                 
+ 61NI cG $|g from |e decay only                                                 
+ 61NI  G 1064.912  22 56.6   10 M1+E2    +0.14   12                             
+ 61NI cG E$weighted average from (n,|g), |e decay, (|a,n|g), ({+7}Li,|an|g),    
+ 61NI2cG and Coul. ex.                                                          
+ 61NI cG RI$weighted average from (n,|g), |e decay, and (|a,n|g)                
+ 61NIB G BM1W=0.0188 +18-22 $BE2W=0.6 +15-5                                     
+ 61NI  G 1132.370  32 100.0  15 M1+E2    -0.47   9                              
+ 61NI cG E$weighted average from (n,|g) and |e decay                            
+ 61NIB G BM1W=0.0230 +29-27 $BE2W=7.3 23                                        
+ 61NI  L 1185.255  12 3/2-             0.12 PS   3                              
+ 61NIX L XREF=BCDEFIKLMNOPQRS(1170)TUX                                          
+ 61NI cL J$L(d,p)=L(p,d)=L(d,t)=1, L+1/2 from A{-y}(|q) in (pol d,p), (pol p,d),
+ 61NI2cL (pol d,t)                                                              
+ 61NI cL T$from Coul. ex. Others: 0.14 ps {I+8-4} in {+61}Ni(n,n'|g), 0.145 ps  
+ 61NI2cL {I35} in {+61}Ni(|g,|g'), 0.104 ps {I17} in {+58}Fe(|a,n|g),           
+ 61NI3cL {+53}Cr({+11}B,p2n|g).                                                 
+ 61NI  G 276.688   53 0.70   11                                             E   
+ 61NIF G FL=908.613                                                             
+ 61NI cG RI$weighted average from (n,|g) and |e decay                           
+ 61NI  G 529.206   31 10.21  11                                                 
+ 61NI cG E$weighted average from (n,|g), |e decay, (|a,n|g), and ({+7}Li,|an|g) 
+ 61NI cG RI$weighted average from (n,|g), |e decay, and (|a,n|g)                
+ 61NIF G FL=656.015                                                             
+ 61NI  G 902.292   20 2.39   7                                                  
+ 61NI cG E,RI$weighted average from (n,|g) and |e decay                         
+ 61NI  G 1117.822  43 1.26   15                                             E   
+ 61NI cG RI$weighted average from (n,|g) and |e decay                           
+ 61NI  G 1185.241  18 100.0  11(M1+E2)   0.17    3                              
+ 61NI cG E$weighted average from (n,|g) and |e decay                            
+ 61NIF G FL=0.0                                                                 
+ 61NIF G FLAG=DL                                                                
+ 61NIB G BM1W=0.093 +31-19 $BE2W=3.5 +19-12                                     
+ 61NI  L 1454.84   11 7/2-             0.58 PS   25                             
+ 61NIX L XREF=CDEFIMNOPQRSTUVX                                                  
+ 61NI cL J$L(p,d)=L(d,t)=L(|a,{+3}He)=3; L+1/2 from (pol p,d)                   
+ 61NI  G 441.8       8.5                                                    G   
+ 61NIF G FLAG=H                                                                 
+ 61NIF G FL=1015.24                                                             
+ 61NI cG $|g reported only in (p,p'|g) and Coul. ex.                            
+ 61NI  G 546.3     3  16     5                                              X   
+ 61NI  G 1387.4    4 30      4 M1+E2     +2.7    4                              
+ 61NI cG E,RI$weighted average from (n,|g) and (|a,n|g). Other:                 
+ 61NI2cG I|g=94 {I13} in ({+7}Li,|an|g) is in severe disagreement               
+ 61NIB G BM1W=3.3E-4 +29-12 $BE2W=2.3 +16-8                                     
+ 61NI  G 1454.76   12 100    4 E2                                               
+ 61NI cG E$weighted average from (n,|g), (|a,n|g) and ({+7}Li,|an|g)            
+ 61NIB G BE2W=6.8 +49-21                                                        
+ 61NI  L 1609.70    4 5/2-             0.26 PS   4                              
+ 61NIX L XREF=BCDEFIMNOPQRSTX                                                   
+ 61NI cL J$L(p,d)=3; L-1/2 from (pol p,d); L(t,p)=2+4 from 3/2- target          
+ 61NI  G 477.5     5  9.4    29                                                 
+ 61NI cG E,RI$weighted average from (|a,n|g) and (n,|g). |g not reported        
+ 61NI2cG in |e decay                                                            
+ 61NI  G 701.21    11 21     5                                                  
+ 61NI cG E$weighted average from (n,|g), |e decay, (|a,n|g) and ({+7}Li,|an|g)  
+ 61NI cG E$unweighted average from (n,|g), |e decay, (|a,n|g) and ({+7}Li,|an|g)
+ 61NI  G 1542.30   8  100    4  M1+E2    -0.07   5                              
+ 61NI cG E$LWM, weighted average from (n,|g), |e decay, (|a,n|g) and            
+ 61NI2cG ({+7}Li,|an|g)                                                         
+ 61NIB G BM1W=0.0112 +21-16 $BE2W=0.04 +9-3                                     
+ 61NI  G 1609.625  48 75     4 M1+E2     -0.33   14                         E   
+ 61NI cG RI$unweighted average from (n,|g), |e decay, and (|a,n|g)              
+ 61NIB G BM1W=0.0068 12 $BE2W=0.51 +47-32                                       
+ 61NI  L 1729.480  143/2-              0.065 PS  11                             
+ 61NIX L XREF=BCDEFIJLMNOQRSTX                                                  
+ 61NI cL J$L(d,p)=L(d,t)=1; L+1/2 from (pol p,d); L(t,p)=0+2 from 3/2- target   
+ 61NI cL T$other: 0.062 ps {I14} in {+61}Ni(n,n'|g).                            
+ 61NI  G 544.8        11     7                                              E  ?
+ 61NIF G FLAG=F                                                                 
+ 61NI cG RI$other: I|g=23 in (p,p'|g). Evaluator treats this transition as      
+ 61NI2cG uncertain since it is not reported in (n,|g), (|a,n|g) and             
+ 61NI3cG ({+7}Li,|an|g)                                                         
+ 61NIF G FL=1185.255                                                            
+ 61NI  G 629.88    25 9.7    19 D+Q                                             
+ 61NI cG E,RI$weighted average of values from |e decay and (n,|g)               
+ 61NI cG M$|DJ=1, D+Q from ADO ratio in ({+7}Li,|an|g)                          
+ 61NI  G 820.90    10 41     3                                                  
+ 61NI cG E,RI$weighted average of values from |e decay and (n,|g).              
+ 61NI2cG I|g=7.9 in (|a,n|g) seems discrepant                                   
+ 61NI  G 1073.473  25 85     5                                                  
+ 61NI cG E,RI$weighted average of values from |e decay, (n,|g) and (|a,n|g)     
+ 61NI  G 1446.499  29 95     5                                                  
+ 61NI cG E,RI$NRM, weighted average from |e decay, (n,|g) and (|a,n|g)          
+ 61NI  G 1662.000  19 100    3                                              E   
+ 61NI  G 1729.60   10 93     6                                                  
+ 61NI cG E$LWM, weighted average from |e decay, (n,|g) and (|a,n|g)             
+ 61NI cG RI$weighted average from |e decay, (n,|g) and (|a,n|g)                 
+ 61NI  L 1807.9     39/2-              0.6 PS    5                              
+ 61NIX L XREF=CDEILMOTX                                                         
+ 61NI cL J$L(t,p)=4 from 3/2- target; |g(|q) and |g(lin pol) in (|a,n|g).       
+ 61NI  G 792.6     5 12.4    23 M1+E2    +0.97   18                         Z   
+ 61NIF G FLAG=z                                                                 
+ 61NIB G BM1W=0.0042 +53-22 $BE2W=11 +13-6                                      
+ 61NI cG $Other I|g: 61 {I4} in ({+7}Li,|an|g) is in severe disagreement        
+ 61NI  G 1740.3    5 100.0   23 E2                                              
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NIB G BE2W=3.7 +46-18                                                        
+ 61NI  L 1978      7                                                            
+ 61NIX L XREF=MT                                                                
+ 61NI  L 1987.73   199/2-              0.51 PS   18                             
+ 61NIX L XREF=CDEILMOX                                                          
+ 61NI cL J$ L(t,p)=4 from 3/2- target; |g(|q) and |g(lin pol) in (|a,n|g).      
+ 61NI  G 532.6     4 21.4    24M1(+E2)   +0.02   3                              
+ 61NI cG E,RI$weighted average from (|a,n|g) and ({+7}Li,|an|g)                 
+ 61NIB G BM1W=0.035 +20-10 $BE2W=0.09 +67-9                                     
+ 61NI  G 972.5     5 21      4 M1+E2     -0.70   23                         Z   
+ 61NIF G FLAG=z                                                                 
+ 61NI cG $Other I|g=45 {I4} in ({+7}Li,|an|g) disagrees                         
+ 61NIB G BM1W=0.0038 +24-13 $BE2W=3.5 +26-18                                    
+ 61NI  G 1079.3    7 32      4 E2                                           Z   
+ 61NIF G FLAG=z                                                                 
+ 61NIB G BE2W=10 +5-3                                                           
+ 61NI cG $Other I|g=149 {I20} in ({+7}Li,|an|g) is in severe disagreement       
+ 61NI  G 1920.2    5 100     5 E2                                               
+ 61NI cG E$average from (|a,n|g) and ({+7}Li,|an|g)                             
+ 61NIB G BE2W=1.7 +9-5                                                          
+ 61NI  L 1998.08    85/2-              0.045 PS  7                              
+ 61NIX L XREF=BCDEFILMRTX                                                       
+ 61NI cL J$L(d,t)=3; L(p,t)=2 from 3/2- target; |g(|q) and |g(lin pol)          
+ 61NI2cL in (|a,n|g).                                                           
+ 61NI cL T$from {+61}Ni(n,n'|g). Other: 0.042 ps {I11} in {+58}Fe(|a,n|g),      
+ 61NI2cL {+53}Cr({+11}B,p2n|g).                                                 
+ 61NI  G 982.5     4 15.2    24                                                 
+ 61NI cG E$weighted average from (n,|g), (|a,n|g) and ({+7}Li,|an|g)            
+ 61NI cG RI$weighted average from (n,|g) and (|a,n|g)                           
+ 61NI  G 1089.58   22 23.7   15                                                 
+ 61NI cG E$weighted average from (n,|g), (|a,n|g) and ({+7}Li,|an|g)            
+ 61NI cG RI$weighted average from (n,|g) and (|a,n|g)                           
+ 61NI  G 1342.3    4 18      4  [E2]                                        X   
+ 61NIB G BE2W=22 6                                                              
+ 61NI  G 1930.6    7  12     4                                                  
+ 61NI cG E$weighted average from (n,|g) and (|a,n|g).                           
+ 61NI cG RI$unweighted average from (n,|g) and (|a,n|g). Other:                 
+ 61NI2cG I|g(1930)/I|g(1089)=91 {I18}/100 {I18} in ({+7}Li,|an|g) is larger than
+ 61NI3cG the adopted ratio of 12 {I4}/23.7 {I15}                                
+ 61NI  G 1998.08   12 100    3 M1+E2     -0.27   6                              
+ 61NI cG E$weighted average from (n,|g) and (|a,n|g).                           
+ 61NIB G BM1W=0.034 +7-5 $BE2W=1.1 +6-4                                         
+ 61NI  L 2018.3     47/2-              0.12 PS   +8-3                           
+ 61NIX L XREF=CDEILQX                                                           
+ 61NI cL J$L(p,d)=3; L+1/2 from (pol p,d)                                       
+ 61NI cL T$from {+61}Ni(n,n'|g). Other: 0.26 ps {I16} in (|a,n|g).              
+ 61NI  G 1110.0    5  11.1                                                  z   
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NI  G 1950.5    5 100       M1(+E2)   -0.02   +2-7                           
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NIB G BM1W=0.022 +7-9 $BE2W LT 0.075                                         
+ 61NI  L 2121.48   19 9/2+             0.40 PS   +74-12                         
+ 61NIX L XREF=B(?)CDLMQ(2124.5)STUX                                             
+ 61NI cL J$9/2+ from |g(|q) and |g(lin pol) in (|a,n|g); L=4 component          
+ 61NI2cL of a doublet with L(d,p)=L(pol d,p)=1+4 and L(d,t)=(1+4). See          
+ 61NI3cL 2123-keV level; L+1/2 for L=4 component from (pol d,p); L(t,p)=3+5     
+ 61NI4cL from 3/2- target                                                       
+ 61NI  G 1106.3    2 100       E1                                               
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NIB G BE1W=8.1E-4 36                                                         
+ 61NI  L 2123.918  17 1/2-             0.044 PS  15                             
+ 61NIX L XREF=BCFLM(*)X                                                         
+ 61NI cL J$L=1 component of 2130-keV doublet with L(d,p)=L(pol d,p)=L(d,t)=1+4; 
+ 61NI2cL L-1/2 from (pol d,p); log| {Ift}=5.0 from 3/2- parent                  
+ 61NI cL T$other: 0.045 ps {I19} in {+61}Ni(n,n'|g) and 0.051 ps {I10} in       
+ 61NI2cL {+60}Ni(n,|g).                                                         
+ 61NI  G 394.33    5  1.22   4                                              X   
+ 61NIF G FL=1729.480                                                            
+ 61NI  G 514.33    14  0.47  5                                              X   
+ 61NI  G 938.62    4  11.18  12                                             X   
+ 61NIF G FL=1185.255                                                            
+ 61NI  G 1024.27   7  0.84   4                                              X   
+ 61NIF G FL=1099.640                                                            
+ 61NI  G 1215.35   5  1.37   4                                              X   
+ 61NIF G FL=908.613                                                             
+ 61NI  G 1840.94   5  3.28   8                                              X   
+ 61NIF G FL=282.958                                                             
+ 61NI  G 2123.90   3  100.0  10                                                 
+ 61NI cG E$from (n,|g)                                                          
+ 61NI  L 2129.0     3 11/2-            2 PS      GT                             
+ 61NIX L XREF=CEIJLM(*)ORX                                                      
+ 61NI cL J$|g(|q) and linear polarization in (|a,n|g).                          
+ 61NI  G 1113.8    3 100       E2                                               
+ 61NI cG E$unweighted average from (|a,n|g) and ({+7}Li,|an|g)                  
+ 61NIB G BE2W LT 11                                                             
+ 61NI  L 2409.8     39/2-              0.19 PS   4                              
+ 61NIX L XREF=CMTX                                                              
+ 61NI cL J$|g(|q) and linear polarization in (|a,n|g).                          
+ 61NI  G 955.0     5 27      3 M1+E2     -0.10   5                          Z   
+ 61NIF G FLAG=z                                                                 
+ 61NI cG $Other I|g=83 {I21} in ({+7}Li,|an|g) disagrees                        
+ 61NIB G BM1W=0.022 +6-4 $BE2W=0.4 +6-3                                         
+ 61NI  G 1277.5    5 19      3 E2                                           Z   
+ 61NIF G FLAG=z                                                                 
+ 61NIB G BE2W=7.2 +23-16                                                        
+ 61NI  G 1394.6    5 15      3 M1+E2                                        Z   
+ 61NIF G FLAG=z                                                                 
+ 61NI cG $Other I|g=58 {I13} in ({+7}Li,|an|g) disagrees                        
+ 61NIB G BM1W LT 0.0064 $BE2W LT 5.9                                            
+ 61NI cG MR$-2.1|<|d|<-0.3.                                                     
+ 61NI  G 2342.0    7 100     5 E2                                           Z   
+ 61NIB G BE2W=1.8 +5-3                                                          
+ 61NI  L 2415      6 (3/2-)                                                     
+ 61NIX L XREF=DEIO                                                              
+ 61NI cL E$from {+59}Ni(t,p).                                                   
+ 61NI cL J$L(t,p)=(0+2) from 3/2- target                                        
+ 61NI  L 2465      6 7/2-              0.236 PS  +21-7                          
+ 61NIX L XREF=DEILMOQRST                                                        
+ 61NI cL J$L(p,d)=3; L+1/2 from (pol p,d)                                       
+ 61NI cL T$from DSAM in {+61}Ni(n,n'|g)                                         
+ 61NI  L 2530      4 5/2-,7/2-                                                  
+ 61NIX L XREF=DEIO                                                              
+ 61NI cL J$L(t,p)=2+4 from 3/2- target                                          
+ 61NI  L 2593      5 7/2-                                                       
+ 61NIX L XREF=DIMQST$                                                           
+ 61NI cL J$L(p,d)=3; L+1/2 from (pol p,d)                                       
+ 61NI  L 2639.50    5 1/2-,3/2-                                                 
+ 61NIX L XREF=DEFIMTQ$                                                          
+ 61NI cL J$L(d,p)=1                                                             
+ 61NI  G 2356.6    3  9.5    15                                             X   
+ 61NI  G 2639.44   6  100.0  23                                             X   
+ 61NI  L 2696      4 5/2+                                                       
+ 61NIX L XREF=DIMOT                                                             
+ 61NI cL J$L(d,p)=2; L+1/2 from (pol d,p)                                       
+ 61NI  L 2707.63    9(3/2-,5/2+)                                                
+ 61NIX L XREF=FM                                                                
+ 61NI cL J$|g to 3/2-; |g from 7/2-; weak primary |g from 1/2+                  
+ 61NI  G 2707.58   9  100                                                   X   
+ 61NI  L 2734        (7/2-)                                                     
+ 61NIX L XREF=JQ$                                                               
+ 61NI cL J$L(p,d)=(3); L+1/2 from (pol p,d)                                     
+ 61NI  L 2765.00    73/2-                                                       
+ 61NIX L XREF=DFIMT                                                             
+ 61NI cL J$L(t,p)=0+2 from 3/2- target                                          
+ 61NI  G 1154.9    3  26     4                                              X   
+ 61NI  G 1580.03   20 29     4                                              X   
+ 61NI  G 1633.08   20 44     6                                              X   
+ 61NI  G 1665      1  58     4                                              X   
+ 61NI  G 2108.99   18 70     6                                              X   
+ 61NI  G 2482.07   18 69     9                                              X   
+ 61NIF G FL=282.958                                                             
+ 61NI  G 2764.69   16 100    6                                              X   
+ 61NI  L 2786      6 5/2-,7/2-                                                  
+ 61NIX L XREF=DI(2804)MTU(*)                                                    
+ 61NI cL J$L(d,p)=3                                                             
+ 61NI  L 2800      7                                                            
+ 61NIX L XREF=MU(*)                                                             
+ 61NI  L 2853      6  5/2-,7/2-                                                 
+ 61NIX L XREF=DMT                                                               
+ 61NI cL J$L(t,p)=2+4 from 3/2- target                                          
+ 61NI  L 2862.91    9 1/2-,3/2-                                                 
+ 61NIX L XREF=FI(2873)M                                                         
+ 61NI cL J$L(d,p)=1                                                             
+ 61NI  G 1253.23   20 63     8                                              X   
+ 61NI  G 2207.0    3  95     15                                             X   
+ 61NI  G 2579.84   15 100    8                                              X   
+ 61NI  G 2795.3    4   52    9                                              X   
+ 61NI  L 2913      8 7/2-                                                       
+ 61NIX L XREF=DEIQRST$                                                          
+ 61NI cL J$ L(p,d)=L(|a,{+3}He)=3; L+1/2 from (pol p,d)                         
+ 61NI  L 3040      8 (1/2-,3/2-)                                                
+ 61NIX L XREF=EIMQT                                                             
+ 61NI cL J$L(d,p)=(1)                                                           
+ 61NI  L 3062.14    51/2+                                                       
+ 61NIX L XREF=FI(3073)                                                          
+ 61NI cL J$L(d,p)=0.                                                            
+ 61NI  G 1877.1    4  12.0   25                                             X   
+ 61NI  G 2406.05   6 100.0   28                                             X   
+ 61NI  G 2778.9    4  13.6   25                                             X   
+ 61NI  G 3062.16   10 54.0   25                                             X   
+ 61NI  L 3099      7 (3/2-)                                                     
+ 61NIX L XREF=MT                                                                
+ 61NI  L 3104.7     5                                                           
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|g to 5/2-. 2019As04, in ({+7}Li,|an|g) assigned (7/2+) without any  
+ 61NI2cL supporting argument                                                    
+ 61NI  G 1972.3    5                                                        Y   
+ 61NI  L 3115      6 5/2-,7/2-                                                  
+ 61NIX L XREF=IMRT                                                              
+ 61NI cL J$L(d,p)=3.                                                            
+ 61NI  L 3138      6 7/2-                                                       
+ 61NIX L XREF=IMQ$                                                              
+ 61NI cL J$L(p,d)=3; L+1/2 from (pol p,d)                                       
+ 61NI  L 3144.949  24 (1/2-,3/2)                                                
+ 61NIX L XREF=FT                                                                
+ 61NI cL J$ |gs to 1/2- and 5/2-; primary |g from 1/2+                          
+ 61NI  G 1021.06   8  14.4   9                                              X   
+ 61NI  G 1146.69   16 10.5   11                                             X   
+ 61NI  G 1415.43   10 13.7   11                                             X   
+ 61NIF G FL=1729.480                                                            
+ 61NI  G 1536      1  9.3    12                                             X   
+ 61NI  G 1959.71   7  26.9   12                                             X   
+ 61NI  G 2012.47   22 12.3   18                                             X   
+ 61NI  G 2045.32   5  72.2   20                                             X   
+ 61NI  G 2488.84   12 17.6   11                                             X   
+ 61NI  G 2861.95   4  100.0  17                                             X   
+ 61NI  G 3077.5    3  9.1    11                                             X   
+ 61NI  G 3144.7     7  62.1  20                                             X   
+ 61NI  L 3175      8 (1/2-,3/2-)                                                
+ 61NIX L XREF=IMT                                                               
+ 61NI cL J$L(d,p)=(1).                                                          
+ 61NI  L 3231.62    4 1/2-,3/2-                                                 
+ 61NIX L XREF=FI(3241)                                                          
+ 61NI cL J$L(d,p)=1.                                                            
+ 61NI  G 1107.71   9 20.4    18                                             X   
+ 61NI  G 1233.4    3 12.6    21                                             X   
+ 61NI  G 1502.0    1 23.1    18                                             X   
+ 61NIF G FL=1729.480                                                            
+ 61NI  G 1621.86   8 60.5    27                                             X   
+ 61NI  G 2099.27   7 100.0   30                                             X   
+ 61NI  G 2575.63   14 26.6   21                                             X   
+ 61NI  G 3164.49   24 25.2   30                                             X   
+ 61NI  G 3231.47   9  71.3   30                                             X   
+ 61NI  L 3247      6                                                            
+ 61NIX L XREF=MT                                                                
+ 61NI  L 3258.7     4 (11/2-)          0.46 PS   8                              
+ 61NIX L XREF=CMTX                                                              
+ 61NI cL J$|g(|q) and |g(lin pol) in (|a,n|g).                                  
+ 61NI  G 1271.3    4  46     12M1+E2                                        y   
+ 61NI cG MR$-2.7|<|d|<-0.27.                                                    
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NIB G BM1W LT 0.011 $BE2W LT 12                                              
+ 61NI  G 1450.6    3  100    12 D+Q                                         y   
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NI  L 3275      7  (1/2-,3/2-)                                               
+ 61NIX L XREF=IMT                                                               
+ 61NI cL J$ L(d,p)=(1)                                                          
+ 61NI  L 3286      7                                                            
+ 61NIX L XREF=EM                                                                
+ 61NI  L 3295        7/2-                                                       
+ 61NIX L XREF=Q                                                                 
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d)                                      
+ 61NI  L 3298      10(1/2-,3/2-)                                                
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$ L(d,p)=(1) for 3298+3308, but 3308 is assigned 7/2- from (pol d,t)  
+ 61NI  L 3298.4     3 11/2+            0.60 PS   +23-14                         
+ 61NIX L XREF=CLX                                                               
+ 61NI cL J$|g(|q) and |g(lin pol) in (|a,n|g).                                  
+ 61NI  G 1176.9    2 100       M1+E2     +0.63   8                              
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NIB G BM1W=0.016 48 $BE2W=8.3 +29-27                                         
+ 61NI  L 3308      9 (7/2)-                                                     
+ 61NIX L XREF=IRS$                                                              
+ 61NI cL J$L(d,t)=3, (L+1/2) from (pol d,t)                                     
+ 61NI  L 3346      7                                                            
+ 61NIX L XREF=MT                                                                
+ 61NI  L 3382      6 1/2-,3/2-                                                  
+ 61NIX L XREF=EIM                                                               
+ 61NI cL J$L(d,p)=1                                                             
+ 61NI  L 3406      7                                                            
+ 61NIX L XREF=M                                                                 
+ 61NI  L 3415.11    4 (1/2-,3/2)                                                
+ 61NIX L XREF=FM                                                                
+ 61NI cL J$gammas to 1/2- and 5/2-; primary |g from 1/2+                        
+ 61NI  G 650.1     4  3.9    12                                             X   
+ 61NI  G 1685.54   10 22.2   14                                             X   
+ 61NI  G 2229.84   20 19     4                                              X   
+ 61NI  G 2282.66   14 13.7   12                                             X   
+ 61NI  G 2315.35   16 16.1   14                                             X   
+ 61NI  G 2759.38   19 26.9   16                                             X   
+ 61NI  G 3132.05   8  100.0  25                                             X   
+ 61NI  G 3347.7    4  12.6   18                                             X   
+ 61NI  G 3415.04   6  99.0   22                                             X   
+ 61NI cG E$alternative placement: 4515-->1100                                   
+ 61NI  L 3426.34   20 13/2-            0.7 PS    GT                             
+ 61NIX L XREF=CX                                                                
+ 61NI cL J$|g(|q) and |g(lin pol) in (|a,n|g).                                  
+ 61NI  G 1297.5    5  14.5   15M1+E2     -2.6    4                          Z   
+ 61NIF G FLAG=z                                                                 
+ 61NI cG $Other I|g=71 {I4} in ({+7}Li,|an|g) disagrees                         
+ 61NIB G BM1W LT 2.8E-4 $BE2W LT 1.6                                            
+ 61NI  G 1438.52   14 100    4 E2                                               
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NIB G BE2W LT 6.5                                                            
+ 61NI  G 1618.7    4  35     5 E2                                               
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NI cG RI$unweighted average from (|a,n|g) and ({+7}Li,|an|g)                 
+ 61NIB G BE2W LT 1.4                                                            
+ 61NI  L 3427      10(1/2-,3/2-)                                                
+ 61NIX L XREF=ILT                                                               
+ 61NI cL J$L(d,p)=1                                                             
+ 61NI  L 3435.46   20 13/2+            1.0 PS    4                              
+ 61NIX L XREF=CX                                                                
+ 61NI cL J$|g(|q) and |g(lin pol) in (|a,n|g).                                  
+ 61NI cL T$other: <1.4 ps in {+48}Ca({+18}O,5n|g)                               
+ 61NI  G 1314.0    1 100       E2                                               
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NIB G BE2W=10 +7-3                                                           
+ 61NI  L 3449      6 3/2+,5/2+                                                  
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=2                                                             
+ 61NI  L 3470      6                                                            
+ 61NIX L XREF=EIM                                                               
+ 61NI  L 3488      6 9/2+                                                       
+ 61NIX L XREF=IMQU$                                                             
+ 61NI cL J$ L(p,d)=4; L+1/2 from (pol p,d)                                      
+ 61NI  L 3506      6 3/2+,5/2+                                                  
+ 61NIX L XREF=IMU                                                               
+ 61NI cL J$L(d,p)=2.                                                            
+ 61NI  L 3525.57    8 (1/2,3/2)                                                 
+ 61NIX L XREF=EFIMT                                                             
+ 61NI cL J$ |gs to 1/2- and 3/2-; primary |g from 1/2+                          
+ 61NI  G 1795.61   24 27     4                                              X   
+ 61NI  G 2340.56   22 25     3                                              X   
+ 61NI  G 3242.59   11 100    5                                              X   
+ 61NI  G 3525.1    9  11     4                                              X   
+ 61NI  L 3548      7                                                            
+ 61NIX L XREF=M                                                                 
+ 61NI  L 3565.2    10 (9/2+)                                                    
+ 61NIX L XREF=IMX                                                               
+ 61NI cL J$|DJ=1 |g to 7/2-                                                     
+ 61NI  G 2110.3    10  100      D+Q                                         Y   
+ 61NI  L 3587      7                                                            
+ 61NIX L XREF=M                                                                 
+ 61NI  L 3610      6                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 3621.9     5 (11/2+)                                                   
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1 |g to 9/2+                                                     
+ 61NI  G 1500.4    4   100      D+Q                                         Y   
+ 61NI  L 3629      9 5/2-,7/2-                                                  
+ 61NIX L XREF=EIMR                                                              
+ 61NI cL J$L(d,t)=3                                                             
+ 61NI  L 3644.5     8(7/2+)                                                     
+ 61NIX L XREF=CM                                                                
+ 61NI cL J$|g(|q) and |g(lin pol) in (|a,n|g).                                  
+ 61NI  G 1523.0    7 100                                                    Z   
+ 61NI  L 3647      10 3/2+,5/2+                                                 
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=2                                                             
+ 61NI  L 3657      7 7/2-                                                       
+ 61NIX L XREF=MQ                                                                
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d)                                      
+ 61NI  L 3664.5     8(9/2+)                                                     
+ 61NIX L XREF=CX                                                                
+ 61NI cL J$|g(|q) and |g(lin pol) in (|a,n|g).                                  
+ 61NI  G 1543.0    7 100                                                        
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NI  L 3668.97    4 (1/2-,3/2)                                                
+ 61NIX L XREF=F                                                                 
+ 61NI cL J$gammas to 1/2- and 5/2-; primary |g from 1/2+                        
+ 61NI  G 806.0     3  2.1    7                                              X   
+ 61NI  G 2483.6    7  3.5    15                                             X   
+ 61NI  G 3012.66   11 31.3   11                                             X   
+ 61NI  G 3385.92   5  100.0  14                                             X   
+ 61NI  G 3601.8    4  6.9    13                                             X   
+ 61NI  L 3686      6 1/2-,3/2-                                                  
+ 61NIX L XREF=EIM                                                               
+ 61NI cL J$L(d,p)=1                                                             
+ 61NI  L 3711.0     3 (11/2+)                                                   
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1 |g to 9/2+                                                     
+ 61NI  G 1589.5    2   100      D+Q                                         Y   
+ 61NI  L 3711.47    6 (1/2-,3/2)                                                
+ 61NIX L XREF=FIM                                                               
+ 61NI cL J$|gs to 1/2- and 5/2-; primary |g from 1/2+                           
+ 61NI  G 848.54    13 8.5    7                                              X   
+ 61NI  G 1587.77   23 7.1    9                                              X   
+ 61NI  G 2611.73   16 14.9   12                                             X   
+ 61NI  G 2802.7    4  5.9    12                                             X   
+ 61NI  G 3644.0    4  13.2   22                                             X   
+ 61NI  G 3711.42   11 100    4                                              X   
+ 61NI  L 3728      6 1/2-,3/2-                                                  
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=1                                                             
+ 61NI  L 3738.32   18(1/2+)                                                     
+ 61NIX L XREF=EFI(3753)T                                                        
+ 61NI cL J$L(d,p)=(0)                                                           
+ 61NI  G 3082.21   21 100                                                   X   
+ 61NI  L 3768        7/2-                                                       
+ 61NIX L XREF=MQ$                                                               
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d)                                      
+ 61NI  L 3776.76    9(1/2-,3/2-)                                                
+ 61NIX L XREF=FI(3791)M                                                         
+ 61NI cL J$L(d,p)=(1); gammas to 1/2- and 5/2-; primary |g from 1/2+            
+ 61NI  G 1778.83   12 91     6                                              X   
+ 61NI  G 2644.23   22 51     6                                              X   
+ 61NI  G 2676.5    5  25     7                                              X   
+ 61NI  G 3709.3    5  100    25                                             X   
+ 61NI  L 3819      10(1/2-,3/2-)                                                
+ 61NIX L XREF=EI                                                                
+ 61NI cL J$L(d,p)=(1)                                                           
+ 61NI  L 3837      7                                                            
+ 61NIX L XREF=M                                                                 
+ 61NI  L 3860.8    10                                                           
+ 61NIX L XREF=IMX                                                               
+ 61NI cL J$|g to 7/2-. (9/2+) assigned by 2019Sa04 in ({+7}Li,|an|g) without    
+ 61NI2cL any supporting arguments                                               
+ 61NI  G 2405.9    10                                                       Y   
+ 61NI  L 3869.97    7(1/2,3/2)                                                  
+ 61NIX L XREF=FIM                                                               
+ 61NI cL J$gammas to 1/2- and 3/2-; primary |g from 1/2+                        
+ 61NI  G 2684.58   25 13.4   21                                             X   
+ 61NI  G 3213.9    3  16.8   24                                             X   
+ 61NI  G 3869.83   12 100    6                                              X   
+ 61NI  L 3919      7                                                            
+ 61NIX L XREF=M                                                                 
+ 61NI  L 3938      6 7/2-                                                       
+ 61NIX L XREF=EIMQ$                                                             
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d)                                      
+ 61NI  L 3963      5                                                            
+ 61NIX L XREF=IMT                                                               
+ 61NI  L 3994      6                                                            
+ 61NIX L XREF=EIM                                                               
+ 61NI  L 4019.36   21 15/2+            1.4 PS    GT                             
+ 61NIX L XREF=CI                                                                
+ 61NI cL J$|g(|q) and |g(lin pol) in (|a,n|g).                                  
+ 61NI  G 584.0     2 39      4 M1+E2     +0.63   10                         Z   
+ 61NI cG $Other I|g=263 {I15} in ({+7}Li,|an|g) disagrees                       
+ 61NIF G FLAG=z                                                                 
+ 61NIB G BM1W LT 0.01 $BE2W LT 24                                               
+ 61NI  G 593.00    13 100    4 E1                                           Z   
+ 61NIF G FLAG=z                                                                 
+ 61NIB G BE1W LT 6.1E-4                                                         
+ 61NI  G 720.5     6  127    12 Q                                           Y   
+ 61NIF G FLAG=y                                                                 
+ 61NIF G FL=3298.4                                                              
+ 61NI cG $|g not reported in (|a,n|g)                                           
+ 61NI  L 4024      7 7/2-                                                       
+ 61NIX L XREF=MQ$                                                               
+ 61NI cL J$L(p,d)=3; L+1/2 from (pol p,d)                                       
+ 61NI  L 4032.5    11 (13/2+)                                                   
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1 |g to 11/2-                                                    
+ 61NI  G 1903.4    10  100      D+Q                                         Y   
+ 61NI  L 4049      6 (1/2-,3/2-)                                                
+ 61NIX L XREF=IMT                                                               
+ 61NI cL J$L(d,p)=(1).                                                          
+ 61NI  L 4080      6                                                            
+ 61NIX L XREF=EIM                                                               
+ 61NI  L 4103      7                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 4126      6 (1/2+)                                                     
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=(0).                                                          
+ 61NI  L 4143      7 7/2-                                                       
+ 61NIX L XREF=MQ$                                                               
+ 61NI cL J$L(p,d)=3; L+1/2 from (pol p,d)                                       
+ 61NI  L 4165      6 3/2+,5/2+                                                  
+ 61NIX L XREF=IM$                                                               
+ 61NI cL J$L(d,p)=2.                                                            
+ 61NI  L 4178.88   14 (3/2+)                                                    
+ 61NIX L XREF=EFMI(4189)                                                        
+ 61NI cL J$ |g to 1/2+; primary |g from 1/2+; L(d,p)=2 for 4189+4200.           
+ 61NI  G 1116.46   25 40     6                                              X   
+ 61NI  G 4111.5    4 100     18                                             X   
+ 61NI  L 4197.3     9 (13/2-)                                                   
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1 |g to 11/2-, |g to 9/2+                                        
+ 61NI  G 2067.6    15  100   16 D+Q                                         Y   
+ 61NI  G 2076.0    10   57   11                                             Y   
+ 61NI  L 4204.2     4  (3/2+)                                                   
+ 61NIX L XREF=IFMT                                                              
+ 61NI cL J$ primary |g from 1/2+; see comment for 4178.8 level                  
+ 61NI  G 3104.6    8 100                                                    X   
+ 61NI  L 4206.7     6 (13/2+)                                                   
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=2 |g to 9/2+; |g to 11/2-                                        
+ 61NI  G  908.4    6   84    9  D+Q                                         Y   
+ 61NIF G FL=3298.4                                                              
+ 61NI  G 2077.4    10  75    7  D+Q                                         Y   
+ 61NI  G 2085.3    15  100   7  Q                                           Y   
+ 61NI  L 4215      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 4231      6                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 4239.70    5(3/2+)                                                     
+ 61NIX L XREF=FI(4252)                                                          
+ 61NI cL J$ |gs to 1/2- and 5/2-; primary |g from 1/2+; L(d,p)=(2).             
+ 61NI  G 2115.2    3  9.0    20                                             X   
+ 61NI  G 2510.0    3  9.8    13                                             X   
+ 61NI cG E$alternative placement: 3526-->1015                                   
+ 61NI  G 3054.36   18 16.9   13                                             X   
+ 61NI  G 3106.8    4  24     3                                              X   
+ 61NI  G 3583.47   14 57     4                                              X   
+ 61NI  G 4171.7    6  8.3    22                                             X   
+ 61NI  G 4239.66   9  100    4                                              X   
+ 61NI  L 4259      7  5/2-,7/2-                                                 
+ 61NIX L XREF=MQ                                                                
+ 61NI cL J$L(p,d)=3                                                             
+ 61NI  L 4267      7                                                            
+ 61NIX L XREF=M                                                                 
+ 61NI  L 4288      6                                                            
+ 61NIX L XREF=IMT                                                               
+ 61NI  L 4306      8                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 4314      10(1/2+)                                                     
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$ L(d,p)=(0) for 4314+4336                                            
+ 61NI  L 4336      6  (1/2+)                                                    
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$ see comment for 4314 level                                          
+ 61NI  L 4354      6                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$ L(d,p)=2 for a composite of 4360+4374+4386+4403 suggests            
+ 61NI2cL 3/2+,5/2+ for one or more of these levels, but not for 4376            
+ 61NI3cL which is assigned 7/2- here                                            
+ 61NI  L 4376      6 7/2-                                                       
+ 61NIX L XREF=I(?)MQ                                                            
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d). L(d,p)=2 for a composite            
+ 61NI2cL probably does not include 4376 level                                   
+ 61NI  L 4389      9                                                            
+ 61NIX L XREF=EIM$                                                              
+ 61NI cL J$ see comment for 4354 level                                          
+ 61NI  L 4403      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$ see comment for 4354 level                                          
+ 61NI  L 4427      6                                                            
+ 61NIX L XREF=IMT                                                               
+ 61NI  L 4439.87   13 (1/2-,3/2)                                                
+ 61NIX L XREF=FIM                                                               
+ 61NI cL J$ |gs to 5/2- and 1/2+; primary |g from 1/2+; see also                
+ 61NI2cL comment for 4476 level                                                 
+ 61NI  G 1377.3    4  11.5   25                                             X   
+ 61NI cG E$alternative placement: 4240-->2863                                   
+ 61NI  G 3254.8    6  14     4                                              X   
+ 61NI  G 3531.51   20 100    9                                              X   
+ 61NI  G 4439.2    4  42     6                                              X   
+ 61NI  L 4455      7                                                            
+ 61NIX L XREF=EM                                                                
+ 61NI  L 4476      6 (3/2+,5/2+)                                                
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=2 for a composite of 4448+4476+4501                           
+ 61NI  L 4477.3     3 (11/2+)                                                   
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1, M1+E2 |g to 13/2+                                             
+ 61NI  G 1041.8    2  100       M1+E2                                       Y   
+ 61NI  L 4487        7/2-                                                       
+ 61NIX L XREF=Q                                                                 
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d)                                      
+ 61NI  L 4502      6 (3/2+,5/2+)                                                
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$ see comment for 4476 level                                          
+ 61NI  L 4514.67   13 (1/2-,3/2)                                                
+ 61NIX L XREF=FM                                                                
+ 61NI cL J$ |g to 5/2-; primary |g from 1/2+                                    
+ 61NI  G 3328.6    6  42     10                                             X   
+ 61NI  G 3382.3    7  96     25                                             X   
+ 61NI  G 4514.6    4  100    14                                             X   
+ 61NI  L 4521.9     6 (13/2+)                                                   
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1 |g to 11/2+                                                    
+ 61NI  G 1223.5    5  100       D+Q                                         Y   
+ 61NIF G FL=3298.4                                                              
+ 61NI  L 4522      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 4544      6                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 4568      6 (3/2+,5/2+)                                                
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=(2).                                                          
+ 61NI  L 4578      8 3/2+,5/2+                                                  
+ 61NIX L XREF=IM$                                                               
+ 61NI cL J$L(d,p)=2                                                             
+ 61NI  L 4586          7/2-                                                     
+ 61NIX L XREF=Q                                                                 
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d)                                      
+ 61NI  L 4601      6                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 4624      6                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 4641      6                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 4652      9 7/2-                                                       
+ 61NIX L XREF=EIQT                                                              
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d)                                      
+ 61NI  L 4667      6                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 4685      6                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 4689.3     9 (15/2+)                                                   
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1 |g to (13/2+)                                                  
+ 61NI  G 482.6     7  100       D                                           Y   
+ 61NIF G FL=4206.7                                                              
+ 61NI  L 4701      7                                                            
+ 61NIX L XREF=M                                                                 
+ 61NI  L 4720      7                                                            
+ 61NIX L XREF=F(4713?)IM                                                        
+ 61NI  L 4736      107/2-                                                       
+ 61NIX L XREF=IQ                                                                
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d)                                      
+ 61NI  L 4741      7                                                            
+ 61NIX L XREF=M                                                                 
+ 61NI  L 4756      6 3/2+,5/2+                                                  
+ 61NIX L XREF=EIM                                                               
+ 61NI cL J$L(d,p)=2.                                                            
+ 61NI  L 4764.2    19 (13/2+)                                                   
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1 |g to 11/2-                                                    
+ 61NI  G 2635.1    18 100       D+Q                                         Y   
+ 61NI  L 4793.10   16 7/2-                                                      
+ 61NIX L XREF=FIMQ$                                                             
+ 61NI cL J$L(p,d)=3; L+1/2 from (pol p,d)                                       
+ 61NI  G 2085.7    3 122     18                                             X   
+ 61NI cG E$alternative placement: 5956-->3870                                   
+ 61NI  G 4793.2    7  100    26                                             X   
+ 61NI  L 4818.5     6(17/2+)           1.1 PS    LT                             
+ 61NIX L XREF=CIMTX                                                             
+ 61NI cL J$|DJ=1 |g to 15/2+                                                    
+ 61NI cL T$from DSAM in {+48}Ca({+18}O,5n|g)                                    
+ 61NI  G 799.1     5 100        D+Q                                             
+ 61NI cG E$weighted average from (|a,n|g) and ({+7}Li,|an|g)                    
+ 61NI  L 4833      6                                                            
+ 61NIX L XREF=EIM                                                               
+ 61NI  L 4854      9 (1/2-,3/2-)                                                
+ 61NIX L XREF=EI                                                                
+ 61NI cL J$L(d,p)=(1).                                                          
+ 61NI  L 4861      7                                                            
+ 61NIX L XREF=M                                                                 
+ 61NI  L 4872      10 7/2-                                                      
+ 61NIX L XREF=IQ                                                                
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d)                                      
+ 61NI  L 4881      7                                                            
+ 61NIX L XREF=M                                                                 
+ 61NI  L 4883      10(1/2+)                                                     
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=(0) for 4872+4883. {I7}/2- in (pol d,p) suggests L(d,p)=(0)   
+ 61NI2cL corresponds to 4883 level                                              
+ 61NI  L 4907      6  (1/2+)                                                    
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=0 for 4916+4954                                               
+ 61NI  L 4930      7                                                            
+ 61NIX L XREF=E(*)M                                                             
+ 61NI  L 4951      6 7/2-                                                       
+ 61NIX L XREF=E(*)IMQS                                                          
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d). L(d,p)=0 for 4916+4954 suggests that
+ 61NI2cL L=0 is for 4916 level                                                  
+ 61NI  L 4968      6 (3/2+,5/2+)                                                
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=2 for 4968+4980 doublet                                       
+ 61NI  L 4989      6 (3/2+,5/2+)                                                
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$see comment for 4968 group                                           
+ 61NI  L 4999.6    21                                                           
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|g to 11/2-. 2019Sa04 in ({+7}Li,|an|g) assign (13/2+), without any  
+ 61NI2cL supporting argument                                                    
+ 61NI  G 2870.5    20 100                                                   Y   
+ 61NI  L 5008      7                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 5024      7 (7/2-)                                                     
+ 61NIX L XREF=IMQ                                                               
+ 61NI cL J$L(p,d)=(3); L+1/2 from (pol p,d)                                     
+ 61NI  L 5036.22    9(1/2-,3/2-)                                                
+ 61NIX L XREF=FIM                                                               
+ 61NI cL J$L(d,p)=(1); Gammas to 1/2- and 5/2-                                  
+ 61NI  G 3850.7    6  74     19                                             X   
+ 61NI cG E$alternative placement: 6616-->2765                                   
+ 61NI  G 4753.0    6 100     21                                             X   
+ 61NI  L 5060      7 1/2+                                                       
+ 61NIX L XREF=IMT                                                               
+ 61NI cL J$L(d,p)=0.                                                            
+ 61NI  L 5079      107/2-                                                       
+ 61NIX L XREF=MQ$                                                               
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d)                                      
+ 61NI  L 5098      7 1/2-,3/2-                                                  
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=1.                                                            
+ 61NI  L 5116.58   171/2-,3/2-                                                  
+ 61NIX L XREF=FIM                                                               
+ 61NI cL J$L(d,p)=1.                                                            
+ 61NI  G 2351.3    4 88      18                                             X   
+ 61NI  G 4833.2    9 100     38                                             X   
+ 61NI  L 5152      10                                                           
+ 61NIX L XREF=M                                                                 
+ 61NI  L 5156.0     6  (15/2+)                                                  
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1 |g to (13/2+)                                                  
+ 61NI  G 1720.5    5  100       D+Q                                         Y   
+ 61NI  L 5164.5    21                                                           
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|g to 11/2-. 2019Sa04 in ({+7}Li,|an|g) assign (13/2+), without any  
+ 61NI2cL supporting argument                                                    
+ 61NI  G 3035.4    20 100       D+Q                                         Y   
+ 61NI  L 5166      7 (1/2+)                                                     
+ 61NIX L XREF=IMQ$                                                              
+ 61NI cL J$L(p,d)=(0).                                                          
+ 61NI  L 5185      7 1/2+                                                       
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=0.                                                            
+ 61NI  L 5208      8 3/2+,5/2+                                                  
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=2.                                                            
+ 61NI  L 5220      10                                                           
+ 61NIX L XREF=M                                                                 
+ 61NI  L 5244      7 7/2-                                                       
+ 61NIX L XREF=IMQ$                                                              
+ 61NI cL J$ L(p,d)=3; L+1/2 from (pol p,d)                                      
+ 61NI  L 5250.8    10  (17/2+)                                                  
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1 |g to (15/2+)                                                  
+ 61NI  G 561.5     5  100       D+Q                                         Y   
+ 61NI  L 5267      7                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 5280      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 5295      10(1/2-,3/2-)                                                
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=(1).                                                          
+ 61NI  L 5309      101/2+                                                       
+ 61NIX L XREF=I$                                                                
+ 61NI cL J$L(d,p)=0.                                                            
+ 61NI  L 5310.9     4 (17/2+)                                                   
+ 61NIX L XREF=CX                                                                
+ 61NI cL J$|DJ=1, M1+E2 |g to (15/2+)                                           
+ 61NI  G 1291.5    3 100        M1+E2                                           
+ 61NI cG E$from ({+7}Li,|an|g). Other: 1297 {I1} in (|a,n|g)                    
+ 61NI  L 5337      7                                                            
+ 61NIX L XREF=IMQ                                                               
+ 61NI  L 5356      10(1/2-,3/2-)                                                
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=(1).                                                          
+ 61NI  L 5370      7                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$ see comment for 5406 level                                          
+ 61NI  L 5390.82   14 (1/2,3/2)                                                 
+ 61NIX L XREF=FIM                                                               
+ 61NI cL J$ |g to 5/2-; primary |g from 1/2+. L(d,p)=(0) for a composite of     
+ 61NI2cL 5366+5395+5405 levels suggests (1/2+) for one or more of these levels  
+ 61NI  G 1721.5    5  36     10                                             X   
+ 61NI  G 5322.2    7 100     16                                             X   
+ 61NI  L 5406      7                                                            
+ 61NIX L XREF=IMQ                                                               
+ 61NI cL J$ see comment for 5406 level                                          
+ 61NI  L 5439      7 1/2-,3/2-                                                  
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=1.                                                            
+ 61NI  L 5460      7                                                            
+ 61NIX L XREF=IMQ                                                               
+ 61NI  L 5487      7                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 5508      7                                                            
+ 61NIX L XREF=IM                                                                
+ 61NI  L 5528      7 3/2+,5/2+                                                  
+ 61NIX L XREF=EIM                                                               
+ 61NI cL J$L(d,p)=2.                                                            
+ 61NI  L 5550      10                                                           
+ 61NIX L XREF=M                                                                 
+ 61NI  L 5574      101/2-,3/2-                                                  
+ 61NIX L XREF=IM                                                                
+ 61NI cL J$L(d,p)=1.                                                            
+ 61NI  L 5588      10 1/2+                                                      
+ 61NIX L XREF=MQ                                                                
+ 61NI cL J$L(p,d)=0.                                                            
+ 61NI  L 5601      10                                                           
+ 61NIX L XREF=IM                                                                
+ 61NI  L 5622      7 3/2+,5/2+                                                  
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=2.                                                            
+ 61NI  L 5645      10(1/2-,3/2-)                                                
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=(1).                                                          
+ 61NI  L 5652        (3/2+)                                                     
+ 61NIX L XREF=Q                                                                 
+ 61NI cL J$L(p,d)=(2); L-1/2 from (pol p,d)                                     
+ 61NI  L 5659      101/2-,3/2-                                                  
+ 61NIX L XREF=I$                                                                
+ 61NI cL J$L(d,p)=1                                                             
+ 61NI  L 5703      10 1/2+                                                      
+ 61NIX L XREF=IQ                                                                
+ 61NI cL J$ L(p,d)=0                                                            
+ 61NI  L 5723      10 (3/2+,5/2+)                                               
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$ L(d,p)=2 for 5703+5723 probably correspond mainly to 5723 level     
+ 61NI  L 5742      10 3/2+,5/2+                                                 
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=2                                                             
+ 61NI  L 5761                                                                   
+ 61NIX L XREF=Q                                                                 
+ 61NI  L 5796      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 5804      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 5821      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 5842      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 5859      10(1/2+)                                                     
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=(0).                                                          
+ 61NI  L 5883      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 5894      10(3/2+,5/2+)                                                
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=(2) for 5894+5914                                             
+ 61NI  L 5914      10 (3/2+,5/2+)                                               
+ 61NIX L XREF=I                                                                 
+ 61NI  L 5934      10 (3/2+,5/2+)                                               
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$ L(d,p)=2 for 5934+5957                                              
+ 61NI  L 5955.49   17 3/2+                                                      
+ 61NIX L XREF=FIQ$                                                              
+ 61NI cL J$ L(p,d)=2; L-1/2 from (pol p,d)                                      
+ 61NI  G 1750.9    6  36     10                                             X   
+ 61NIF G FL=4204.2                                                              
+ 61NI  G 4225.9    8 100     31                                             X   
+ 61NI  G 5955.3    8 69      20                                             X   
+ 61NI  L 5987      10 1/2+                                                      
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=0                                                             
+ 61NI  L 6016      10(3/2+,5/2+)                                                
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=(2)                                                           
+ 61NI  L 6041      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6072      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6085      10(3/2+,5/2+)                                                
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=(2)                                                           
+ 61NI  L 6102      10 (3/2+,5/2+)                                               
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=2 for 6102+6135                                               
+ 61NI  L 6135      10 (3/2+,5/2+)                                               
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6148      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6166      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6176      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6184      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6191.4    12  (19/2+)                                                  
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1 |g to (17/2+)                                                  
+ 61NI  G 940.5     5  100       D                                           Y   
+ 61NIF G FL=5250.8                                                              
+ 61NI  L 6200                                                                   
+ 61NIX L XREF=Q                                                                 
+ 61NI  L 6227      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6249      10(3/2+,5/2+)                                                
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=(2).                                                          
+ 61NI  L 6269      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6289      10(1/2+)                                                     
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=(0).                                                          
+ 61NI  L 6314      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6346      103/2+,5/2+                                                  
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=2.                                                            
+ 61NI  L 6371      103/2+,5/2+                                                  
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=2.                                                            
+ 61NI  L 6391      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6413      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6427      10 (3/2+,5/2+)                                               
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=2 for 6427+6444                                               
+ 61NI  L 6444      10 (3/2+,5/2+)                                               
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6471      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6492      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6515      10 (1/2-,3/2-)                                               
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=(1) for 6515+6538                                             
+ 61NI  L 6538      10(1/2-,3/2-)                                                
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6556      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6575.68   18 (3/2+)                                                    
+ 61NIX L XREF=FI(6571)                                                          
+ 61NI cL J$|g to 1/2-; primary |g from 1/2+; L(d,p)=(2) for 6571+6589           
+ 61NI  G 6292.3    7 100                                                    X   
+ 61NI  L 6589      10(3/2+,5/2+)                                                
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$ L(d,p)=(2) for 6571+6589                                            
+ 61NI  L 6609      103/2+,5/2+                                                  
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=2                                                             
+ 61NI  L 6615.8     3                                                           
+ 61NIX L XREF=F                                                                 
+ 61NI  G 5515.4    7 100                                                    X   
+ 61NI  L 6630      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6661      10 (3/2+,5/2+)                                               
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$L(d,p)=2 for 6661+6676                                               
+ 61NI  L 6676      10 (3/2+,5/2+)                                               
+ 61NIX L XREF=I                                                                 
+ 61NI cL J$ L(d,p)=2 for 6661+6676                                              
+ 61NI  L 6706      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6732      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6734.6     7  (17/2+)                                                  
+ 61NIX L XREF=X                                                                 
+ 61NI cL J$|DJ=1 |g to (15/2+)                                                  
+ 61NI  G 1578.6    4  100       D+Q                                         Y   
+ 61NI  L 6748      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6767      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6776      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6803      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6818      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6838      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6849      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6878      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6908      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6923      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6928      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6939      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6971      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 6993      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7008      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7036      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7051      10                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7099      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7137      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7185      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7206      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7232      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7276      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7312      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7374      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7437      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7469      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7509      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7557      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7604      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7620      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7698      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7722      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7747      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7811      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7820.088  18 1/2+                                                  Y  S
+ 61NIX L XREF=F                                                                 
+ 61NI  G 1204.2    3 0.023   5                                              X   
+ 61NI  G 1244.39   18 0.05   1                                              X   
+ 61NI  G 1864.55   18 0.06   1                                              X   
+ 61NI  G 2429.15   14 0.09   1                                              X   
+ 61NI  G 2703.38   19 0.10   1                                              X   
+ 61NI  G 2783.80   9 0.19    1                                              X   
+ 61NI  G 3027.02   18 0.09   1   [E3]                                       X   
+ 61NI cG E$this |g may be uncertain due to implied high multipolarity           
+ 61NI  G 3305.30   14 0.13   1                                              X   
+ 61NI  G 3380.29   21 0.19   2                                              X   
+ 61NI  G 3580.26   6  0.070  3                                              X   
+ 61NI  G 3615.9    4  0.05   1                                              X   
+ 61NI  G 3640.99   18 0.16   1                                              X   
+ 61NI  G 3949.97   9  0.45   2                                              X   
+ 61NI  G 4043.33   14 0.22   1                                              X   
+ 61NI  G 4081.6    3  0.13   1                                              X   
+ 61NI  G 4108.52   8  0.85   2                                              X   
+ 61NI  G 4150.92   6  0.95   3                                              X   
+ 61NI  G 4294.44   15 0.16   1                                              X   
+ 61NI  G 4404.82   5 1.31    3                                              X   
+ 61NI  G 4588.26   6  0.95   2                                              X   
+ 61NI  G 4675.05   5  1.64   2                                              X   
+ 61NI  G 4757.86   10 0.40   2                                              X   
+ 61NI  G 4957.1    4 0.18    2                                              X   
+ 61NI  G 5055.02   12 0.34   2                                              X   
+ 61NI  G 5112.1    5 0.07    1                                              X   
+ 61NI  G 5180.36   9 0.32    1                                              X   
+ 61NI  G 5695.86   4 12.70   24                                             X   
+ 61NIF G FL=2123.918                                                            
+ 61NI  G 6090.5    5 0.06    1                                              X   
+ 61NI  G 6634.40   5 2.39    3                                              X   
+ 61NI  G 6719.97   5 4.51    6                                              X   
+ 61NI  G 7163.9    5 0.11    2                                              X   
+ 61NI  G 7536.62   6 57.0    7                                              X   
+ 61NI  G 7819.56   6 100.0   12                                             X   
+ 61NI  L 7821.41   5  (1/2-,3/2-)                                           R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7822.6     6 3/2-                                                  R   
+ 61NIX L XREF=GH                                                                
+ 61NI  G 7539         36                                                        
+ 61NI  G 7755         100                                                       
+ 61NI  G 7822         12                                                        
+ 61NI  L 7825.55   5  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7826      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7832.11   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7832.5     7 1/2+                                                  R   
+ 61NIX L XREF=GH                                                                
+ 61NI  G 7549                                                                   
+ 61NI cG $ |G{-|g}=0.29 eV {I5} (1978Be04)                                      
+ 61NI  G 7832                                                                   
+ 61NI cG $|G{-|g}=l0.51 eV 8 (1978Be04)                                         
+ 61NI  L 7833.49   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7841.04   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7843.52   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7843.63   5  (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7848.10   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7848.15   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7848.31   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7849.12   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7849.89   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7852.60   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7852.97   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7859.02   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7862.14   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7862.41   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7862.53   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7865      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7866.89   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7866.95   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7866.98   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7868.5    10 1/2-                                                  X   
+ 61NIX L XREF=G                                                                 
+ 61NI  G 7868                                                                   
+ 61NI cG $ |G{-|g}=0.28 eV {I7} (1978Be04)                                      
+ 61NI  L 7869.12   5  1/2-                                                  R   
+ 61NIX L XREF=G                                                                 
+ 61NI  L 7870.23   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7870.88   5  (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7871.93   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7875.51   5  (3/2+,5/2+)                                           R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7876.09   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7883.96   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7884.12   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7884.27   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7884.65   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7890.35   5  (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7892.16   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7897      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7897.10   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7898.90   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7900.79   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7903.76   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7904.92   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7905.57   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7906.61   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7908.44   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7910.31   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7912.40   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7914.10   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7915.63   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7916.57   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7917.95   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7920.58   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7926.25   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7926.85   5  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7929.84   5  (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7930.33   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7930.60   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7931.64   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7932.19   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7938.62   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7938.75   5  (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7939.07   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7941.80   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7942.19   5                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7945.44   5                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7945.77   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7947.85   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7951.54   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7952      50                                                           
+ 61NIX L XREF=I                                                                 
+ 61NI  L 7953.50   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7953.99   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7954.26   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7955.18   5  1/2-,3/2-                                             R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7955.41   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7956.99   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7957.47   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7957.82   5  1/2(-)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7957.94   5                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7962.96   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7963.57   5                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7965.31   5  1/2-,3/2-                                             R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7966.57   5  (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7969.14   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7972.03   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7974.03   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7974.31   5  1/2-,3/2-                                             R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7977.80   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7978.80   5                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7979.27   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7979.72   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7983.71   5  (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7984.67   5  (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7985.09   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7988.02   5  (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7989.52   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7990.02   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7991.91   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7992.31   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 7997.21   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8000.08   5  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8000.75   5  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8003.04   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8003.83   5  1/2-,3/2-                                             R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8008.54   11 1/2-,3/2-                                             R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8009.70   5  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8011.23   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8011.49   6                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8012.88   5                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8013.63   5                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8015.79   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8017.67   6  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8018.37   6  5/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8019.47   6  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8022.84   6  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8023.41   6  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8025.45   7  1/2-,3/2-                                             R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8025.75   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8026.56   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8029.67   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8030.90   6  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8031.47   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8036.73   6  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8037.28   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8037.61   5  (3/2)                                                 R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8040.47   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8042.85   5  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8045.75   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8046.69   5  5/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8049.99   6  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8050.35   6  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8051.51   6  1/2-,3/2-                                             R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8053.09   5  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8054.39   6  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8054.64   6  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8060.35   6  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8062.88   7  1/2-,3/2-                                             R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8065.03   6  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8068.04   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8068.56   7  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8069.24   7  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8070.18   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8070.52   7  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8072.04   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8072.14   7  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8073.34   7  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8073.74   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8074.54   7  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8075.83   11 1/2-,3/2-                                             R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8076.85   7  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8078.37   7  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8079.07   7  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8081.49   7  1/2-,3/2-                                             R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8081.96   7  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8084.42   7  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8084.80   7  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8085.06   7  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8089.34   7  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8089.53   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8092.59   7  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8092.87   7  (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8093.965  7  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8094.84   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8095.85   7  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8097.36   7  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8098.36   7  (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8098.77   7  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8101.08   7  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8104.03   7  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8106.24   7  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8107.48   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8108.22   7  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8109.15   9                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8109.61   9  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8109.98   9  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8111.21   9  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8112.78   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8114.83   9  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8115.72   9  3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8117.50   7  3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8121.65   11 (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8122.64   7  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8123.21   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8123.96   11 (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8125.72   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8126.53   11 (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8127.73   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8128.67   11 (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8132.06   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8132.08   11 (5/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8133.27   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8136.56   11 3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8137.63   11 (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8139.38   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8140.03   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8141.11   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8142.30   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8143.99   7  (1/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8144.46   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8145.91   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8148.98   11 3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8150.45   7  [1/2]-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8150.91   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8153.11   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8153.73   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8155.86   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8156.08   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8157.30   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8158.49   11 (3/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8159.92   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8162.76   5  (5/2+)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8163.38   11 [1/2]-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8163.98   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8164.49   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8166.78   9  3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8168.70   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8169.89   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8171.95   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8173.06   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8173.75   11 3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8175.35   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8180.09   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8182.79   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8183.04   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8183.83   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8184.71   5  3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8185.66   5  3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8187.03   7  (1/2)                                                 R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8187.65   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8188.71   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8190.77   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8190.79   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8191.84   7  1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8192.51   11 (1/2)                                                 R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8193.57   11 (1/2-,3/2-)                                           R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8193.75   11 3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8195.27   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8195.64   11 (1/2)                                                 R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8196.39   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8197.30   7  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8199.83   11 (3/2)                                                 R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8200.22   7  (1/2)                                                 R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8201.88   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8202.31   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8206.93   11 3/2(-)                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8208.59   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8210.68   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8211.93   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8212.76   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8214.57   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8215.80   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8216.63   11 3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8217.35   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8217.81   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8219.22   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8220.80   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8221.67   11 (3/2)-                                                R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8223.60   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8227.12   7  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8228.63   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8228.93   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8231.37   11                                                           
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8232.11   11                                                           
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8233.27   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8235.60   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8235.91   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8237.29   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8238.11   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8239.73   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8240.48   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8242.84   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8243.62   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8244.39   11 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8245.48   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8248.80   21 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8249.99   21 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8250.93   5  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8251.78   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8252.26   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8252.88   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8253.53   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8254.16   11 3/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8254.91   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8257.33   21 1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8258.41   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8259.99   21 1/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8260.85   7  1/2+                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8261.69   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8262.18   7                                                            
+ 61NIX L XREF=H                                                                 
+ 61NI  L 8264.18   7  3/2-                                                  R   
+ 61NIX L XREF=H                                                                 
+ 61NI  L 9550        7/2-                                                       
+ 61NIX L XREF=Q$                                                                
+ 61NI cL J$L(p,d)=3; L+1/2 in (pol p,d); isobaric analog of 7/2-, {+61}Co g.s.  
+                                                                                

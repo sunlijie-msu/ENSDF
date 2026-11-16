@@ -1,0 +1,258 @@
+ 61NI    59CO(7LI,ANG)                 2019SA04                  ENSDF    202006
+ 61NI  H TYP=FUL$AUT=BALRAJ SINGH$CIT=ENSDF$CUT=20-Jan-2020$                    
+ 61NI c  Dataset adapted from compilation by Jun Chen (NSCL, MSU), Jan 24, 2019,
+ 61NI2c  for the XUNDL database. Several revisions made in the present dataset. 
+ 61NI c  2019Sa04: E({+7}Li)=22-24 MeV beam from the Pelletron-LINAC Facility   
+ 61NI2c  TIFR-Mumbai. Target was 5.2 mg/cm{+2} mono-isotopic {+59}Co on a 4     
+ 61NI3c  mg/cm{+2} Ta foil. The |g rays were detected with the an array of 11   
+ 61NI4c  Compton-suppressed Clover HPGe detectors. Measured E|g, I|g, |g|g-coin,
+ 61NI5c  |g|g(ADO), |g|g(DCO), |g|g(lin pol). Deduced high-spin levels, J|p,    
+ 61NI6c  multipolarities, branching ratios. Comparisons with                    
+ 61NI7c  shell-model calculations.                                              
+ 61NI cG $DCO(D) is for gate |DJ=1, dipole transition and DCO(Q) for gate on    
+ 61NI2cG |DJ=2, quadrupole. Expected DCO(D)=0.59 {I1} for a |DJ=1,              
+ 61NI3cG dipole and 0.95 {I1} for |DJ=2, quadrupole; and DCO(Q)=0.96 {I2} and   
+ 61NI4cG 1.74 {I1}, respectively (2019Sa04)                                     
+ 61NI cG $Expected R{-ADO} ratios are 1.24 {I2} for |DJ=2, quadrupole           
+ 61NI2cG transitions and 0.81 {I2} for |DJ=1, dipole transitions (2019Sa04).    
+ 61NI cG $POL=polarization asymmetry. Expected values are positive for electric 
+ 61NI2cG transitions and negative for magnetic transitions (2019Sa04).          
+ 61NI cG $P{-S}=polarization sensitivity, which considers dependence of         
+ 61NI2cG polarization asymmetry on the gamma-ray energy, as defined in 2019Sa04 
+ 61NI cG RI$From 2019Sa04. Evaluator notes that branching ratios in several     
+ 61NI2cG cases disagree with previous fairly precise data from (n,|g) and       
+ 61NI3cG (|a,n|g), as noted in comments. There seems no discussion by           
+ 61NI4cG 2019Sa04 about these disagreements.                                    
+ 61NI cG M$From 2019Sa04 based on measured |g|g(|q)(DCO), |g|g(|q)(ADO) and     
+ 61NI2cG |g|g(lin pol) data                                                     
+ 61NI cG M(a)$2019Sa04 assign M1+E2 from their |g|g(|q) data and, in some       
+ 61NI2cG cases also from |g|g(lin pol), where POL value overlaps zero.          
+ 61NI3cG Evaluator assigns D+Q in such cases based on experimental data,        
+ 61NI4cG with the understanding that it is likely to be M1+E2, but not          
+ 61NI5cG confirmed yet.                                                         
+ 61NI cG M(b)$2019Sa04 assign E2 from their |g|g(|q) data and, in some          
+ 61NI2cG cases also from |g|g(lin pol), where POL value overlaps zero.          
+ 61NI3cG Evaluator assigns Q in such cases based on experimental data,          
+ 61NI4cG with the understanding that it is likely to be E2, but not             
+ 61NI5cG confirmed yet.                                                         
+ 61NI cG M(c)$2019Sa04 assign M1 from their |g|g(|q) data and, in some          
+ 61NI2cG cases also from |g|g(lin pol), where POL value overlaps zero.          
+ 61NI3cG Evaluator assigns D in such cases based on experimental data           
+ 61NI cG M(d)$2019Sa04 assign E1+M2 from their |g|g(|q) data and, in some       
+ 61NI2cG cases also from |g|g(lin pol), where POL value overlaps zero.          
+ 61NI3cG Evaluator assigns D+Q in such cases based on experimental data         
+ 61NI cG M(e)$2019Sa04 assign E1 from their |g|g(|q) data and, in some          
+ 61NI2cG cases also from |g|g(lin pol), where POL value overlaps zero.          
+ 61NI3cG Evaluator assigns D in such cases based on experimental data           
+ 61NI cL E$Deduced from least-squares fit to E|g data                           
+ 61NI cL J$As given in 2019Sa04, based on measured |g|g(DCO), |g|g(ADO) and     
+ 61NI2cL |g(lin pol), and previously known assignments for low-lying states.    
+ 61NI PN                                                                     5  
+ 61NI  L 0.0          3/2-                                                      
+ 61NI  L 67.1      2  5/2-                                                      
+ 61NI  G 66.7      3  194.3  40 D+Q                                         a   
+ 61NI cG $R{-ADO}=0.71 {I3}                                                     
+ 61NI  L 283.1     2  1/2-                                                      
+ 61NI  G 283.4     3  4.9    3  D+Q                                         a   
+ 61NI cG $R{-ADO}=0.93 {I13}                                                    
+ 61NI  L 656.2     2  1/2-                                                      
+ 61NI  G 373.1     1  1.0    1  D                                           c   
+ 61NI cG $R{-ADO}=0.80 {I8}                                                     
+ 61NI  G 589.0     5                                                            
+ 61NI  G 656.0     5                                                            
+ 61NI  L 907.7     2  5/2-                                                      
+ 61NI  G 625.0     5  1.0    2                                                  
+ 61NI  G 840.6     4  3.9    4  D+Q                                         a   
+ 61NI cG $R{-ADO}=0.98 {I8}                                                     
+ 61NI  G 907.7     2  21.8   29 M1+E2                                           
+ 61NI cG $POL=-0.03 {I2}, P{-S}=-0.41 {I42}. R{-ADO}=0.77 {I3}                  
+ 61NI  L 1015.0    2  7/2-                                                      
+ 61NI  G 947.9     2  151.0  38 (M1+E2)                                     a   
+ 61NI cG $POL=-0.01 {I1}, P{-S}=-0.17 {I25}. DCO(Q)=0.76 {I5}. R{-ADO}=0.98 {I9}
+ 61NI cG M$M1+E2 in 2019Sa04                                                    
+ 61NI  G 1015.1    2  50.2   14  Q                                          b   
+ 61NI cG $DCO(Q)=1.02 {I2}, R{-ADO}=1.19 {I4}                                   
+ 61NI  L 1099.5    3  3/2-                                                      
+ 61NI  G 816.1     5  2.3    2  D+Q                                         a   
+ 61NI cG $R{-ADO}=0.88 {I5}                                                     
+ 61NI  G 1032.4    5                                                            
+ 61NI  G 1098.8    6            M1+E2                                           
+ 61NI cG $POL=-0.05 {I3}, P{-S}-1.0 {I11}. R{-ADO}=0.84 {I7}                    
+ 61NI  L 1132.2     3 5/2-                                                      
+ 61NI  G 1065.4    5                                                            
+ 61NI  G 1132.4    5                                                            
+ 61NI  L 1186.1     3 3/2-                                                      
+ 61NI  G 529.6     5                                                            
+ 61NI  G 903.2     5                                                            
+ 61NI  G 1119.4    5                                                            
+ 61NI  G 1186.0    5                                                            
+ 61NI  L 1454.3    2  7/2-                                                      
+ 61NI  G 1386.9    2  2.9    4  D+Q                                         a   
+ 61NI cG $R{-ADO}=1.08 {I9}                                                     
+ 61NI cG $I|g(1387)/I|g(1454)=0.94 {I25} disagrees with 0.30 {I4} in the        
+ 61NI2cG Adopted dataset, where value is taken from (n,|g) and (|a,n|g)         
+ 61NI  G 1454.4    5  3.1    7  Q                                           b   
+ 61NI cG $POL=+0.01 {I4}, P{-S}=+0.3 {I16}. DCO(Q)=0.96 {I7}. R{-ADO}=1.19 {I5} 
+ 61NI  L 1609.1     3 5/2-                                                      
+ 61NI  G 477.4     5                                                            
+ 61NI  G 701.3     5  1.0    2                                                  
+ 61NI  G 1541.8    5  5.6    7                                                  
+ 61NI  G 1609.0    5                                                            
+ 61NI  L 1729.0    3  3/2-                                                      
+ 61NI  G 629.5     1            D+Q                                         a   
+ 61NI cG $R{-ADO}=0.63 {I7}                                                     
+ 61NI  G 821.3     5                                                            
+ 61NI  G 1073.4    6                                                            
+ 61NI  G 1446.4    5                                                            
+ 61NI  G 1662.0    10                                                           
+ 61NI  G 1729.0    10                                                           
+ 61NI  L 1807.3    2  9/2-                                                      
+ 61NI  G 792.4     3  10.2   6  D+Q                                         a   
+ 61NI cG $R{-ADO}=1.02 {I9}                                                     
+ 61NI cG $I|g(792)/I|g(1740)=0.61 {I4} disagrees with 0.124 {I23} in the        
+ 61NI2cG Adopted dataset, where value is taken from (|a,n|g)                    
+ 61NI  G 1740.4    5  16.7   8  E2                                              
+ 61NI cG $POL=+0.07 {I4}, P{-S}=+6 {I16}. DCO(Q)=1.05 {I5}. R{-ADO}=1.22 {I7}   
+ 61NI  L 1987.0    2  9/2-                                                      
+ 61NI  G 532.5     3  2.3    4  M1+E2                                           
+ 61NI cG $POL=-0.04 {I3}, P{-S}=-0.32 {I33}. DCO(Q)=0.70 {I3}. R{-ADO}=0.86 {I7}
+ 61NI  G 972.0     4  6.0    5  D+Q                                         a   
+ 61NI cG $I|g(972)/I|g(1920)=0.45 {I4} disagrees with 0.21 {I4} in the          
+ 61NI2cG Adopted dataset, where value is taken from (|a,n|g)                    
+ 61NI cG $R{-ADO}=0.69 {I7}                                                     
+ 61NI  G 1079.2    1  19.8   27  Q                                          b   
+ 61NI cG $I|g(1079)/I|g(1920)=1.49 {I20} disagrees with 0.32 {I4} in the        
+ 61NI2cG Adopted dataset, where value is taken from (|a,n|g)                    
+ 61NI cG $POL=+0.02 {I2}, P{-S}=+0.40 {I58}. DCO(Q)=1.05 {I4}. R{-ADO}=1.17 {I4}
+ 61NI  G 1920.3    5  13.2   6   Q                                          b   
+ 61NI cG $POL=+0.02 {I2}, P{-S}=+2 {I13}. DCO(Q)=1.03 {I4}. R{-ADO}=1.16 {I4}   
+ 61NI  L 1997.2    4  5/2-                                                      
+ 61NI  G 982.4     5                                                            
+ 61NI  G 1089.4    5  1.1    2                                                  
+ 61NI  G 1930.0    10 1.0    2                                                  
+ 61NI cG $I|g(1930)/I|g(1089)=0.91 {I25} disagrees with 0.51 {I8} in the        
+ 61NI2cG Adopted Gammas, where value is from (n,|g) and (|a,n|g)                
+ 61NI  G 1997.0    10                                                           
+ 61NI  L 2017.8    5  7/2-                                                      
+ 61NI  G 1110.0    5                                                            
+ 61NI  G 1951.0    10 2.1    3                                                  
+ 61NI  L 2120.9    2  9/2+                                                      
+ 61NI  G 1106.0    2  100        D                                          e   
+ 61NI cG $POL=+0.02 {I2}, P{-S}=+0.40 {I49}. DCO(Q)=0.65 {I1}. R{-ADO}=0.82 {I3}
+ 61NI  L 2124.0    10 1/2-                                                      
+ 61NI  G 2124.0    10                                                           
+ 61NI  L 2128.5    2  11/2-                                                     
+ 61NI  G 1113.5    1  83.6   45 E2                                              
+ 61NI cG $POL=+0.03 {I1}, P{-S}=+0.70 {I84}. DCO(Q)=0.99 {I2}. R{-ADO}=1.27 {I8}
+ 61NI  L 2409.2    2  9/2-                                                      
+ 61NI  G 954.6     3  2.0    5                                                  
+ 61NI cG $I|g(955)/I|g(2342)=0.83 {I21} disagrees with 0.27 {I3} in the         
+ 61NI2cG Adopted Gammas, where value is from (|a,n|g)                           
+ 61NI  G 1277.0    10                                                           
+ 61NI  G 1394.4    2  1.4    3  D+Q                                         a   
+ 61NI cG $I|g(1394)/I|g(2342)=0.58 {I13} disagrees with 0.15 {I3} in the        
+ 61NI2cG Adopted Gammas, where value is from (|a,n|g)                           
+ 61NI cG $R{-ADO}=0.90 {I9}                                                     
+ 61NI  G 2342.0    10 2.4    3                                                  
+ 61NI  L 3104.5     6 (7/2+)                                                    
+ 61NI  G 1972.3    5                                                            
+ 61NI  L 3257.85   25 11/2-                                                     
+ 61NI  G 1270.9    3  1.2    3                                                  
+ 61NI  G 1450.5    2  2.6    3   D+Q                                        a   
+ 61NI cG $POL=-0.02 {I4}, P{-S}=-0.6 {I18}. DCO(Q)=0.73 {I4}. R{-ADO}=0.96 {I7} 
+ 61NI  L 3297.7    3  11/2+                                                     
+ 61NI  G 1176.8    2  23.6   10 D+Q                                         a   
+ 61NI cG $R{-ADO}=1.04 {I4}                                                     
+ 61NI  L 3425.6    2  13/2-                                                     
+ 61NI  G 1297.0    2  9.5    5  D+Q                                         a   
+ 61NI cG $R{-ADO}=0.77 {I3}                                                     
+ 61NI  G 1438.7    2  13.4   7  E2                                              
+ 61NI cG $POL=+0.029 {I18}, P{-S}=+1.1 {I17}. DCO(Q)=0.96 {I2}.                 
+ 61NI2cG R{-ADO}=1.34 {I7}                                                      
+ 61NI  G 1618.5    4  5.3    4   Q                                          b   
+ 61NI cG $POL=+0.02 {I3}, P{-S}=+1.1 {I28}. DCO(Q)=0.95 {I6}, R{-ADO}=1.18 {I7} 
+ 61NI  L 3434.9    2  13/2+                                                     
+ 61NI  G 1314.0    1  45.4   16  Q                                          b   
+ 61NI cG $POL=+0.02 {I2}, P{-S}=+0.53 {I87}. R{-ADO}=1.27 {I5}                  
+ 61NI  L 3564.6    11 9/2+                                                      
+ 61NI  G 2110.3    10 1.1    3  D+Q                                         d   
+ 61NI cG $R{-ADO}=0.99 {I8}                                                     
+ 61NI  L 3621.3    5  11/2+                                                     
+ 61NI  G 1500.4    4  2.6    3  D+Q                                         a   
+ 61NI cG $R{-ADO}=0.98 {I8}                                                     
+ 61NI  L 3663.4    6  9/2+                                                      
+ 61NI  G 1542.5    5  4.0    3  D+Q                                         a   
+ 61NI cG $POL=-0.04 {I5}, P{-S}=-1.7 {I36}. DCO(D)=1.58 {I9}. R{-ADO}=0.87 {I7} 
+ 61NI  L 3710.4    3  11/2+                                                     
+ 61NI  G 1589.5    2  3.5    4  D+Q                                         a   
+ 61NI cG $2019Sa04 suggest that this |g ray may correspond to the 1587.8 in     
+ 61NI2cG (n,|g). This is unlikely as the transition in (n,|g) is from a         
+ 61NI3cG low-spin (J|p=1/2-,3/2-) level, whereas 2019Sa04 assign their 1589.4   
+ 61NI4cG transition from an 11/2+ level                                         
+ 61NI cG $R{-ADO}=0.68 {I5}                                                     
+ 61NI  L 3860.2    11 (9/2+)                                                    
+ 61NI  G 2405.9    10                                                           
+ 61NI  L 4018.3    3  15/2+                                                     
+ 61NI  G 583.5     3  12.7   7  D+Q                                         a   
+ 61NI cG $I|g(584)/I|g(593)=2.65 {I22} disagrees with 0.39 {I4} in the          
+ 61NI2cG Adopted Gammas, where value is from (|a,n|g)                           
+ 61NI cG $R{-ADO}=0.99 {I5}                                                     
+ 61NI  G 592.6     2  4.8    3   D                                          e   
+ 61NI cG $DCO(Q)=0.68 {I3}. R{-ADO}=0.84 {I3}                                   
+ 61NI  G 720.5     6  6.1    6   Q                                          b   
+ 61NI cG $POL=+0.04 {I4}, P{-S}=+0.46 {I51}. R{-ADO}=1.31 {I6}                  
+ 61NI  L 4031.9    11 13/2+                                                     
+ 61NI  G 1903.4    10 3.9    3  D+Q                                         d   
+ 61NI cG $R{-ADO}=0.94 {I7}                                                     
+ 61NI  L 4196.7     9 13/2-                                                     
+ 61NI  G 2067.6    15 3.7    6  D+Q                                         a   
+ 61NI cG $R{-ADO}=0.62 {I10}                                                    
+ 61NI  G 2076.0    10 2.1    4                                                  
+ 61NI  L 4206.1     6 13/2+                                                     
+ 61NI  G 908.4     6  4.6    5  D+Q                                         a   
+ 61NI cG $R{-ADO}=0.76 {I7}                                                     
+ 61NI  G 2077.4    10 4.1    4  D+Q                                         d   
+ 61NI cG $DCO(Q)=0.77 {I5}. R{-ADO}=0.84 {I8}                                   
+ 61NI  G 2085.3    15 5.5    4  Q                                           b   
+ 61NI cG $DCO(D)=1.50 {I10}. R{-ADO}=1.28 {I6}                                  
+ 61NI  L 4476.7    3  11/2+                                                     
+ 61NI  G 1041.8    2  11.9   5  M1+E2                                           
+ 61NI cG $POL=-0.05 {I3}, P{-S}=-1.0 {I10}. DCO(D)=1.07 {I10}, R{-ADO}=0.98 {I4}
+ 61NI  L 4521.2     6 13/2+                                                     
+ 61NI  G 1223.5    5  5.8    5  D+Q                                         a   
+ 61NI cG E$uncertainty of 0.1 keV in Table I of 2019Sa04 could be a misprint, as
+ 61NI2cG it seems low as compared to other |DE|g values.                        
+ 61NI3cG Evaluator assigns 0.5 keV                                              
+ 61NI cG $POL=-0.03 {I5}, P{-S}=-0.8 {I15}. DCO(D)=1.09 {I7}, R{-ADO}=1.02 {I6} 
+ 61NI  L 4688.7    9  15/2+                                                     
+ 61NI  G 482.6     7  11.0   5  D                                           c   
+ 61NI cG $POL=-0.03 {I5}, P{-S}=-0.28 {I40}. DCO(D)=1.00 {I5}, R{-ADO}=0.80 {I9}
+ 61NI  L 4763.7    18 13/2+                                                     
+ 61NI  G 2635.1    18 2.6    3  D+Q                                         d   
+ 61NIF G FL=2128.5                                                              
+ 61NI cG $R{-ADO}=0.93 {I6}                                                     
+ 61NI  L 4817.0    6  17/2+                                                     
+ 61NI  G 798.7     5  5.2    4  D+Q                                         a   
+ 61NI cG $POL=-0.01 {I3}, P{-S}-0.07 {I39}. R{-ADO}=0.71 {I7}                   
+ 61NI  L 4999.1    20 (13/2+)                                                   
+ 61NI  G 2870.5    20 2.1    3                                                  
+ 61NIF G FL=2128.5                                                              
+ 61NI  L 5155.4    6  15/2+                                                     
+ 61NI  G 1720.5    5  9.5    6  D+Q                                         a   
+ 61NI cG $POL=-0.03 {I4}, P{-S}=-2.1 {I62}. R{-ADO}=0.96 {I5}                   
+ 61NI  L 5164.0    20 (13/2+)                                                   
+ 61NI  G 3035.4    20 2.6    3                                                  
+ 61NIF G FL=2128.5                                                              
+ 61NI  L 5250.2    11 17/2+                                                     
+ 61NI  G 561.5     5  9.6    6  D+Q                                         a   
+ 61NI cG $R{-ADO}=0.88 {I7}                                                     
+ 61NI  L 5309.8    4  17/2+                                                     
+ 61NI  G 1291.5    3  8.5    5  M1+E2                                           
+ 61NI cG $POL=-0.07 {I5}, P{-S}=-2.2 {I30}. R{-ADO}=1.00 {I6}                   
+ 61NI  L 6190.7    12 19/2+                                                     
+ 61NI  G 940.5     5  6.1    4  D                                           c   
+ 61NI cG $R{-ADO}=0.82 {I6}                                                     
+ 61NI  L 6734.1     7 17/2+                                                     
+ 61NI  G 1578.6    4  6.2    5  D+Q                                         a   
+ 61NI cG $POL=-0.01 {I5}, P{-S}=-0.5 {I28}. DCO(D)=1.01 {I6}, R{-ADO}=0.95 {I9} 
+                                                                                

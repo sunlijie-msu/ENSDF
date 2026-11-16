@@ -5,21 +5,24 @@
  60GA3c  identified in the RIKEN BigRIPS separator by B|r-|DE-ToF, transported  
  60GA4c  to the exit of the ZeroDegree spectrometer, and implanted into the     
  60GA5c  Wide-range Active Silicon Strip Stopper Array for Beta and ion         
- 60GA6c  detection (WAS3ABi) consisting of three 1-mm-thick DSSDs. |g rays were 
- 60GA7c  detected using the EUroball-RIKEN Cluster Array (EURICA) of 12         
- 60GA8c  cluster-type Ge detectors. Measured E{-p}(>0.9 MeV), E|g, I|g,         
- 60GA9c  p|g-coin, |b|g-coin, |g|g-coin, and implant-decay correlations. Deduced
- 60GAAc  decay scheme, decay branching ratios, {+60}Ge T{-1/2}, and {+60}Ge mass
- 60GABc  using A=60 he isobaric multiplet mass equation(IMME).                  
+ 60GA6c  detection (WAS3ABi) consisting of three 1-mm-thick DSSDs. A total of   
+ 60GA7c  1.5E4 60Ga ions were implanted. |g rays were detected using the        
+ 60GA8c  EUroball-RIKEN Cluster Array (EURICA) of 12 cluster-type Ge detectors. 
+ 60GA9c  Measured E{-p}(>0.9 MeV), E|g, I|g, p|g-coin, |b|g-coin, |g|g-coin, and
+ 60GAAc  implant-decay correlations. Deduced decay scheme, decay branching      
+ 60GABc  ratios, {+60}Ge T{-1/2}, and {+60}Ge mass using A=60 he isobaric       
+ 60GACc  multiplet mass equation(IMME).                                         
  60GA c  2016Ci01: {+60}Ge was produced in fragmentation of a 150-MeV/nucleon   
  60GA2c  {+78}Kr{+34+} primary beam impinging on a {+9}Be target, transported   
  60GA3c  through the NSCL A1900 fragment separator, and implanted into the      
- 60GA4c  optical time projection chamber (OTPC). Measured {+60}Ge T{-1/2} and   
- 60GA5c  |e+|b{++}-delayed protons.                                             
+ 60GA4c  optical time projection chamber (OTPC). A total of 41 {+60}Ge ions were
+ 60GA5c  implanted. Measured {+60}Ge T{-1/2} and |e+|b{++}-delayed protons.     
  60GA cE TI$From 2021Or01, based on measured %I(p) and %I|g balance from each   
  60GA2cE level                                                                  
  60GA cE IB,IE,LOGFT$From the log| {Ift} code (by the compiler)                 
- 60GA cG E,RI$From 2021Or01                                                     
+ 60GA cG E,RI$From 2021Or01. The number of {+60}Ge implants were measured. The  
+ 60GA2cG |g-ray efficiencies were calibrated using standard |g-ray sources and  
+ 60GA3cG known |g rays from a previous experiment with the same setup. |b|g-coin efficiency is estimated to be 0.58 {I2} and p|g-coin efficiency is estimated to be 1.
 
  60GA cL E$Deduced from measured E(p) of proton decay and S(p) (2021Or01),      
  60GA2cL unless otherwise noted.                                                
@@ -31,7 +34,6 @@
  60GE3cP from implantation-decay time distribution in 2016Ci01.                 
  60GE cP QP$From 2021Or01. Other: 12500 {I360} (syst,2017Wa10)                  
  60GA  N 1.0                   1.0                                              
- 60GA cN BR$From 2021Or01                                                       
  60GA PN                                                                     4  
  60GA  L 0            2+               69.4 MS   2                              
  60GA2 L %EC+%B+=100                                                            

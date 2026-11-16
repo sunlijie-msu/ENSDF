@@ -1,0 +1,845 @@
+ 61CU    28SI(36AR,3PG)                2008AN06                  15NDS    201503
+ 61CU  H TYP=FUL$AUT=KAZIMIERZ ZUBER, BALRAJ SINGH$CIT=NDS 125, 1 (2015)$       
+ 61CU2 H CUT=25-Jan-2015$                                                       
+ 61CU c  2008An06: Three experiments were performed: GS54, GSFMA42 and          
+ 61CU2c  GSFMA138. All experiments used the GAMMASPHERE array to measure        
+ 61CU3c  E|g, I|g, |g|g, (particle)|g coin, |g|g(|q)(DCO). The protons and |a   
+ 61CU4c  particles were detected using the MICROBALL array and Si strip         
+ 61CU5c  telescopes used for |DE-E measurements. Comparisons with cranked       
+ 61CU6c  Nilsson and Strutinsky model calculations for collective structures    
+ 61CU7c  and with large-scale shell-model calculations for normal-deformed      
+ 61CU8c  states.                                                                
+ 61CU t  ---------------------------------------------------------------------- 
+ 61CU t  Experiment          GS54           GSFMA42              GSFMA138       
+ 61CU t  ---------------------------------------------------------------------- 
+ 61CU t  Beam energy   143 MeV                 148 MeV                 142 MeV  
+ 61CU t  Target thick.  0.42 mg/cm{+2}     0.42 mg/cm{+2}     0.2 mg/cm{+2}     
+ 61CU t  Support foil   0.9 mg/cm{+2} Ta   1.0 mg/cm{+2} Au   1.1 mg/cm{+2} Ta  
+ 61CU t  ---------------------------------------------------------------------- 
+ 61CU t  Germanium         82 detectors    86 detectors         77 detectors    
+ 61CU t  Microball             95 elements     65 elements          16 elements 
+ 61CU t  Si |DE-E telescopes   --                  4                 8          
+ 61CU t  Liquid scintillators  15 detectors    20 detectors         30 detectors
+ 61CU t  (neutron shell)                                                        
+ 61CU t  Laboratory            LBNL            Argonne              Argonne     
+ 61CU t  -----------------------------------------------------------------------
+ 61CU cG $DCO values are for 30|'-83|' geometry with gates on |DJ=2,            
+ 61CU2cG quadrupole and |DJ=1, dipole transitions. Expected values of DCOs      
+ 61CU3cG are: 1. for gate on |DJ=2, quadrupole: 1.0 for |DJ=2, quadrupole;      
+ 61CU4cG |<1.0 for |DJ=0 and |?0.6 for |DJ=1 transitions. 2. for gate on        
+ 61CU5cG |DJ=1, dipole transitions: |?1.0 for |DJ=1, dipole; 1.7 for |DJ=2,     
+ 61CU6cG quadrupole or |DJ=0, dipole.                                           
+ 61CU cG $DCO(1) corresponds to value for gate on |DJ=2, quadrupole             
+ 61CU cG $DCO(2) corresponds to value for gate on |DJ=1, dipole, except         
+ 61CU2cG for one case where the value is for gate on |DJ=0                      
+ 61CU3cG transition, as indicated.                                              
+ 61CU cG RI$Relative to 100 for 1310.4|g measured in the {+28}Si({+36}Ar,3p|g)  
+ 61CU2cG reaction (2008An06).                                                   
+ 61CU cG M$Deduced from DCO measurements in 2008An06. In the absence of         
+ 61CU2cG polarization or other confirming data, the evaluators assign           
+ 61CU3cG Mult=Q for |DJ=2,quadrupole transitions, mult=D or D+Q for |DJ=1 or    
+ 61CU4cG 0 dipole or dipole+quadrupole transitions. From systematics and band   
+ 61CU5cG assignments, 2008An06 assign E2 for all |DJ=2 transitions and          
+ 61CU6cG M1+E2, M1 or E1 for |DJ=1 or 0 transitions                             
+ 61CU cG E(X)$DCO value is for an unresolved doublet                            
+ 61CU cL E$From least-squares fit to E|g data                                   
+ 61CU cL J$Spin-parities of high-spin states (>9/2) are assigned from           
+ 61CU2cL |g|g(|q) and band structure (2008An06). Assignments of low-spin        
+ 61CU3cL levels are from Adopted Levels.                                        
+ 61CU cL J(n)$From Fig. 1 of 2008An06, not given in authors' table 2.           
+ 61CU CL BAND(A)$Band based on 3/2- g.s.,|a=-1/2.                               
+ 61CU2cL Normal-deformed structure.                                             
+ 61CU CL BAND(a)$Band based on 5/2-,|a=+1/2.                                    
+ 61CU2cL Normal-deformed structure.                                             
+ 61CU CL BAND(B)$Band based on 9/2+,|a=+1/2.                                    
+ 61CU2cL Normal-deformed structure.                                             
+ 61CU CL BAND(b)$Band based on 11/2+,|a=-1/2.                                   
+ 61CU2cL Normal-deformed structure.                                             
+ 61CU CL BAND(C)$Band based on 21/2,|a=+1/2.                                    
+ 61CU2cL Dipole dominated structure.                                            
+ 61CU3cL Population intensity=1% of the reaction channel.                       
+ 61CU CL BAND(c)$Band based on 19/2,|a=-1/2.                                    
+ 61CU2cL Dipole dominated structure.                                            
+ 61CU3cL Population intensity=1% of the reaction channel.                       
+ 61CU CL BAND(D)$Band based on 33/2,|a=+1/2.                                    
+ 61CU2cL Continuation of band based on 19/2.                                    
+ 61CU3cL Dipole dominated structure.                                            
+ 61CU4cL Population intensity=1% of the reaction channel.                       
+ 61CU CL BAND(d)$Band based on 35/2,|a=-1/2.                                    
+ 61CU2cL Continuation of band based on 19/2.                                    
+ 61CU3cL Dipole dominated structure.                                            
+ 61CU4cL Population intensity=1% of the reaction channel                        
+ 61CU CL BAND(E)$Band based on 13/2+,|a=+1/2.                                   
+ 61CU2cL Dipole dominated structure.                                            
+ 61CU3cL Population intensity=20% of the reaction channel.                      
+ 61CU CL BAND(e)$Band based on 15/2+,|a=-1/2.                                   
+ 61CU2cL Dipole dominated structure.                                            
+ 61CU3cL Population intensity=20% of the reaction channel.                      
+ 61CU CL BAND(F)$Band based on 21/2-,|a=+1/2.                                   
+ 61CU2cL Dipole dominated structure.                                            
+ 61CU3cL Population intensity=5% of the reaction channel.                       
+ 61CU CL BAND(f)$Band based on 23/2-,|a=-1/2.                                   
+ 61CU2cL Dipole dominated structure.                                            
+ 61CU3cL Population intensity=5% of the reaction channel.                       
+ 61CU CL BAND(G)$SD-1 band. Band based on 25/2+.                                
+ 61CU2cL Population intensity=7% of the reaction channel.                       
+ 61CU CL BAND(H)$SD-2 band. Band based on 29/2+.                                
+ 61CU2cL Population intensity=1% of the reaction channel.                       
+ 61CU CL BAND(I)$SD-3 band,|a=+1/2.                                             
+ 61CU2cL Band based on (25/2+).                                                 
+ 61CU3cL Population intensity=1% of the reaction channel.                       
+ 61CU CL BAND(i)$SD-3 band,|a=-1/2.                                             
+ 61CU2cL Band based on (27/2+).                                                 
+ 61CU3cL Population intensity=1% of the reaction channel.                       
+ 61CU CL BAND(J)$SD-4 band,|a=+1/2.                                             
+ 61CU2cL Band based on 29/2+.                                                   
+ 61CU3cL Population intensity=2% of the reaction channel.                       
+ 61CU CL BAND(j)$SD-4 band,|a=-1/2.                                             
+ 61CU2cL Band based on 31/2+.                                                   
+ 61CU3cL Population intensity=2% of the reaction channel.                       
+ 61CU CL BAND(K)$SD-5 band. Band based on 31/2-.                                
+ 61CU2cL Population intensity=1% of the reaction channel.                       
+ 61CU CL BAND(L)$SD-6 band. Band based on (29/2-).                              
+ 61CU2cL Population intensity=1% of the reaction channel.                       
+ 61CU CL BAND(M)$SD-7 band.                                                     
+ 61CU3cL SD-7 and SD-8 are Signature partners.                                  
+ 61CU2cL Population intensity|?0.5% of the reaction channel.                    
+ 61CU CL BAND(m)$SD-8 band.                                                     
+ 61CU3cL SD-7 and SD-8 are Signature partners.                                  
+ 61CU3cL Population intensity|?0.5% of the reaction channel.                    
+ 61CU CL BAND(N)$SD-9 band.                                                     
+ 61CU2cL Population intensity|?0.5% of the reaction channel.                    
+ 61CU PN                                                                     5  
+ 61CU  L 0.0         3/2-                                                   A   
+ 61CU  L 970.10    145/2-                                                   a   
+ 61CU  G 970.2     2 49.6    24 D+Q                                             
+ 61CU2 G DCO(1)=0.45 1                                                          
+ 61CU  L 1310.50   157/2-                                                   A   
+ 61CU  G 340.8     2 6.2     4 D                                                
+ 61CU2 G DCO(1)=0.63 4 $ DCO(2)=1.24 12                                         
+ 61CU  G 1310.4    3 100     3 Q                                                
+ 61CU2 G DCO(1)=1.00 2$ DCO(2)=1.57 2                                           
+ 61CU  L 1394.28   165/2-                                                       
+ 61CU  G 424.2     2 0.6     2                                                  
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 1394.4    3 9.1     3 D+Q                                              
+ 61CU2 G DCO(1)=0.60 2                                                          
+ 61CU  L 1732.69   157/2-                                                       
+ 61CU  G 338.6     2 3.8     3 D                                                
+ 61CU2 G DCO(2)=1.03 6                                                          
+ 61CU  G 422.2     2 17.0    10D                                                
+ 61CU2 G DCO(1)=1.11 2 $ DCO(2)=1.68 4                                          
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 762.8     2 7.6     6 D+Q                                              
+ 61CU2 G DCO(1)=0.47 6                                                          
+ 61CU  G 1732.3    3 38.3    12 Q                                               
+ 61CU2 G DCO(1)=1.00 7                                                          
+ 61CU  L 1942.58   177/2-                                                       
+ 61CU  G 210.1     2 2.6     5 D                                                
+ 61CU2 G DCO(1)=0.96 11                                                         
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 632.3     2 3.1     6 D                                                
+ 61CU2 G DCO(1)=1.07 5                                                          
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 972.2     2 10.0    15 D+Q                                         X   
+ 61CU2 G DCO(1)=0.39 2                                                          
+ 61CU  G 1943.0    8 3.4     8 Q                                                
+ 61CU2 G DCO(2)=1.49 12                                                         
+ 61CU  L 2295.59   179/2-                                                       
+ 61CU  G 563.1     2 4.8     4 D+Q                                          X   
+ 61CU2 G DCO(2)=0.98 8                                                          
+ 61CU  G 901.2     2 3.6     4                                                  
+ 61CU  G 985.7     2 9.8     9 D+Q                                              
+ 61CU cG E$level-energy difference=985.1 {i2}                                   
+ 61CU2 G DCO(2)=0.82 5                                                          
+ 61CU  G 1325.2    3 4.8     5                                                  
+ 61CU  L 2336.45   199/2-                                                   a   
+ 61CU  G 1025.9    2 6.3     2 D+Q                                              
+ 61CU2 G DCO(1)=0.40 3                                                          
+ 61CU  G 1366.1    3 19.0    10 Q                                               
+ 61CU2 G DCO(1)=0.95 5                                                          
+ 61CU  L 2612.35   189/2-                                                       
+ 61CU  G 670.0     2 11.6    10 D+Q                                             
+ 61CU2 G DCO(1)=0.73 4                                                          
+ 61CU  G 879.4     2 13.0    11 D+Q                                             
+ 61CU2 G DCO(1)=0.78 7                                                          
+ 61CU  G 1301.7    6 3.0     3                                                  
+ 61CU  G 1642.2    8 1.0     1                                                  
+ 61CU  L 2627.44   1911/2-                                                  A   
+ 61CU  G 1316.6    3 26.2    15 Q                                           X   
+ 61CU2 G DCO(1)=1.15 14                                                         
+ 61CU  L 2720.31   199/2+                                                   B   
+ 61CU  G 987.7     2 27.8    16 D                                               
+ 61CU2 G DCO(1)=0.56 6 $ DCO(2)=1.24 7                                          
+ 61CU  G 1409.1    3 34.0    10E1                                               
+ 61CU2 G DCO(1)=0.62 3 $ DCO(2)=1.00 6                                          
+ 61CU  L 3015.92   2011/2-                                                      
+ 61CU  G 679.3     2 3.5     4 D+Q                                              
+ 61CU2 G DCO(1)=0.53 9                                                          
+ 61CU  G 720.6     2 3.4     4 D+Q                                              
+ 61CU2 G DCO(1)=0.88 7                                                          
+ 61CU  G 1705.3    6 11.5    8 Q                                            X   
+ 61CU2 G DCO(1)=1.14 2                                                          
+ 61CU  L 3260.60   1911/2-                                                      
+ 61CU  G 633.1     2 3.8     3 D                                            X   
+ 61CU2 G DCO(1)=1.08 3                                                          
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 648.4     2 6.2     8 D+Q                                              
+ 61CU2 G DCO(1)=0.77 4 $ DCO(2)=0.97 4                                          
+ 61CU  G 1317.8    5 6.0     6                                                  
+ 61CU  G 1527.8    3 9.2     8 Q                                            X   
+ 61CU2 G DCO(1)=1.17 7                                                          
+ 61CU  L 3549.04   1911/2-                                                      
+ 61CU  G 921.7     2 3.9     7 D                                                
+ 61CU2 G DCO(1)=1.09 4                                                          
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 936.5     2 5.4     8 D+Q                                          X   
+ 61CU2 G DCO(1)=0.92 7                                                          
+ 61CU  G 1212.6    4 0.9     1                                                  
+ 61CU  G 1253.9    3 1.5     3 D+Q                                              
+ 61CU2 G DCO(1)=1.35 8                                                          
+ 61CU  G 1606.4    6 1.4     1                                                  
+ 61CU  G 2238.5    4 1.0     1                                                  
+ 61CU  L 3780.8    3 13/2-                                                  a   
+ 61CU  G 1153.5    6 2.0     2 D+Q                                              
+ 61CU2 G DCO(1)=0.31 5                                                          
+ 61CU  G 1444.4    3 8.9     3 Q                                                
+ 61CU2 G DCO(1)=1.25 17                                                         
+ 61CU  L 3942.61   2211/2+                                                  b   
+ 61CU  G 1222.2    2 5.5     5 D+Q                                              
+ 61CU2 G DCO(2)=0.53 4                                                          
+ 61CU  G 1315.0    5 0.5     1                                                  
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 1330.2    6 1.0     1                                                  
+ 61CU  L 3970.80   2213/2-                                                      
+ 61CU  G 710.4     2 3.3     3 D+Q                                              
+ 61CU2 G DCO(1)=0.78 4                                                          
+ 61CU  G 1343.2    3 2.5     2 D+Q                                              
+ 61CU2 G DCO(1)=0.67 5                                                          
+ 61CU  G 1358.4    7 1.9     1                                                  
+ 61CU  L 4052.45   2313/2-                                                      
+ 61CU  G 791.7     4 2.5     3 D+Q                                              
+ 61CU2 G DCO(1)=0.90 7                                                          
+ 61CU  G 1424.9    7 1.5     2 D+Q                                             ?
+ 61CU2 G DCO(1)=1.44 13                                                         
+ 61CU  G 1715.9    3 4.0     4                                                  
+ 61CU  G 1757.3    4 3.3     4                                                  
+ 61CU  L 4081.44   2013/2+                                                  B   
+ 61CU  G 1065.6    2 17.1    5 D                                                
+ 61CU2 G DCO(1)=0.68 3 $ DCO(2)=1.38 12                                         
+ 61CU  G 1361.1    3 40.9    12 Q                                           X   
+ 61CU2 G DCO(1)=0.98 2 $ DCO(2)=1.83 9                                          
+ 61CU  L 4287.74   2313/2-                                                      
+ 61CU  G 1951.4    4 6.1     6 Q                                                
+ 61CU2 G DCO(1)=1.14 6                                                          
+ 61CU  G 1992.2    4 1.6     1                                                  
+ 61CU  L 4467.67   2415/2-                                                  A   
+ 61CU  G 686.8     6 0.3     1                                                  
+ 61CU  G 1451.7    120.8     1                                                  
+ 61CU  G 1840.9    4 5.2     2 Q                                                
+ 61CU2 G DCO(1)=0.99 8 $ DCO(2)=1.71 6                                          
+ 61CU  L 4590.84   1913/2+                                                      
+ 61CU  G 509.7     2 1.0     2                                                  
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 648.1     2 3.2     3 D+Q                                          X   
+ 61CU2 G DCO(1)=0.45 2                                                          
+ 61CU  G 1041.9    2 8.8     8 D                                                
+ 61CU2 G DCO(1)=0.49 2                                                          
+ 61CU  G 1329.8    3 9.0     4 D                                            X   
+ 61CU2 G DCO(1)=0.55 7                                                          
+ 61CU  G 1870.1    4 13.5    9 Q                                                
+ 61CU2 G DCO(1)=1.09 5                                                          
+ 61CU  L 4819.57   2115/2-                                                      
+ 61CU  G 767.2     3 1.8     2 D+Q                                              
+ 61CU2 G DCO(1)=0.72 7                                                          
+ 61CU  G 848.6     4 1.8     2                                                  
+ 61CU  G 1559.3    3 3.6     3 Q                                                
+ 61CU2 G DCO(1)=0.97 5                                                          
+ 61CU  G 2191.0    4 2.8     3                                                  
+ 61CU  L 4990.65   2515/2+                                                  b   
+ 61CU  G 909.2     2 3.5     3 D+Q                                              
+ 61CU2 G DCO(1)=0.27 6                                                          
+ 61CU  G 1048.0    5 1.5     2                                                  
+ 61CU  L 5120.10   2017/2+                                                  B   
+ 61CU  G 300.4     2 3.7     4 D                                                
+ 61CU2 G DCO(1)=0.57 4                                                          
+ 61CU  G 529.2     2 41.3    25 Q                                               
+ 61CU2 G DCO(1)=1.05 4                                                          
+ 61CU  G 652.6     2 3.8     5 D                                                
+ 61CU2 G DCO(1)=0.58 2                                                          
+ 61CU  G 1038.6    2 44.1    15 Q                                               
+ 61CU2 G DCO(1)=0.92 1 $ DCO(2)=1.81 8                                          
+ 61CU  L 5137.96   2215/2+                                                      
+ 61CU  G 547.1     2 2.2     3 D+Q                                              
+ 61CU2 G DCO(1)=0.32 4                                                          
+ 61CU  G 850.0     6 3.5     4 D                                                
+ 61CU2 G DCO(1)=0.64 5 $ DCO(2)=1.11 10                                         
+ 61CU  L 5302.0    3                                                            
+ 61CU  G 1753.0    5 0.9     3                                                  
+ 61CU  L 5532.03   2313/2+                                                  E   
+ 61CU  G 1244.3    4 0.5     2                                                  
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 2270.5    6 0.6     2                                                  
+ 61CU  L 5579.9    9 17/2-                                                  a   
+ 61CU  G 1800      1 3.8     4 Q                                                
+ 61CU2 G DCO(1)=1.13 7                                                          
+ 61CU  L 5702.34   2115/2+                                                      
+ 61CU  G 170.3     2 0.4     1 D                                                
+ 61CU2 G DCO(2)=0.99 19                                                         
+ 61CU  G 400.3     2 0.2     1                                                  
+ 61CU  G 564.2     2 2.4     3 D                                                
+ 61CU2 G DCO(2)=1.67 3                                                          
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 582.2     2 0.7     1 D+Q                                              
+ 61CU2 G DCO(1)=0.76 17 $ DCO(2)=0.92 10                                        
+ 61CU  G 1111.5    3 0.4     1                                                  
+ 61CU  G 1414.6    3 0.5     1 D                                            X   
+ 61CU2 G DCO(2)=0.96 9                                                          
+ 61CU  G 1731.9    3 2.4     3                                                  
+ 61CU  L 5729.50   2115/2+                                                  e   
+ 61CU  G 197.4     2 0.2     1 D                                                
+ 61CU2 G DCO(2)=0.91 7                                                          
+ 61CU  G 591.6     2 0.7     2 D                                                
+ 61CU2 G DCO(2)=1.27 7                                                          
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 1139.0    4 0.2     1 D+Q                                              
+ 61CU2 G DCO(2)=1.14 12                                                         
+ 61CU  G 1441.9    3 0.5     1 D                                                
+ 61CU2 G DCO(2)=1.02 6                                                          
+ 61CU  G 1647.9    3 0.4     1 D+Q                                              
+ 61CU2 G DCO(2)=1.39 9                                                          
+ 61CU  G 1758.7    5 0.1     1                                                  
+ 61CU  L 5748.4    3 17/2-                                                      
+ 61CU  G 928.8     3 2.1     1 D+Q                                              
+ 61CU2 G DCO(1)=0.74 8                                                          
+ 61CU  G 1280.7    3 0.8     1                                                  
+ 61CU  L 5853.5    4 17/2+                                                      
+ 61CU  G 1772.0    4 5.8     4 Q                                                
+ 61CU2 G DCO(1)=1.08 6                                                          
+ 61CU  L 5856.3    3 19/2+                                                  b   
+ 61CU  G 719.2     7 0.8     1                                                  
+ 61CU  G 736.2     2 27.4    15 D+Q                                             
+ 61CU2 G DCO(1)=0.49 2                                                          
+ 61CU  L 6056.08   2117/2+                                                  E   
+ 61CU  G 326.6     1 5.3     5 D                                                
+ 61CU2 G DCO(1)=0.63 3                                                          
+ 61CU  G 353.6     4 11.0    11 D                                               
+ 61CU2 G DCO(1)=0.61 1 $ DCO(2)=1.04 14                                         
+ 61CU  G 1065.4    4 0.7     1 D+Q                                              
+ 61CU2 G DCO(1)=0.52 8                                                          
+ 61CU  G 1236.5    2 3.1     4 D                                                
+ 61CU2 G DCO(2)=1.03 7                                                          
+ 61CU  G 1974.1    4 2.3     3 Q                                                
+ 61CU2 G DCO(1)=0.96 11                                                         
+ 61CU  L 6572.2    3 19/2+                                                  e   
+ 61CU  G 515.9     3 20.5    25 D                                               
+ 61CU2 G DCO(1)=0.50 6 $ DCO(2)=0.97 3                                          
+ 61CU  G 718.7     3 1.2     1 D+Q                                              
+ 61CU2 G DCO(1)=0.41 2                                                          
+ 61CU  G 1451.7    3 12.5    8 D+Q                                          X   
+ 61CU2 G DCO(1)=1.24 4                                                          
+ 61CU  L 6824.4    3 21/2+                                                  B   
+ 61CU  G 967.6     3 3.0     3 D+Q                                              
+ 61CU2 G DCO(2)=0.75 1                                                          
+ 61CU  G 1704.5    3 49.3    16 Q                                               
+ 61CU2 G DCO(1)=1.05 2 $ DCO(2)=1.96 6                                          
+ 61CU  L 7124.6    7 19/2                                                   c   
+ 61CU  G 1268.3    7 0.9     1 D                                                
+ 61CU2 G DCO(1)=1.08 15                                                         
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 2004.0    201.0     1 D                                                
+ 61CU2 G DCO(1)=1.33 22                                                         
+ 61CU  L 7306.2    3 21/2+                                                  E   
+ 61CU  G 733.1     4 23.1    23 D                                               
+ 61CU2 G DCO(2)=1.13 8                                                          
+ 61CU  G 1250.0    6 4.0     4 Q                                                
+ 61CU2 G DCO(2)=1.52 18                                                         
+ 61CU  G 1450.4    3 1.0     1 D+Q                                              
+ 61CU2 G DCO(2)=1.43 6                                                          
+ 61CU  L 7389.0    5 23/2+                                                  b   
+ 61CU  G 564.4     4 3.0     5 D+Q                                          X   
+ 61CU2 G DCO(1)=0.56 10 $ DCO(2)=1.17 22                                        
+ 61CU  G 1533.5    8 7.6     8 Q                                                
+ 61CU2 G DCO(1)=1.00 12 $ DCO(2)=1.92 4                                         
+ 61CU  L 7455.2    1021/2+                                                      
+ 61CU  G 1599.0    164.1     2 D+Q                                              
+ 61CUF G FL=5856.3                                                              
+ 61CU2 G DCO(2)=1.28 14                                                         
+ 61CU  L 7535.4    1321/2-                                                      
+ 61CU  G 1787.0    181.2     1                                                  
+ 61CU  G 1955.4    200.5     1 Q                                                
+ 61CU2 G DCO(1)=1.03 9                                                          
+ 61CU  L 7606.5    1921/2+                                                      
+ 61CU  G 1753.0    182.0     1 Q                                                
+ 61CUF G FL=5853.5                                                              
+ 61CU2 G DCO(1)=1.01 7                                                          
+ 61CU  L 7858.6    9 21/2                                                   C   
+ 61CU  G 734.0     7 1.6     1 D+Q                                              
+ 61CU2 G DCO=0.41 2                                                             
+ 61CU  L 7936.6    4 23/2-                                                      
+ 61CU  G 1112.2    2 34.7    9 D                                                
+ 61CU2 G DCO(1)=0.47 1 $ DCO(2)=0.97 3                                          
+ 61CU  L 8030.3    5 23/2+                                                  e   
+ 61CU  G 723.9     7 17.4    17 D                                               
+ 61CU2 G DCO(1)=0.66 8 $ DCO(2)=1.21 6                                          
+ 61CU  G 1206.0    124.9     5 D+Q                                              
+ 61CU2 G DCO(1)=0.94 18                                                         
+ 61CU  G 1458.3    7 6.7     7 Q                                                
+ 61CU2 G DCO(2)=1.42 13                                                         
+ 61CU  L 8212.1    12(21/2-)                                                    
+ 61CU  G 2632      3 0.5     1 (Q)                                              
+ 61CU2 G DCO(1)=1.3 3                                                           
+ 61CU  L 8333.8    8 23/2+                                                      
+ 61CU  G 1509.3    8 5.9     6 D+Q                                          X   
+ 61CU2 G DCO(1)=1.06 7                                                          
+ 61CU  L 8358.1    10                                                           
+ 61CU  G 2778      3 0.3     1                                                  
+ 61CU  L 8625.6    1023/2                                                   c   
+ 61CU  G 767.0     8 1.3     1 D+Q                                              
+ 61CU2 G DCO(1)=0.76 13                                                         
+ 61CU  G 1501.0    150.3     1                                                  
+ 61CU  L 8678.8    7 21/2-                                                  F   
+ 61CU  G 2106.6    111.2     2 D                                                
+ 61CU2 G DCO(2)=1.06 9                                                          
+ 61CU cG M$assigned by the evaluators,                                          
+ 61CU2cG consistent with DCO ratio. Mult=E2/M1 in table 2 of 2008An06 seems a   
+ 61CU3cG misprint since it is inconsistent with J|p values of levelS involved   
+ 61CU  G 3101.2    160.6     1  Q                                               
+ 61CU2 G DCO(1)=1.08 16                                                         
+ 61CU  L 8789.1    5 25/2+                                                  E   
+ 61CU  G 758.7     4 8.7     9 D+Q                                              
+ 61CU2 G DCO(2)=1.11 9                                                          
+ 61CU  G 1483.2    7 3.5     4 Q                                                
+ 61CU2 G DCO(2)=1.33 8                                                          
+ 61CU  L 8885.1    5 25/2+                                                      
+ 61CU  G 854.9     4 5.2     5 D+Q                                              
+ 61CU2 G DCO(2)=1.02 4                                                          
+ 61CU  G 1429.9    141.1     1                                                  
+ 61CU  G 1495.8    152.1     1 D+Q                                              
+ 61CU2 G DCO(1)=1.04 10                                                         
+ 61CU  G 1578.9    161.6     1 Q                                                
+ 61CU2 G DCO(2)=1.69 36                                                         
+ 61CU  L 9138.4    24                                                           
+ 61CU  G 2314.0    231.1     1                                                  
+ 61CU  L 9287.1    7 23/2-                                                  f   
+ 61CU  G 608.2     3 5.8     6 D                                                
+ 61CU2 G DCO(1)=0.64 5 $ DCO(2)=0.99 7                                          
+ 61CU  G 929.0     8 0.2     1                                                  
+ 61CU cG M$E2/M1 assigned in table 2 of 2008An06 based only on J|p assignments  
+ 61CU  G 1075.0    110.2     1                                                  
+ 61CU  G 1980.6    201.4     2 D                                                
+ 61CU2 G DCO(2)=0.87 10                                                         
+ 61CU  L 9408.5    7 27/2-                                                      
+ 61CU  G 1471.4    7 23.5    23 Q                                               
+ 61CU2 G DCO(1)=1.02 2 $ DCO(2)=1.87 3                                          
+ 61CU  L 9474.6    1125/2                                                   C   
+ 61CU  G 849.0     9 1.1     1  D+Q                                             
+ 61CU2 G DCO(2)=0.88 3                                                          
+ 61CU  G 1616.0    160.3     1                                                  
+ 61CU  L 9643.6    16(25/2-)                                                    
+ 61CU  G 1707.0    170.6     1  D                                           X   
+ 61CU2 G DCO(1)=0.58 3                                                          
+ 61CU  L 9692.7    5 (25/2-)                                                    
+ 61CU  L 9725.2    6 27/2+                                                  e   
+ 61CU  G 840.1     4 3.8     4                                                  
+ 61CU2 G DCO(2)=0.84 4                                                          
+ 61CU  G 935.9     5 5.8     5 D                                                
+ 61CU2 G DCO(2)=1.03 3                                                          
+ 61CU  G 1695.0    8 3.9     4 Q                                                
+ 61CU2 G DCO(2)=1.43 8                                                          
+ 61CU  L 9789.9    9 27/2-                                                      
+ 61CU  G 1853.0    192.3     2 Q                                                
+ 61CU2 G DCO(2)=1.71 13                                                         
+ 61CU  L 9957.6    7 25/2-                                                  F   
+ 61CU  G 670.3     3 5.4     6 D                                                
+ 61CU2 G DCO(2)=1.02 2                                                          
+ 61CU  G 1279.5    6 2.1     2                                                  
+ 61CU  G 1928.0    191.3     1 D                                                
+ 61CU2 G DCO(2)=0.89 6                                                          
+ 61CU  G 2422.0    240.7     1 Q                                                
+ 61CU2 G DCO(2)=2.0 3                                                           
+ 61CU  G 2568      3 0.8     1                                                  
+ 61CU  L 10342.6   1127/2                                                   c   
+ 61CU  G 868.0     9 1.0     1 D+Q                                              
+ 61CU2 G DCO(2)=1.28 9                                                          
+ 61CU  G 1717.0    170.4     1 Q                                                
+ 61CU2 G DCO(2)=1.55 6                                                          
+ 61CU  L 10347.1   1225/2+                                                      
+ 61CU  G 2013.0    200.4     1                                                  
+ 61CU  G 2317.1    230.2     1 D+Q                                              
+ 61CU2 G DCO(2)=1.08 18                                                         
+ 61CU  G 2958      3 0.3     1                                                  
+ 61CU  G 3523      4 0.2     1                                                  
+ 61CU  L 10409.2   1025/2+                                                  G   
+ 61CU cL E$any one of the 10409 or 10463 levels can be the bandhead of SD-1 band
+ 61CU  G 2472.4    121.1     1 D                                                
+ 61CU2 G DCO(1)=0.69 7                                                          
+ 61CU  G 2954      3 0.3     1                                                  
+ 61CU  G 3584      4 1.7     2 Q                                                
+ 61CU2 G DCO(1)=1.25 15                                                         
+ 61CU  L 10462.6   1225/2+                                                      
+ 61CU cL E$see comment for 10409 level for bandhead of SD-1 band                
+ 61CU  G 2127.9    211.0     1 D+Q                                              
+ 61CU2 G DCO(1)=0.65 3                                                          
+ 61CU  G 3008      3 0.2     1                                                  
+ 61CU  G 3074      3 1.3     1 D+Q                                              
+ 61CU2 G DCO(1)=1.36 13                                                         
+ 61CU  G 3638      4 0.9     2 Q                                                
+ 61CU2 G DCO(1)=0.87 14                                                         
+ 61CU  L 10687.8   7 27/2-                                                  f   
+ 61CU  G 730.1     4 8.7     9 D+Q                                              
+ 61CU2 G DCO(2)=1.09 4                                                          
+ 61CU  G 897.6     9 0.4     1                                                  
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 1400.9    7 3.7     4 Q                                                
+ 61CU2 G DCO(2)=1.40 11                                                         
+ 61CU  G 1802.5    181.0     1                                                  
+ 61CU  L 10906.6   1029/2+                                                  E   
+ 61CU  G 1181.0    127.7     8 D+Q                                          X   
+ 61CU2 G DCO(2)=1.03 9                                                          
+ 61CU  G 2118.0    141.0     1 Q                                                
+ 61CU2 G DCO(2)=1.27 7                                                          
+ 61CU  L 11019     4                                                            
+ 61CU  G 3630      4 0.4     1                                                  
+ 61CU  L 11132.9   8 31/2-                                                      
+ 61CU  G 1343.4    130.6     1 Q                                                
+ 61CU2 G DCO(2)=1.44 23                                                         
+ 61CU  G 1723.7    9 6.2     6 Q                                                
+ 61CU2 G DCO(1)=1.25 9                                                          
+ 61CU  L 11144     4                                                            
+ 61CU  G 3755      4 0.4     1                                                  
+ 61CU  L 11236.9   2027/2-                                                      
+ 61CU  G 3300      3 0.8     1                                                  
+ 61CU  L 11255     4                                                            
+ 61CU  G 3866      4 0.6     1                                                  
+ 61CU  L 11301.6   7 29/2-                                                  F   
+ 61CU  G 613.8     3 7.5     8 D+Q                                              
+ 61CU2 G DCO(1)=0.46 3 $ DCO(2)=1.03 4                                          
+ 61CU  G 1344.4    7 2.2     2 Q                                                
+ 61CU2 G DCO(2)=1.28 6                                                          
+ 61CU  G 1893.1    190.4     1                                                  
+ 61CU  L 11303.1   1527/2-                                                      
+ 61CU  G 1894.0    190.4     1 D                                                
+ 61CU2 G DCO(1)=0.71 9                                                          
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 3367      3 0.6     1 Q                                                
+ 61CU2 G DCO(2)>1                                                               
+ 61CU  L 11369.6   1129/2                                                   C   
+ 61CU  G 1027.0    101.0     1 D+Q                                              
+ 61CU2 G DCO(1)=0.54 4 $ DCO(2)=0.92 4                                          
+ 61CU  G 1644.4    160.5     1                                                  
+ 61CU cG M$|DJ=1 transition                                                     
+ 61CU  G 1895.0    190.3     1                                                  
+ 61CU  L 11449     3 (25/2+)                                                I   
+ 61CU  L 11752.6   19(29/2-)                                                L   
+ 61CU  G 2060.0    210.3     1 Q                                                
+ 61CU2 G DCO(1)=0.98 22                                                         
+ 61CU  G 2109.0    210.3     1 (Q)                                              
+ 61CU2 G DCO(1)=0.81 12                                                         
+ 61CU  G 2344.0    230.5     1 (D+Q)                                            
+ 61CU2 G DCO(1)=1.3 3                                                           
+ 61CU  L 11775.7   1129/2+                                                  G   
+ 61CU  G 1313.0    154.0     10                                                 
+ 61CU  G 1366.0    166.0     6                                                  
+ 61CU  G 1428.6    141.5     2 Q                                                
+ 61CU2 G DCO(1)=0.97 8                                                          
+ 61CU  G 2367.9    243.0     3  D                                               
+ 61CU2 G DCO(1)=0.60 6 $ DCO(2)=1.16 6                                          
+ 61CU  L 12003.7   7 31/2-                                                  f   
+ 61CU  G 702.2     4 7.4     7 D+Q                                              
+ 61CUF G FL=11301.6                                                             
+ 61CU2 G DCO(1)=0.57 14 $ DCO(2)=1.09 2                                         
+ 61CU  G 870.2     9 2.3     2 D                                                
+ 61CU2 G DCO(2)=1.24 4                                                          
+ 61CU cG M$|DJ=0 transition                                                     
+ 61CU  G 1316.8    134.5     5                                                  
+ 61CU  L 12086.7   1131/2+                                                  e   
+ 61CU  G 1180.0    122.5     5 D+Q                                          X   
+ 61CU2 G DCO(2)=1.03 9                                                          
+ 61CU  G 2362.0    242.0     1 Q                                                
+ 61CU2 G DCO(2)=1.93 21                                                         
+ 61CU  L 12090     3 (27/2+)                                                i   
+ 61CU  L 12355.6   1231/2                                                   c   
+ 61CU  G 986.0     100.8     1 D+Q                                          X   
+ 61CU2 G DCO(2)=0.92 6                                                          
+ 61CU  G 2013.0    200.3     1                                                  
+ 61CU  L 12793.4   1731/2-                                                  K   
+ 61CU  G 1490.0    150.7     1                                                  
+ 61CUF G FL=11303.1                                                             
+ 61CU  G 1556.5    160.1     1                                                  
+ 61CU  G 3386      3 1.7     2 Q                                                
+ 61CU2 G DCO(1)=0.95 7                                                          
+ 61CU  L 12839.2   8 33/2-                                                  F   
+ 61CU  G 835.5     4 7.6     8 D+Q                                              
+ 61CU2 G DCO(2)=1.02 2                                                          
+ 61CU  G 1537.3    8 2.4     3 Q                                                
+ 61CUF G FL=11301.6                                                             
+ 61CU2 G DCO(2)=1.47 8                                                          
+ 61CU  L 12847.3   25(29/2+)                                                I   
+ 61CU  G 757.2     8 0.5     1                                                  
+ 61CUF G FL=12090                                                               
+ 61CU  G 1398.0    140.5     1                                                  
+ 61CU  G 3122      3 0.3     1                                                 ?
+ 61CU  G 4058      4 0.2     1                                                 ?
+ 61CU  L 13146     4 31/2-                                                      
+ 61CU  G 3737      4 0.8     1 Q                                                
+ 61CU2 G DCO(1)=1.00 15                                                         
+ 61CU  L 13206.0   2129/2+                                                  J   
+ 61CU  G 3480      4 0.2     1                                                  
+ 61CU  L 13284.3   1833/2+                                                  G   
+ 61CU  G 1509.4    1515.5    16 Q                                           X   
+ 61CU2 G DCO(1)=0.96 2 $ DCO(2)=1.59 16                                         
+ 61CU  L 13419.6   1833/2+                                                      
+ 61CU  G 1642.9    162.0     3                                                  
+ 61CU  L 13678     3 (31/2+)                                                i   
+ 61CU  G 830.6     8 0.2     1                                                  
+ 61CU  G 1587.8    161.2     2  Q                                               
+ 61CUF G FL=12090                                                               
+ 61CU2 G DCO(1)=0.93 7                                                          
+ 61CU  L 13823     5 (29/2+)                                                H   
+ 61CU  L 13874.2   2031/2+                                                  j   
+ 61CU  G 668.2     7 0.7     1 D+Q                                              
+ 61CU2 G DCO(1)=0.62 3                                                          
+ 61CU  G 4150      4 0.4     1 Q                                                
+ 61CU2 G DCO(1)=0.89 19 $ DCO(2)=1.8 4                                          
+ 61CU  L 13983.5   1333/2                                                   D   
+ 61CU  G 1628.0    160.5     1 D+Q                                              
+ 61CU2 G DCO(2)=1.31 7                                                          
+ 61CU  G 1897.0    191.4     1 D                                                
+ 61CUF G FL=12086.7                                                             
+ 61CU2 G DCO(2)=1.10 6                                                          
+ 61CU  G 2614      3 0.7     1 Q                                                
+ 61CU2 G DCO(2)=1.70 11                                                         
+ 61CU  L 14020.7   1333/2                                                   C   
+ 61CU  G 1665.0    170.5     1 D+Q                                              
+ 61CU2 G DCO(2)=1.13 24                                                         
+ 61CU  G 1934.0    190.9     1                                                  
+ 61CUF G FL=12086.7                                                             
+ 61CU cG M$|DJ=1 transition                                                     
+ 61CU  G 2651      3 0.4     1                                                  
+ 61CU  L 14023.9   1335/2-                                                  f   
+ 61CU  G 1183.6    135.2     5 D+Q                                              
+ 61CU2 G DCO(2)=0.96 4                                                          
+ 61CU  G 2021.3    201.4     1 Q                                                
+ 61CU2 G DCO(2)=1.39 8                                                          
+ 61CU  L 14068     3 (33/2-)                                                L   
+ 61CU  G 2315.0    231.0     1 Q                                                
+ 61CU2 G DCO(1)=1.16 14                                                         
+ 61CU  L 14163     4                                                            
+ 61CU  G 3030      3 0.4     1                                                  
+ 61CU  L 14563     3 (33/2+)                                                I   
+ 61CU  G 885.4     100.3     1                                                  
+ 61CU  G 1716.0    171.1     2                                                  
+ 61CU  L 14587.2   2033/2+                                                  J   
+ 61CU  G 713.1     7 0.3     1 D+Q                                              
+ 61CU2 G DCO(2)=0.94 5                                                          
+ 61CU  G 1381.0    141.0     1 Q                                                
+ 61CU2 G DCO(2)=1.62 16                                                         
+ 61CU  G 2500.5    250.1     1 D+Q                                             ?
+ 61CUF G FL=12086.7                                                             
+ 61CU  L 14628.0   2535/2-                                                  K   
+ 61CU  G 1834.6    181.4     1 Q                                                
+ 61CU2 G DCO(1)=0.95 7                                                          
+ 61CU  L 14800.5   1235/2                                                   d   
+ 61CU  G 780.0     100.3     1 D+Q                                              
+ 61CUF G FL=14020.7                                                             
+ 61CU2 G DCO(2)=1.22 10                                                         
+ 61CU  G 817.0     101.8     2 D                                                
+ 61CU2 G DCO(1)=0.7 3 $ DCO(2)=1.06 5                                           
+ 61CU  G 1961.0    202.8     2 D                                                
+ 61CU2 G DCO(1)=0.47 5 $ DCO(2)=0.80 11                                         
+ 61CU  L 15201.8   1637/2-                                                  F   
+ 61CU  G 1177.4    132.2     2 D+Q                                              
+ 61CUF G FL=14023.9                                                             
+ 61CU  G 2364.3    241.8     2 Q                                                
+ 61CU2 G DCO(2)=1.35 17                                                         
+ 61CU  L 15231.9   2037/2+                                                  G   
+ 61CU  G 1811.0    181.6     3  Q                                               
+ 61CU2 G DCO(1)=1.12 9                                                          
+ 61CU  G 1948.9    2012.0    12 Q                                               
+ 61CU2 G DCO(1)=0.97 7                                                          
+ 61CU  L 15311     5 (33/2+)                                                H   
+ 61CU  G 1488.0    150.3     1                                                  
+ 61CU  L 15434.6   2135/2+                                                  j   
+ 61CU  G 848.0     100.8     1 D+Q                                              
+ 61CU2 G DCO(1)=0.42 3                                                          
+ 61CU  G 1559.8    162.2     4 Q                                                
+ 61CU2 G DCO(1)=1.02 4                                                          
+ 61CU  L 15524     3 (35/2+)                                                i   
+ 61CU  G 960.3     100.2     1                                                  
+ 61CU  G 1845.7    191.0     2 Q                                                
+ 61CU2 G DCO(1)=1.05 9                                                          
+ 61CU  L 15742.4   1437/2                                                   D   
+ 61CU  G 942.0     102.0     1 D                                                
+ 61CU2 G DCO(2)=1.09 4                                                          
+ 61CU  G 1721.0    170.3     1                                                  
+ 61CUF G FL=14020.7                                                             
+ 61CU  G 1759.0    181.0     1 Q                                                
+ 61CU2 G DCO(1)=1.07 10                                                         
+ 61CU  L 16302.3   2237/2+                                                  J   
+ 61CU  G 868.0     100.8     1 D+Q                                              
+ 61CU2 G DCO(1)=0.53 2                                                          
+ 61CU  G 1714.3    171.2     5                                                  
+ 61CU  L 16571.3   1639/2                                                   d   
+ 61CU  G 829.0     101.4     1 D                                                
+ 61CU2 G DCO(2)=0.91 5                                                          
+ 61CU  G 1771.0    182.2     1 Q                                                
+ 61CU2 G DCO(2)=1.60 8                                                          
+ 61CU  L 16588     4 (37/2+)                                                I   
+ 61CU  G 2025.0    201.1     2  Q                                               
+ 61CU2 G DCO(1)=1.05 11                                                         
+ 61CU  L 16615     5 (37/2-)                                                L   
+ 61CU  G 2547      3 0.8     1  Q                                               
+ 61CU2 G DCO(1)=1.00 10                                                         
+ 61CU  L 16921     4 (39/2-)                                                K   
+ 61CU  G 2293.0    230.3     1                                                  
+ 61CU  L 17039     4 (39/2-)                                                K   
+ 61CU  G 2411.0    240.5     1                                                  
+ 61CU  L 17067     5 (37/2+)                                                H   
+ 61CU  G 1756.0    180.6     1                                                  
+ 61CU  L 17310.6   2339/2+                                                  j   
+ 61CU  G 1008.4    100.3     1                                                  
+ 61CU  G 1875.9    192.0     4 Q                                                
+ 61CU2 G DCO(1)=1.06 9                                                          
+ 61CU  L 17431     3 41/2+                                                  G   
+ 61CU  G 2198.7    2210.0    10 Q                                               
+ 61CU2 G DCO(1)=1.03 2 $ DCO(2)=1.37 17                                         
+ 61CU  L 17618.1   1741/2                                                   D   
+ 61CU  G 1047.0    101.8     1  D+Q                                             
+ 61CU2 G DCO(1)=0.44 2 $ DCO(2)=1.10 4                                          
+ 61CU  G 1875.0    191.0     1  Q                                               
+ 61CU2 G DCO(2)=1.60 8                                                          
+ 61CU  L 17750     4 (39/2+)                                                i   
+ 61CU  G 2226.7    220.8     1  (Q)                                             
+ 61CU2 G DCO(1)=0.87 9                                                          
+ 61CU  L 18353.0   24(41/2+)                                                J   
+ 61CU  G 1042.3    100.1     1                                                  
+ 61CU  G 2050.7    211.8     3                                                  
+ 61CU  L 18857.4   1943/2                                                   d   
+ 61CU  G 1239.0    121.7     1  D+Q                                             
+ 61CU2 G DCO(2)=1.20 10                                                         
+ 61CU  G 2286.0    230.8     1                                                  
+ 61CU  L 18995     4 (41/2+)                                                I   
+ 61CU  G 2407.0    240.8     3  Q                                               
+ 61CU2 G DCO(1)=0.93 9                                                          
+ 61CU  L 19134     4 41/2+                                                  H   
+ 61CU  G 2067.0    210.6     1                                                  
+ 61CU  G 3902      4 0.3     1 Q                                                
+ 61CU2 G DCO(1)=0.91 20                                                         
+ 61CU  L 19472     6 (41/2-)                                                L   
+ 61CU  G 2857      3 0.3     1 Q                                                
+ 61CU2 G DCO(1)=0.90 12                                                         
+ 61CU  L 19562     3 (43/2+)                                                j   
+ 61CU  G 1209.0    121.0     1                                                  
+ 61CU  G 2252.1    231.7     3 Q                                                
+ 61CU2 G DCO(1)=1.05 6                                                          
+ 61CU  L 19878     4 (43/2-)                                                K   
+ 61CU  G 2839      3 0.3     1                                                  
+ 61CU  G 2957      3 0.2     1                                                  
+ 61CU  L 19970     4 45/2+                                                  G   
+ 61CU  G 2538.9    256.0     6 Q                                                
+ 61CU2 G DCO(1)=1.11 7                                                          
+ 61CU  L 20285     5 (43/2+)                                                i   
+ 61CU  G 2534.8    250.6     1  Q                                               
+ 61CU2 G DCO(1)=0.92 7                                                          
+ 61CU  L 20550.7   24(45/2)                                                 D   
+ 61CU  G 1692.8    170.4     1                                                  
+ 61CU  G 2934      3 0.3     1                                                  
+ 61CU  L 20723     4 (45/2+)                                                J   
+ 61CU  G 2370.0    241.3     1                                                  
+ 61CU  L 20913.3   25(45/2)                                                     
+ 61CU  G 2055.9    210.6     1                                                  
+ 61CU  G 3295      3 0.5     1                                                  
+ 61CU  L 21536     4 45/2+                                                  H   
+ 61CU  G 2402.0    240.5     1 Q                                                
+ 61CU2 G DCO(1)=1.23 17                                                         
+ 61CU  G 4105      4 0.2     1 Q                                                
+ 61CU2 G DCO(1)=0.98 18                                                         
+ 61CU  L 21839     5 (45/2+)                                                I   
+ 61CU  G 2844      3 0.4     1  (Q)                                             
+ 61CU2 G DCO(1)=0.88 6                                                          
+ 61CU  L 22212     4 47/2+                                                  j   
+ 61CU  G 2650      3 1.3     2 Q                                                
+ 61CU2 G DCO(1)=1.03 7                                                          
+ 61CU  L 22284     6 (45/2+)                                                n   
+ 61CU  G 4853      5 0.1     1                                                  
+ 61CU  L 22718     6 (45/2-)                                                L   
+ 61CU  G 3246      3 0.1     1                                                  
+ 61CU  L 22984     4 49/2+                                                  G   
+ 61CU  G 3014      3 2.4     3 (Q)                                              
+ 61CU2 G DCO(1)=0.89 3                                                          
+ 61CU  L 23376     6 (47/2-)                                                K   
+ 61CU  G 3498      4 0.1     1                                                  
+ 61CU  L 23418     6 (47/2+)                                                i   
+ 61CU  G 3133      3 0.2     1                                                  
+ 61CU  L 23662     4 (49/2+)                                                J   
+ 61CU  G 2939      3 0.4     1                                                  
+ 61CU  L 24337     4 49/2+                                                  H   
+ 61CU  G 2801      3 0.3     1                                                  
+ 61CU  G 4367      4 0.1     1 (Q)                                              
+ 61CU2 G DCO(1)=0.87 21                                                         
+ 61CU  L 24612     6 (49/2+)                                                    
+ 61CU  G 4642      5 0.1     1                                                  
+ 61CU  L 25121     6 (49/2+)                                                I   
+ 61CU  G 3281      3 0.1     1                                                  
+ 61CU  L 25325     5 (51/2+)                                                j   
+ 61CU  G 3113      3 0.4     1  (Q)                                             
+ 61CU2 G DCO(1)=0.87 8                                                          
+ 61CU  L 26577     6 53/2+                                                  G   
+ 61CU  G 3592      4 0.1     1 Q                                                
+ 61CU2 G DCO(1)=0.91 8                                                          
+ 61CU  L 26842     6 53/2+                                                      
+ 61CU  G 3857      4 0.3     1 (Q)                                              
+ 61CU2 G DCO(1)=0.87 10                                                         
+ 61CU  L 26928     7 (51/2+)                                                i   
+ 61CU  G 3510      4 0.1     1                                                  
+ 61CU  L 27023     4 (53/2+)                                                J   
+ 61CU  G 3362      3 0.1     1                                                  
+ 61CU  G 4038      4 0.1     1                                                  
+ 61CU  L 27525     5 (53/2+)                                                H   
+ 61CU  G 3188      3 0.1     1                                                  
+ 61CU  L 28885     7 (55/2+)                                                j   
+ 61CU  G 3560      4 0.1     1                                                  
+ 61CU  L X           J1+1                                                   M   
+ 61CU  L 339+X     3                                                            
+ 61CU  L 790+X     6 J1                                                     m   
+ 61CU  L 2037.0+X  20J1+3                                                   M   
+ 61CU  G 1698.0    170.3     1                                                  
+ 61CU  G 2037.0    200.3     1                                                  
+ 61CUF G FL=X                                                                   
+ 61CU  L 2520+X    5 J1+2                                                   m   
+ 61CU  G 1730.0    170.3     1                                                  
+ 61CU  L 4288+X    3 J1+5                                                   M   
+ 61CU  G 2251.0    230.7     1                                                  
+ 61CU  L 4465+X    5 J1+4                                                   m   
+ 61CU  G 1945.0    190.3     1                                                  
+ 61CU  L 6674+X    4 J1+6                                                   m   
+ 61CU  G 2209.0    220.5     1                                                  
+ 61CU  G 2385.6    240.2     1                                                  
+ 61CU  L 6735+X    4 J1+7                                                   M   
+ 61CU  G 2447.2    240.4     1                                                  
+ 61CU  L 9261+X    5 J1+8                                                   m   
+ 61CU  G 2587      3 0.6     1                                                  
+ 61CU  L 9434+X    5 J1+9                                                   M   
+ 61CU  G 2699      3 0.3     1                                                  
+ 61CU  L 12369+X   6 J1+10                                                  m   
+ 61CU  G 3108      3 0.2     1                                                  
+ 61CU  L 12482+X   6 J1+11                                                  M   
+ 61CU  G 3048      3 0.1     1                                                  
+ 61CU  L 15897+X   7 J1+13                                                  M   
+ 61CU  G 3414      3 0.1     1                                                  
+ 61CU  L Y           J2                                                     N   
+ 61CU  L 1833+Y    4 J2+2                                                       
+ 61CU  L 1846.1+Y  18J2+2                                                   N   
+ 61CU  G 1846.1    180.3     1                                                  
+ 61CUF G FL=Y                                                                   
+ 61CU  L 3998+Y    3 J2+4                                                   N   
+ 61CU  G 2152.2    220.6     1                                                  
+ 61CU  G 2165.0    220.2     1                                                  
+ 61CU  L 6459+Y    4 J2+6                                                   N   
+ 61CU  G 2460.3    250.7     1                                                  
+ 61CU  L 9258+Y    5 J2+8                                                   N   
+ 61CU  G 2799      3 0.5     1                                                  
+ 61CU  L 12432+Y   6 J2+10                                                  N   
+ 61CU  G 3174      3 0.2     1                                                  
+                                                                                

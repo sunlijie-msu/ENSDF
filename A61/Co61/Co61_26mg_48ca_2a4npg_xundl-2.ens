@@ -1,0 +1,292 @@
+ 61CO    26MG(48CA,2A4NPG):XUNDL-2     2015AY02                           201505
+ 61CO c  Compiled (unevaluated) dataset from 2015Ay02:                          
+ 61CO2c  Phys Rev C 91, 044327 (2015)                                           
+ 61CO c  Compiled by J. Chen (NSCL, MSU), May 4, 2015                           
+ 61CO c  Edited by B. Singh (McMaster), May 7, 2015                             
+ 61CO c  Multinucleon transfer in inverse kinematics                            
+ 61CO c  2015Ay02: E=275, 290 and 320 MeV {+48}Ca beams were produced from the  
+ 61CO2c  Argonne Tandem Linear Accelerator System (ALTAS). Target was a         
+ 61CO3c  self-supporting 0.973 mg/cm{+2} {+26}Mg. |g rays were detected with the
+ 61CO4c  Gammasphere 4|p array of 101 Compton-suppressed HPGe detectors         
+ 61CO5c  surrounding the target and reaction residues were  analyzed with the   
+ 61CO6c  Fragment Mass Analyzer (FMA) and identified on event-by-event basis    
+ 61CO7c  from the position and time-of-flight measured in a microchannel plate  
+ 61CO8c  detector (MCP) placed at the focal plane and the energy loss measured  
+ 61CO9c  with a threefold segmented ionization chamber positioned behind the    
+ 61COac  focal plane. Measured E|g, I|g, |g|g-coin, |g(|q), |g|g(|q),           
+ 61CObc  Doppler-shift attenuation. Deduced levels, J, |p, bands, |g-ray        
+ 61COcc  multipolarities, quadrupole moment. Comparisons with shell-model       
+ 61COdc  calculations.                                                          
+ 61CO cG $Angular correlation ratio is defined as:                              
+ 61CO2cG R{-ac}=I|g(|q=forward/backword)/I|g(|q=90|'), with R{-ac}>1.0 for      
+ 61CO3cG stretched-quadrupole and <0.8 for stretched-dipole transitions         
+ 61CO4cG (2015Ay02).                                                            
+ 61CO cG RI$Compilers' note: several intensitis are quoted with unrealistic     
+ 61CO2cG uncertainties of 0.3% or less. It is possible that the quoted          
+ 61CO3cG uncertainties are statistical only.                                    
+ 61CO cG M$As given in 2015Ay02 based on measured |g(|q) and |g|g(|q) data.     
+ 61CO2cG Compilers' note: for several |DJ=1, M1+E2 transitions, negative A{-4}  
+ 61CO3cG values are given, but expected values should be positive for all       
+ 61CO4cG mixing ratios (see for example graphs in 1975Ta04: NIM 123, 73; and    
+ 61CO5cG tables in ADNDT 13, 407 (1974))                                        
+ 61CO cG M(X)$|DJ=0 transition                                                  
+ 61CO cL E$From a least-squares fit to |g-ray energies (by compilers). The      
+ 61CO2cL 959.1-, 1150.9- and 2076.3-keV |g rays fit poorly in the level scheme, 
+ 61CO3cL these were omitted for the fitting purpose, with a resultant reduced   
+ 61CO4cL |h{+2}=2.1. Without this adjustment, reduced |h{+2}=4.9.               
+ 61CO cL J$As given in 2015Ay02 based on measured |g-ray angular distributions  
+ 61CO2cL and correlations and band structures.                                  
+ 61CO CL BAND(A)$Dipole band 1                                                  
+ 61CO CL BAND(B)$Yrast dipole band 2.                                           
+ 61CO2cL Possible magnetic-dipole rotational (shears) band                      
+ 61CO CL BAND(C)$Dipole band 3                                                  
+ 61CO CL BAND(D)$Dipole band 4                                                  
+ 61CO CL BAND(E)$Quadrupole band 1.                                             
+ 61CO2cL With measured transition Q=1.9 {I+8-11} using                          
+ 61CO3cL the Doppler-shift attenuation method (DSAM), corresponding to          
+ 61CO4cL a quadrupole deformation of |b{-2}=0.4 {I2} (2015Ay02).                
+ 61CO CL BAND(F)$Quadrupole band 2                                              
+ 61CO PN                                                                     5  
+ 61CO  L 0.0          7/2-                                                      
+ 61CO  L 1285.94   10 9/2-                                                      
+ 61CO  G 1285.9    1 98.0    2 M1+E2                                            
+ 61CO2 G A2=-0.19 3$ A4=+0.02 4                                                 
+ 61CO cG $R{-ac}=1.05 {I8}                                                      
+ 61CO  L 1663.82   13 11/2-                                                     
+ 61CO  G 377.8     1 23.4    8 M1+E2                                            
+ 61CO2 G A2=-0.41 3$ A4=+0.004 3                                                
+ 61CO cG $R{-ac}=0.77 {I1}                                                      
+ 61CO  G 1664.2    4 120.0   2 E2                                               
+ 61CO2 G A2=+0.45 3$ A4=-0.21 3                                                 
+ 61CO cG $R{-ac}=1.13 {I7}                                                      
+ 61CO  L 2339.43   19 11/2-                                                     
+ 61CO  G 1053.7    2 35.5    1 M1+E2                                            
+ 61CO cG $R{-ac}=0.84 {I2}                                                      
+ 61CO  L 2373.67   16 13/2-                                                     
+ 61CO  G 709.7     1 58.0    2 M1+E2                                            
+ 61CO2 G A2=-0.31 2$ A4=-0.05 2                                                 
+ 61CO cG $R{-ac}=0.89 {I2}                                                      
+ 61CO  L 3126.14   17 15/2-                                                     
+ 61CO  G 752.3     1 30.4    9 M1+E2                                            
+ 61CO2 G A2=-0.18 3$ A4=-0.03 2                                                 
+ 61CO cG $R{-ac}=0.98 {I1}                                                      
+ 61CO  G 1462.3    2 5.0     2 E2                                               
+ 61CO2 G A2=+0.25 3$ A4=-0.41 3                                                 
+ 61CO cG $R{-ac}=1.22 {I2}                                                      
+ 61CO  L 3158.92   17 13/2-                                                     
+ 61CO  G 1495.1    1 9.2     7 M1+E2                                            
+ 61CO cG $R{-ac}=0.91 {I3}                                                      
+ 61COF G FL=1663.82                                                             
+ 61CO  L 3471.89   16 13/2-                                                 B   
+ 61CO  G 1097.6    6 5.7     5 M1+E2                                            
+ 61CO cG $R{-ac}=0.78 {I3}                                                      
+ 61CO  G 1132.3    4 8.5     3 M1+E2                                            
+ 61CO2 G A2=-0.11 2$ A4=+0.38 3                                                 
+ 61CO cG $R{-ac}=0.89 {I2}                                                      
+ 61CO  G 1808.1    1 62.9    2 M1+E2                                            
+ 61CO2 G A2=-0.31 4$ A4=-0.21 5                                                 
+ 61CO cG $R{-ac}=0.82 {I7}                                                      
+ 61CO  L 3656.88   18 15/2-                                                 B   
+ 61CO  G 185.1     5 56.2    1 M1+E2                                            
+ 61CO2 G A2=-0.29 3$ A4=-0.11 5                                                 
+ 61CO cG $R{-ac}=0.72 {I4}                                                      
+ 61CO  G 530.6     1 21.7    8 M1+E2                                        X   
+ 61CO2 G A2=-0.21 5$ A4=-0.20 6                                                 
+ 61CO cG $R{-ac}=1.35 {I2}                                                      
+ 61CO  G 1318.0    3 14.2    6 E2                                               
+ 61CO2 G A2=+0.51 9$ A4=-0.16 1                                                 
+ 61CO cG $R{-ac}=1.16 {I3}                                                      
+ 61CO  L 3909.84   17 13/2-                                                 A   
+ 61CO  G 2246.0    1 8.2     9 M1+E2                                            
+ 61CO cG $R{-ac}=0.97 {I3}                                                      
+ 61CO  L 4093.46   22 17/2-                                                 B   
+ 61CO  G 435.8     7 61.5    2 M1+E2                                            
+ 61CO2 G A2=-0.23 1$ A4=+0.004 6                                                
+ 61CO cG $R{-ac}=0.79 {I7}                                                      
+ 61CO  G 935.0     5 3.0     1 E2                                               
+ 61CO cG $R{-ac}=1.23 {I2}                                                      
+ 61CO  G 967.3     3 2.1     1 M1+E2                                            
+ 61CO cG $R{-ac}=0.65 {I3}                                                      
+ 61CO  L 4115.86   20 15/2-                                                 A   
+ 61CO  G 207.4     8 3.0     4 M1+E2                                            
+ 61CO2 G A2=-0.56 5$ A4=-0.40 5                                                 
+ 61CO cG $R{-ac}=0.57 {I2}                                                      
+ 61CO  G 459.0     1 2.0     2 M1+E2                                        X   
+ 61CO cG $R{-ac}=0.75 {I2}                                                      
+ 61CO  G 959.1     3 15.0    7 M1+E2                                            
+ 61CO cG E$poor fit. Level-energy difference=956.9                              
+ 61COF G FL=3158.92                                                             
+ 61CO2 G A2=-0.31 3$ A4=+0.05 4                                                 
+ 61CO cG $R{-ac}=0.82 {I3}                                                      
+ 61CO  G 1743.9    8 6.5     5 M1+E2                                            
+ 61CO cG $R{-ac}=0.79 {I4}                                                      
+ 61CO  L 4385.59   20 17/2-                                                 A   
+ 61CO  G 269.8     1 9.9     6 M1+E2                                            
+ 61CO2 G A2=-0.41 5$ A4=-0.17 6                                                 
+ 61CO cG $R{-ac}=0.68 {I6}                                                      
+ 61CO  G 728.5     2 13.0    6 M1+E2                                            
+ 61CO2 G A2=-0.36 7$ A4=-0.17 9                                                 
+ 61CO cG $R{-ac}=0.83 {I3}                                                      
+ 61CO  L 4484.4     4 15/2-                                                 C   
+ 61CO  G 827.3     4 1.0     2 M1+E2                                        X  ?
+ 61CO cG $R{-ac}=0.82 {I2}                                                      
+ 61CO  G 1013.3    6 1.2     1 M1+E2                                            
+ 61CO2 G A2=-0.41 2$ A4=-0.21 1                                                 
+ 61CO cG $R{-ac}=0.97 {I4}                                                      
+ 61CO  G 1358.0    4 2.3     1 M1+E2                                        X   
+ 61CO2 G A2=-0.17 5$ A4=-0.04 7                                                 
+ 61CO cG $R{-ac}=0.76 {I4}                                                      
+ 61CO  L 4801.96   24 19/2-                                                 B   
+ 61CO  G 416.5     2 2.3     1 M1+E2                                            
+ 61CO cG $R{-ac}=0.98 {I7}                                                      
+ 61CO  G 708.6     2 40.2    2 M1+E2                                            
+ 61CO2 G A2=-0.34 1$ A4=+0.02 2                                                 
+ 61CO cG $R{-ac}=0.78 {I4}                                                      
+ 61CO  L 4869.9     3 17/2-                                                 C   
+ 61CO  G 385.8     5 2.1     4 M1+E2                                            
+ 61CO2 G A2=-0.40 5$ A4=+0.06 6                                                 
+ 61CO cG $R{-ac}=0.66 {I4}                                                      
+ 61CO  G 1212.8    4 1.1     2 M1+E2                                            
+ 61CO cG $R{-ac}=0.79 {I2}                                                      
+ 61CO  L 5117.30   21 19/2-                                                 A   
+ 61CO  G 731.7     1 23.0    9 M1+E2                                            
+ 61CO2 G A2=-0.36 7$ A4=-0.17 9                                                 
+ 61CO cG $R{-ac}=0.83 {I3}                                                      
+ 61CO  G 1023.8    1 3.0     2 M1+E2                                            
+ 61CO cG $R{-ac}=0.96 {I5}                                                      
+ 61CO  L 5345.2     3 19/2-                                                 C   
+ 61CO  G 475.3     3 7.3     5 M1+E2                                            
+ 61CO2 G A2=-0.19 2$ A4=-0.12 3                                                 
+ 61CO cG $R{-ac}=1.10 {I3}                                                      
+ 61CO  G 959.2     3 1.1     2 M1+E2                                           ?
+ 61CO cG $R{-ac}=0.78 {I2}                                                      
+ 61CO  G 1687.7    6 1.0     1 E2                                               
+ 61CO cG $R{-ac}=1.74 {I5}                                                      
+ 61CO  L 5722.3     4 17/2-                                                 D   
+ 61CO  G 2064.5    6 9.3     7 M1+E2                                            
+ 61CO2 G A2=-0.41 3$ A4=-0.09 1                                                 
+ 61CO cG $R{-ac}=0.78 {I4}                                                      
+ 61CO  L 5812.9     3 17/2-                                                 E   
+ 61CO  G 2156.2    3 9.4     5 M1+E2                                            
+ 61CO cG $R{-ac}=0.87 {I5}                                                      
+ 61CO  L 5831.7     3 21/2-                                                 B   
+ 61CO  G 1030.0    2 26.3    2 M1+E2                                            
+ 61CO2 G A2=-0.25 1$ A4=-0.08 1                                                 
+ 61CO cG $R{-ac}=0.87 {I5}                                                      
+ 61CO  L 5954.42   25 21/2-                                                 C   
+ 61CO  G 608.8     3 9.2     9 M1+E2                                            
+ 61CO2 G A2=-0.61 8$ A4=+0.28 1                                                 
+ 61CO cG $R{-ac}=0.88 {I3}                                                      
+ 61CO  G 837.3     2 3.2     3 M1+E2                                            
+ 61CO2 G A2=-0.21 1$ A4=-0.02 1                                                 
+ 61CO cG $R{-ac}=0.69 {I3}                                                      
+ 61CO  G 1150.9    3 1.3     1 M1+E2                                            
+ 61CO cG E$poor fit. Level-energy difference=1152.4                             
+ 61COF G FL=4801.96                                                             
+ 61CO2 G A2=-0.56 2$ A4=+0.12 1                                                 
+ 61CO cG $R{-ac}=0.67 {I3}                                                      
+ 61CO  L 6065.3     3 21/2-                                                 A   
+ 61CO  G 947.7     2 12.0    9 M1+E2                                            
+ 61CO2 G A2=-0.31 3$ A4=+0.05 4                                                 
+ 61CO cG $R{-ac}=0.82 {I3}                                                      
+ 61CO  L 6167.9     3 19/2-                                                 D   
+ 61CO  G 445.4     3 5.1     4 M1+E2                                            
+ 61CO2 G A2=-0.36 1$ A4=-0.08 3                                                 
+ 61CO cG $R{-ac}=0.76 {I2}                                                      
+ 61CO  G 2076.3    3 15.2    3 M1+E2                                            
+ 61CO cG E$poor fit. Level-energy difference=2074.4                             
+ 61COF G FL=4093.46                                                             
+ 61CO2 G A2=-0.29 5$ A4=-0.12 3                                                 
+ 61CO cG $R{-ac}=0.83 {I2}                                                      
+ 61CO  L 6708.4     3 21/2-                                                 D   
+ 61CO  G 540.5     2 19.4    7 M1+E2                                            
+ 61CO2 G A2=-0.19 6$ A4=-0.07 6                                                 
+ 61CO cG $R{-ac}=0.98 {I4}                                                      
+ 61CO  G 753.8     3 1.2     3 M1+E2                                        X   
+ 61CO cG $R{-ac}=0.79 {I2}                                                      
+ 61CO  G 1363.4    4 1.3     3 M1+E2                                            
+ 61CO cG $R{-ac}=0.97 {I3}                                                      
+ 61CO  L 6747.3     3 23/2-                                                 C   
+ 61CO  G 793.0     2 5.6     2 M1+E2                                            
+ 61CO2 G A2=-0.23 6$ A4=-0.09 4                                                 
+ 61CO cG $R{-ac}=0.64 {I7}                                                      
+ 61CO  G 915.5     2 1.2     3 M1+E2                                            
+ 61CO cG $R{-ac}=0.87 {I2}                                                      
+ 61CO  L 6821.0     3 21/2-                                                 E   
+ 61CO  G 653.0     2 9.0     8 M1+E2                                            
+ 61CO2 G A2=-0.33 3$ A4=-0.13 9                                                 
+ 61CO cG $R{-ac}=0.85 {I2}                                                      
+ 61CO  G 1008.1    2 2.3     9 E2                                               
+ 61CO cG $R{-ac}=1.26 {I2}                                                      
+ 61CO  L 6892.8     4 23/2-                                                 B   
+ 61CO  G 826.8     3 4.5     1 M1+E2                                            
+ 61CO cG $R{-ac}=0.86 {I3}                                                      
+ 61CO  G 1061.8    3 15.6    5 M1+E2                                            
+ 61CO2 G A2=-0.32 2$ A4=-0.02 1                                                 
+ 61CO cG $R{-ac}=1.01 {I5}                                                      
+ 61CO  L 7173.9    6  (23/2-)                                               A   
+ 61CO  G 1108.3    3 1.0     10 M1+E2                                          ?
+ 61CO cG $R{-ac}=0.92 {I5}                                                      
+ 61CO  L 7504.1     3 23/2-                                                 D   
+ 61CO  G 795.8     2 13.7    7 M1+E2                                            
+ 61CO2 G A2=-0.23 6$ A4=-0.09 4                                                 
+ 61CO cG $R{-ac}=0.64 {I7}                                                      
+ 61CO  L 7699.9     4 (25/2-)                                               C   
+ 61CO  G 952.6     3 2.2     1 M1+E2                                            
+ 61CO  L 8088.2     3 25/2-                                                 E   
+ 61CO  G 584.1     1 1.1     2 M1+E2                                            
+ 61CO cG $R{-ac}=0.87 {I5}                                                      
+ 61CO  G 1267.2    1 18.9    6 E2                                               
+ 61CO2 G A2=+0.38 5$ A4=-0.02 6                                                 
+ 61CO cG $R{-ac}=1.51 {I2}                                                      
+ 61CO  G 1379.7    5 2.1     3 E2                                               
+ 61CO cG $R{-ac}=1.13 {I3}                                                      
+ 61CO  L 8214.8     4 25/2-                                                 B   
+ 61CO  G 1321.9    2 2.1     2 M1+E2                                            
+ 61COF G FL=6892.8                                                              
+ 61CO2 G A2=-0.33 7$ A4=-0.13 1                                                 
+ 61CO cG $R{-ac}=0.94 {I3}                                                      
+ 61CO  L 8405.6     4 25/2-                                                 D   
+ 61CO  G 901.5     2 9.2     6 M1+E2                                            
+ 61CO cG $R{-ac}=0.98 {I6}                                                      
+ 61CO  L 9389.2     5 (27/2-)                                               D   
+ 61CO  G 983.6     2 2.5     4 M1+E2                                            
+ 61CO  L 9674.9     5 27/2-                                                 B   
+ 61CO  G 1460.1    2 1.1     1 M1+E2                                            
+ 61CO cG $R{-ac}=0.87 {I4}                                                      
+ 61CO  L 9791.1     4 29/2-                                                 E   
+ 61CO  G 1702.9    2 13.6    10 E2                                              
+ 61COF G FL=8088.2                                                              
+ 61CO2 G A2=+0.28 2$ A4=-0.16 3                                                 
+ 61CO cG $R{-ac}=1.39 {I3}                                                      
+ 61CO  L 11844.0    5 33/2-                                                 E   
+ 61CO  G 2052.8    2 13.7    9 E2                                               
+ 61CO2 G A2=+0.33 5$ A4=+0.02 7                                                 
+ 61CO cG $R{-ac}=1.31 {I5}                                                      
+ 61CO  L 14289.3    6 37/2-                                                 E   
+ 61CO  G 2445.3    4 5.8     4 E2                                               
+ 61CO2 G A2=+0.31 3$ A4=-0.11 3                                                 
+ 61CO cG $R{-ac}=1.46 {I7}                                                      
+ 61CO  L 17169.6    7 (41/2-)                                               E   
+ 61CO  G 2880.2    4 1.2     5 [E2]                                             
+ 61CO  L X             (J GE 23/2-)                                         F   
+ 61CO DL E         LEVEL ENERGY HELD FIXED IN LEAST-SQUARES ADJUSTMENT          
+ 61CO cL E$x |? 8.5 MeV from level-scheme figure 3 in 2015Ay02                  
+ 61CO  L 1294.91+X 10  (J+2)(-)                                             F   
+ 61CO  G 1294.9    1 2.1     2 E2                                               
+ 61COF G FL=X                                                                   
+ 61CO2 G A2=+0.41 3$ A4=-0.21 5                                                 
+ 61CO cG $R{-ac}=1.23 {I2}                                                      
+ 61CO  L 3129.04+X 23  (J+4)(-)                                             F   
+ 61CO  G 1834.1    2 1.9     2 E2                                               
+ 61CO2 G A2=+0.41 6$ A4=-0.19 7                                                 
+ 61CO cG $R{-ac}=1.63 {I3}                                                      
+ 61CO  L 5474.3+X   3  (J+6)(-)                                             F   
+ 61CO  G 2345.2    2 1.5     4 E2                                               
+ 61CO cG $R{-ac}=1.14 {I5}                                                      
+ 61CO  L 8150.1+X   4  (J+8)(-)                                             F   
+ 61CO  G 2675.7    2 1.1     3 E2                                               
+ 61CO cG $R{-ac}=1.18 {I4}                                                      
+ 61CO  L 11134.3+X  5  (J+10)(-)                                            F   
+ 61CO  G 2984.2    3 1.0     1 [E2]                                             
+                                                                                
