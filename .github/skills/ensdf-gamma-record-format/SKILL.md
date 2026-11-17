@@ -58,3 +58,9 @@ Identical gamma rays multiplaced in multiple level blocks may carry `*`, `&`, or
 - `?`: Denotes uncertain placement of gamma transition in the level scheme.
 - `S`: Denotes expected or assumed, but as yet unobserved, gamma transition.
 - Only a space, `?`, or `S` is allowed in column 80.
+
+## Unplaced Gamma Transitions
+- Unplaced gamma transitions do not have an initial level, hence they are not associated with any level record.
+- Unplaced gamma transitions are G records after the PN record and before the first L record in the dataset.
+- Within the unplaced gamma block, G records are sorted in ascending energy order.
+

@@ -71,7 +71,7 @@ Trace entries to source: verify value, uncertainty, row, column, header, and uni
 
 ### Placement of Unplaced Gammas
 
-- Unplaced G-records form one ascending-energy block immediately after the `PN` record and before the first `L`-record (precede with a blank line if the file does so).
+- Unplaced G-records form one ascending-energy block immediately after the `PN` record and before the first `L`-record.
 - Set col-77 flag letters from the dataset's own field-flagged general comment (e.g. `cG E(X)$…` defines flag `X`); reproduce the author's existing flagged record byte-for-byte to confirm the mapping.
 - Intensities absent in the source leave RI/DRI blank; never fabricate.
 - A value too wide for the 7-char RI field (cols 23–29) becomes E-notation (`1.82E-4`) with DRI unchanged.

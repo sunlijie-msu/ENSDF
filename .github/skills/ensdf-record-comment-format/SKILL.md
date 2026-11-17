@@ -3,7 +3,7 @@ name: ensdf-record-comment-format
 description: "Defines ENSDF record-comment fields, SYM$ identifiers, continuation rules, and record association. Use when checking, interpreting, or formatting comments attached to L, G, B, E, A, or DP records."
 ---
 
-# Record Comment
+# `record comment`
 
 | Field | Columns | Description                                                                       |
 | :---- | :------ | :-------------------------------------------------------------------------------- |
@@ -17,16 +17,16 @@ description: "Defines ENSDF record-comment fields, SYM$ identifiers, continuatio
 
 ## Notes
 
-1. Record comments must follow the data record they comment on.
+1. `record comments` must follow the data record they comment on.
 2. `$` delimiter cannot be omitted.
-3. A record comment following `$` applies to that `RTYPE` record in general.
+3. A `record comment` following `$` applies to that `RTYPE` record in general.
  - For example, if `RTYPE` is `L` and `SYM` is omitted, the comment applies to that level record in general:
 ```
  34S   L 2127.561  15 2+               0.315 PS  12                         Z   
  34S  cL $|b{-2}(p,p')=0.28 {I1} (1985Al03).                                    
 ```
-4. `SYM` can be any data field of the L, G, B, E, A, or DP record (e.g., `E`, `J`, `T`, `S`, `RI`, `M`, `MR`, etc).
-5. A record comment following a `SYM$` applies to that `SYM` field of that `RTYPE` record.
+4. `SYM` can be any data field of the L-, G-, B-, E-, A-, or DP-record (e.g., `E`, `J`, `T`, `S`, `RI`, `M`, `MR`, etc).
+5. A `record comment` following a `SYM$` applies to that `SYM` field of that `RTYPE` record.
  - For example, if `RTYPE` is `L` and `SYM` is `J`, the comment applies to the spin field of that level record:
 ```
  34S   L 2127.561  15 2+               0.315 PS  12                         Z   
