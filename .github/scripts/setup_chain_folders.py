@@ -33,17 +33,25 @@ Usage (run from the repository root, or pass an absolute chain path):
 import argparse
 import hashlib
 import pathlib
+import re
 import shutil
 import sys
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
 GITATTRIBUTES = "# Auto detect text files and perform LF normalization\n* text=auto\n"
 SUBDIRS = ("new", "old")
+OWNED_SUFFIXES = (".new", ".old", ".xundl", ".ens")
+NUCLIDE_RE = re.compile(r"[A-Z][a-z]?\d+")
 
 
 def sha256(path):
     """Return the SHA-256 digest of a file's bytes."""
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def is_nuclide_folder(path):
+    """True for a chain subfolder named like a nuclide (A61, Al61, Ge60)."""
+    return path.is_dir() and NUCLIDE_RE.fullmatch(path.name) is not None
 
 
 def find_moves(root):
@@ -59,7 +67,8 @@ def find_moves(root):
             else:
                 keeps.append(entry)
             continue
-        if not entry.is_dir() or entry.name in SUBDIRS:
+        if not is_nuclide_folder(entry):
+            keeps.append(entry)
             continue
         for path in sorted(entry.iterdir()):
             if not path.is_file():
@@ -100,39 +109,82 @@ def move_verified(source, destination):
     return None
 
 
+def plan_moves(root):
+    """Return (plan, keeps): plan items are (source, destination, status, detail)."""
+    moves, keeps = find_moves(root)
+    plan = []
+    claimed = {}
+    for source, destination in moves:
+        other = claimed.get(destination)
+        if other is not None:
+            if sha256(source) == sha256(other):
+                status, detail = "dedup", f"byte-identical to {other.name}"
+            else:
+                status, detail = "conflict", f"same destination as {other.name}"
+        else:
+            claimed[destination] = source
+            status, detail = classify(source, destination)
+        plan.append((source, destination, status, detail))
+    return plan, keeps
+
+
 def run(root, apply_changes):
     """Plan, optionally perform, and report the reorganization."""
-    moves, keeps = find_moves(root)
+    plan, keeps = plan_moves(root)
     counts = {"move": 0, "dedup": 0, "conflict": 0}
     problems = []
 
-    for source, destination in moves:
-        status, detail = classify(source, destination)
+    for source, destination, status, detail in plan:
         counts[status] += 1
         note = f"  ({detail})" if detail else ""
         print(f"  {status:8s} {source.relative_to(root.parent)} -> "
               f"{destination.relative_to(root.parent)}{note}")
         if status == "conflict":
             problems.append(f"refused: {source} -> {destination} ({detail})")
-            continue
-        if not apply_changes:
-            continue
+
+    verb = "would mkdir"
+    missing = [
+        (entry / name, f"{entry.name}\\{name}")
+        for entry in sorted(root.iterdir()) if is_nuclide_folder(entry)
+        for name in SUBDIRS if not (entry / name).is_dir()
+    ]
+    attributes = root / ".gitattributes"
+    will_execute = apply_changes and not problems
+    if will_execute:
+        verb = "mkdir"
+    for path, label in missing:
+        print(f"  {verb:8s} {label}")
+    if not attributes.is_file():
+        print(f"  {verb:8s} {root.name}\\.gitattributes")
+
+    header = "ABORTED" if problems else ("APPLIED" if will_execute else "DRY RUN")
+    print(f"\n{header} - {len(plan)} files to organize, {len(keeps)} already in place")
+    print(f"  move: {counts['move']}  dedup: {counts['dedup']}  "
+          f"conflict: {counts['conflict']}")
+
+    if problems:
+        print("\nPROBLEMS (nothing was changed):")
+        for problem in problems:
+            print(f"  {problem}")
+        return 1
+    if not will_execute:
+        return 0
+
+    for path, _ in missing:
+        path.mkdir(exist_ok=True)
+    if not attributes.is_file():
+        attributes.write_text(GITATTRIBUTES, encoding="utf-8")
+
+    for source, destination, status, _ in plan:
         if status == "dedup":
             source.unlink()
             continue
-        error = move_verified(source, destination)
+        try:
+            error = move_verified(source, destination)
+        except OSError as exc:
+            error = f"move failed: {source} -> {destination}: {exc}"
         if error:
             problems.append(error)
-
-    if apply_changes:
-        for folder in sorted(p for p in root.iterdir() if p.is_dir()):
-            for name in SUBDIRS:
-                (folder / name).mkdir(exist_ok=True)
-
-    print(f"\n{'APPLIED' if apply_changes else 'DRY RUN'} - {len(moves)} files to organize, "
-          f"{len(keeps)} already in place")
-    print(f"  moved: {counts['move']}  duplicate source removed: {counts['dedup']}  "
-          f"conflicts: {counts['conflict']}")
 
     if problems:
         print("\nPROBLEMS:")
@@ -150,18 +202,27 @@ def verify(root):
             errors.append(f"loose chain-root working file: {entry.name}")
         if not entry.is_dir() or entry.name in SUBDIRS:
             continue
-        for path in sorted(entry.iterdir()):
-            if path.is_file():
-                errors.append(f"loose file in {entry.name}: {path.name}")
+        if not is_nuclide_folder(entry):
+            # Auxiliary folders are left alone, but flag them when they hide
+            # dataset files that the move rules would otherwise touch.
+            stray = sorted(p.name for p in entry.iterdir()
+                           if p.is_file() and p.suffix.lower() in OWNED_SUFFIXES)
+            if stray:
+                errors.append(f"unrecognized folder {entry.name}: {', '.join(stray)}")
+            continue
+        loose = sorted(p.name for p in entry.iterdir()
+                       if p.is_file() and p.suffix.lower() in OWNED_SUFFIXES)
+        if loose:
+            errors.append(f"loose file(s) in {entry.name}: {', '.join(loose)}")
         for name in SUBDIRS:
             if not (entry / name).is_dir():
                 errors.append(f"missing folder: {entry.name}\\{name}")
         for path in sorted((entry / "new").glob("*")):
-            if path.is_file() and path.suffix.lower() != ".ens":
-                errors.append(f"non-ens file in {entry.name}\\new: {path.name}")
+            if path.is_file() and path.suffix.lower() in (".new", ".old", ".xundl"):
+                errors.append(f"archived file in {entry.name}\\new: {path.name}")
         for path in sorted((entry / "old").glob("*")):
-            if path.is_file() and path.suffix.lower() not in (".old", ".xundl"):
-                errors.append(f"unexpected file in {entry.name}\\old: {path.name}")
+            if path.is_file() and path.suffix.lower() in (".new", ".ens"):
+                errors.append(f"unreleased file in {entry.name}\\old: {path.name}")
 
     if not (root / ".gitattributes").is_file():
         errors.append("missing .gitattributes at chain root")
@@ -210,11 +271,6 @@ def main():
     code = run(root, args.apply)
     if code or not args.apply:
         return code
-
-    attributes = root / ".gitattributes"
-    if not attributes.is_file():
-        attributes.write_text(GITATTRIBUTES, encoding="utf-8")
-        print(f"  created {root.name}\\.gitattributes")
 
     print("\nVERIFY:")
     return verify(root)
