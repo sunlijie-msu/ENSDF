@@ -154,7 +154,3 @@ Four NDS baseline snapshots; statuses reflect current repository state.
 ### ENSDF-Agent
 
 **Overview**: The first AI Agent designed for ENSDF 80-column formatting and nuclear data evaluation, developed and refined through daily evaluation tasks at the FRIB Nuclear Data Group.
-
-**Presentations**:
-- LECM2025 (Low Energy Community Meeting 2025)
-- USNDP2025 (U.S. Nuclear Data Program Meeting 2025)
