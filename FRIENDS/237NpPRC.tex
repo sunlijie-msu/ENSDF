@@ -125,7 +125,10 @@ A schematic of the setup is shown in Fig.~\ref{setup_schematic}.
 \end{center}
 \end{figure}
 
-The signals from each preamplifier were digitized by LIBRA's 16-bit, 250~MHz XIA Pixie-16 module~\cite{XIA_Pixie,XIA_Pixie_Manual}. The Digital Data Acquisition System (DDAS)~\cite{Starosta_NIMA2009,Prokop_NIMA2014} was used for recording and processing data. Trapezoidal filtering algorithms were implemented in both the slow filter for pulse amplitude measurement and the fast filter for leading-edge triggering. Each event was timestamped using a Constant Fraction Discriminator (CFD) algorithm based on the trigger filter response.
+The signals from each preamplifier were digitized by LIBRA's 16-bit, 250~MHz XIA Pixie-16 module~\cite{XIA_Pixie,XIA_Pixie_Manual}. The FRIBDigital Data Acquisition System (DDAS)~\cite{Starosta_NIMA2009,Prokop_NIMA2014} was used for recording and processing data. Trapezoidal filtering algorithms were implemented in both the slow filter for pulse amplitude measurement and the fast filter for leading-edge triggering. The raw event timestamp is counted with 125 MHz clock ticks, i.e., 8 ns intervals. Then the timestamp is corrected by a digital constant-fraction discriminator to compensate for the amplitude-dependent time-walk.
+
+The time base is digitized at 125 MSPS driven by an onboard EPSON SGR-8002JC-PCB programmable crystal oscillator, which provides all 16 channels on the module with a shared, synchronized clock reference. The onboard clock source has a frequency stability of +/-50 ppm within a temperature range from -20 to 70°C. In our laboratory environment, thermal drift is bounded within 0.005\%, which would introduce a negligible systematic uncertainty compared with the total uncertainty.
+
 
 \section{Experimental Procedure}
 
@@ -476,7 +479,7 @@ J. C. Hardy, J. A. Macdonald, H. Schmeing, H. R. Andrews, J. S. Geiger, R. L. Gr
 \href{https://xia.com/products/pixie-16/}{XIA Pixie-16 Digitizer.}
 
 \bibitem{XIA_Pixie_Manual}
-\href{https://docs.nscl.msu.edu/daq/newsite/pixie16/Pixie16_UserManual.pdf}{XIA Pixie-16 Digitizer User Manual.}
+\href{https://docs.frib.msu.edu/daq/newsite/pixie16/Pixie16_UserManual.pdf}{XIA Pixie-16 Digitizer User Manual.}
 
 \bibitem{Starosta_NIMA2009}
 K. Starosta, C. Vaman, D. Miller, P. Voss, D. Bazin, T. Glasmacher, H. Crawford, P. Mantica, H. Tan, W. Hennig, M. Walby, A. Fallu-Labruyere, J. Harris, D. Breus, P. Grudberg, W.K. Warburton, \href{https://doi.org/10.1016/j.nima.2009.09.016}{Nucl. Instrum. Methods Phys. Res. A \textbf{610}, 700 (2009).}
