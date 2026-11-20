@@ -125,9 +125,10 @@ A schematic of the setup is shown in Fig.~\ref{setup_schematic}.
 \end{center}
 \end{figure}
 
-The signals from each preamplifier were digitized by LIBRA's 16-bit, 250~MHz XIA Pixie-16 module~\cite{XIA_Pixie,XIA_Pixie_Manual}. The FRIBDigital Data Acquisition System (DDAS)~\cite{Starosta_NIMA2009,Prokop_NIMA2014} was used for recording and processing data. Trapezoidal filtering algorithms were implemented in both the slow filter for pulse amplitude measurement and the fast filter for leading-edge triggering. The raw event timestamp is counted with 125 MHz clock ticks, i.e., 8 ns intervals. Then the timestamp is corrected by a digital constant-fraction discriminator to compensate for the amplitude-dependent time-walk.
+The signals from each preamplifier were digitized by LIBRA's 16-bit, 250-MHz XIA Pixie-16 module~\cite{XIA_Pixie,XIA_Pixie_Manual}. The FRIB Digital Data Acquisition System (DDAS)~\cite{Starosta_NIMA2009,Prokop_NIMA2014} was used to record and process data. Trapezoidal filtering algorithms were applied in the slow filter for pulse-amplitude measurement and in the fast filter for leading-edge triggering. Event timestamps were initially counted with 125 MHz clock ticks and subsequently corrected with a digital constant-fraction discriminator to compensate for amplitude-dependent time walk.
 
-The time base is digitized at 125 MSPS driven by an onboard EPSON SGR-8002JC-PCB programmable crystal oscillator, which provides all 16 channels on the module with a shared, synchronized clock reference. The onboard clock source has a frequency stability of +/-50 ppm within a temperature range from -20 to 70°C. In our laboratory environment, thermal drift is bounded within 0.005\%, which would introduce a negligible systematic uncertainty compared with the total uncertainty.
+The time base is digitized at 125 MSPS driven by an onboard EPSON SGR-8002JC-PCB programmable crystal oscillator, which provides all 16 channels on the module with a shared, synchronized clock reference. The onboard clock source has a frequency stability of $\pm50$~ppm over a temperature range of $-20$ to 70$^{\circ}$C. In our laboratory environment, thermal drift is bounded within 0.005\%, which would introduce a negligible systematic uncertainty compared with the total uncertainty.
+
 
 
 \section{Experimental Procedure}
