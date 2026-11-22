@@ -19,7 +19,7 @@ def parts(text: str) -> list[str]:
 
 
 def number(text: str) -> tuple[str, str | None]:
-    match = re.search(r"(?<![A-Za-z])([+-]?\d+(?:\.\d+)?)(?:\((\d+)\))?", text)
+    match = re.search(r"(?<![A-Za-z])([+-]?\d+(?:\.\d+)?)(?:\s*\((\d+)\))?", text)
     if not match:
         raise ValueError(f"No numeric value found: {text!r}")
     return match.group(1), match.group(2)
@@ -192,6 +192,8 @@ def record_from_row(row: list[str], output: list[str]) -> None:
         original, lower, upper = asymmetric.groups()
         if (len(lower) > 2) != (len(upper) > 2):
             output.append(f" 23MG cE LOGFT${original} {{I+{upper}-{lower}}} (2027GoAA).")
+    if r"\text{a}" in ti_text:
+        output.append(" 23MG cE TI$Tentative assignment (2027GoAA).")
     if proton_intensity_comment:
         output.append(proton_intensity_comment)
     if Decimal(level_e) == Decimal("7785.32"):
