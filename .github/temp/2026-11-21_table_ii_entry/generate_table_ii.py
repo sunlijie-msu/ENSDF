@@ -35,16 +35,27 @@ def field(value: str, width: int, name: str) -> str:
 
 
 def uncertainty_digits(value: Decimal) -> tuple[Decimal, int]:
+    if value <= 0:
+        raise ValueError(f"Uncertainty must be positive: {value}")
     exponent = value.adjusted()
     leading_two = int(value.scaleb(1 - exponent))
     significant = 2 if 10 <= leading_two <= 34 else 1
-    quantum = Decimal(1).scaleb(exponent - significant + 1)
-    scaled = value / quantum
-    whole = int(scaled)
-    first_discarded = int((scaled - whole) * 10)
-    if first_discarded >= 4:
-        whole += 1
-    rounded = Decimal(whole) * quantum
+    target_exponent = exponent - significant + 1
+    rounded = value
+    for quantum_exponent in range(value.as_tuple().exponent + 1, target_exponent + 1):
+        quantum = Decimal(1).scaleb(quantum_exponent)
+        scaled = rounded / quantum
+        whole = int(scaled)
+        first_discarded = int((scaled - whole) * 10)
+        if first_discarded >= 4:
+            whole += 1
+        rounded = Decimal(whole) * quantum
+    quantum = Decimal(1).scaleb(target_exponent)
+    rounded = rounded.quantize(quantum)
+    if rounded.adjusted() > exponent:
+        target_exponent = rounded.adjusted() - significant + 1
+        quantum = Decimal(1).scaleb(target_exponent)
+        rounded = rounded.quantize(quantum)
     return rounded, int(rounded / quantum)
 
 
@@ -102,7 +113,7 @@ def logft_fields(text: str) -> tuple[str, str]:
     decimals = len(value.split(".", 1)[1])
     lower_value, lower_places = round_uncertainty_digits(lower, decimals)
     upper_value, upper_places = round_uncertainty_digits(upper, decimals)
-    places = min(lower_places, upper_places)
+    places = max(lower_places, upper_places)
     rounded_value = Decimal(value).quantize(
         Decimal(1).scaleb(-places), rounding=ROUND_HALF_UP
     )
@@ -156,6 +167,10 @@ def record_from_row(row: list[str], output: list[str]) -> None:
     spin_value = spin(jtext)
     level[22:39] = list(field(spin_value, 17, "Jπ"))
     output.append("".join(level))
+    if r"\text{c}" in jtext:
+        output.append(
+            " 23MG cL J$Tentative assignment based on assumed allowed |b decay (2027GoAA)."
+        )
     if Decimal(level_e) == Decimal("7801.45"):
         output.append(" 23MG cL J$IAS of {+23}Al g.s.")
 
@@ -196,8 +211,8 @@ def record_from_row(row: list[str], output: list[str]) -> None:
         e_record[42:49] = list(field(logft, 7, "log ft"))
         e_record[49:55] = list(field(dft, 6, "log ft uncertainty"))
     intensity, dintensity = number(ibtext)
-    e_record[22:29] = list(field(intensity, 7, "IB"))
-    e_record[29:31] = list(field(dintensity or "", 2, "DIB"))
+    e_record[64:74] = list(field(intensity, 10, "TI"))
+    e_record[74:76] = list(field(dintensity or "", 2, "DTI"))
     output.append("".join(e_record))
     if proton_intensity_comment:
         output.append(proton_intensity_comment)
@@ -274,9 +289,13 @@ def main() -> None:
         1,
         " 23MG2c  Corresponding absolute I(p) intensity is 0.41(1)% (2027GoAA).",
     )
+    for index, record in enumerate(output):
+        if len(record) > 80:
+            raise ValueError(f"ENSDF line exceeds 80 columns: {record!r}")
+        output[index] = record.ljust(80)
     OUTPUT.write_text("\n".join(output) + "\n", encoding="ascii", newline="\n")
-    levels = sum(len(line) == 80 and line[7] == "L" for line in output)
-    gammas = sum(len(line) == 80 and line[7] == "G" for line in output)
+    levels = sum(len(line) == 80 and line[6] == " " and line[7] == "L" for line in output)
+    gammas = sum(len(line) == 80 and line[6] == " " and line[7] == "G" for line in output)
     print(
         f"Wrote {len(output)} expected data/comment lines "
         f"({levels} L, {levels} E, {gammas} G) to {OUTPUT}"

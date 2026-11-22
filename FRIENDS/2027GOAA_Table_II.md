@@ -4,7 +4,7 @@ Here is the complete extracted data for **Table II** from the publication.
 
 #### **1. Bound and \\(\gamma\\)-Decaying States in \\(^{23}\text{Mg}\\) (\\(E_i \le 7854\text{ keV}\\))**
 
-| \\(J_i^\pi\\) | \\(E_i\\) (keV) | \\(I_\beta\\) (%) | \\(\log ft\\) | \\(E_f\\) (keV) [\\(\gamma\\)] | \\(E_\gamma\\) (keV) | \\(I_\gamma\\) (%) | \\(E_f\\) (keV) [\\(p\\)] | \\(E_{p,\text{c.m.}}\\) (keV) | \\(I_p\\) |
+| \\(J_i^\pi\\) | \\(E_i\\) (keV) | \\(I_\beta+\ec\\) (%) | \\(\log ft\\) | \\(E_f\\) (keV) [\\(\gamma\\)] | \\(E_\gamma\\) (keV) | \\(I_\gamma\\) (%) | \\(E_f\\) (keV) [\\(p\\)] | \\(E_{p,\text{c.m.}}\\) (keV) | \\(I_p\\) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | \\(3/2^+\\) | 0 | 36.3(16) | \\(5.309_{-19}^{+20}\\) | — | — | — | — | — | — |
 | \\(5/2^+\\) | 450.75(23) | 22.8(26) | \\(5.428_{-47}^{+53}\\) | 0 | 450.74(24) | 100 | — | — | — |
