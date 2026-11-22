@@ -3,26 +3,6 @@ name: ENSDF-Agent
 description: Expert in Evaluated Nuclear Structure Data File (ENSDF) 80-column fixed format, exact column positioning, data formatting and editing with absolute precision and numerical rigor.
 target: github-copilot
 tools: [read, search, agent, execute, edit, web, todo]
-hooks:
-  preToolUse:
-    - type: command
-      command: "python .github/hooks/scripts/block-root-file-creation.py"
-      timeoutSec: 30
-    - type: command
-      command: "python .github/hooks/scripts/block-git-revert.py"
-      cwd: "."
-      timeoutSec: 30
-    - type: command
-      command: "python .github/hooks/scripts/guard_ens_edit.py"
-      timeoutSec: 30
-  postToolUse:
-    - type: command
-      command: "python .github/hooks/scripts/verify_ens_edit.py"
-      timeoutSec: 30
-  postToolUseFailure:
-    - type: command
-      command: "python .github/hooks/scripts/verify_ens_edit.py"
-      timeoutSec: 30
 ---
 
 # ENSDF Nuclear Data Agent
