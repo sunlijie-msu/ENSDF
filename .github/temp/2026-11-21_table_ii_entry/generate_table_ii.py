@@ -8,9 +8,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 SOURCE = ROOT / "FRIENDS" / "2027GOAA_Table_II.md"
 OUTPUT = Path(__file__).with_name("expected_records.txt")
-SCALE = Decimal("0.443")
-SCALE_UNCERTAINTY = Decimal("0.022")
-MISPLACED_GAMMA: str | None = None
 
 
 def cells(line: str) -> list[str]:
@@ -73,29 +70,6 @@ def measurement_fields(value_text: str, uncertainty_text: str | None) -> tuple[s
     return f"{rounded_value:.{places}f}", str(uncertainty)
 
 
-def scaled_intensity(text: str) -> tuple[str, str]:
-    value_text, uncertainty_text = number(text)
-    value = Decimal(value_text)
-    exact_value = value * SCALE
-    if uncertainty_text is None:
-        if value != 100:
-            raise ValueError(f"Missing gamma-intensity uncertainty: {text!r}")
-        exact_uncertainty = SCALE_UNCERTAINTY * 100
-    else:
-        source_decimals = max(0, -Decimal(value_text).as_tuple().exponent)
-        relative_uncertainty = Decimal(uncertainty_text).scaleb(-source_decimals)
-        exact_uncertainty = (
-            (relative_uncertainty * SCALE) ** 2
-            + (value * SCALE_UNCERTAINTY) ** 2
-        ).sqrt()
-    rounded_uncertainty, digits = uncertainty_digits(exact_uncertainty)
-    quantum = Decimal(1).scaleb(rounded_uncertainty.as_tuple().exponent)
-    rounded_value = exact_value.quantize(quantum, rounding=ROUND_HALF_UP)
-    decimals = max(0, -quantum.as_tuple().exponent)
-    value_out = f"{rounded_value:.{decimals}f}"
-    return value_out, str(digits)
-
-
 def round_uncertainty_digits(digits: str, decimals: int) -> tuple[Decimal, int]:
     exact = Decimal(digits).scaleb(-decimals)
     rounded, _ = uncertainty_digits(exact)
@@ -151,11 +125,10 @@ def ensdf_line(kind: str, energy: str = "", de: str = "") -> list[str]:
 
 
 def record_from_row(row: list[str], output: list[str]) -> None:
-    global MISPLACED_GAMMA
     if len(row) == 10:
-        jtext, etext, ibtext, logtext, final_text, gamma_text, ri_text, p_final, p_energy, p_intensity = row
+        jtext, etext, ti_text, logtext, final_text, gamma_text, ri_text, p_final, p_energy, p_intensity = row
     elif len(row) == 7:
-        jtext, etext, ibtext, logtext, final_text, eptext, iptext = row
+        jtext, etext, ti_text, logtext, final_text, eptext, iptext = row
         gamma_text = ri_text = ""
         p_final, p_energy, p_intensity = final_text, eptext, iptext
     else:
@@ -210,10 +183,15 @@ def record_from_row(row: list[str], output: list[str]) -> None:
         logft, dft = logft_fields(logtext)
         e_record[42:49] = list(field(logft, 7, "log ft"))
         e_record[49:55] = list(field(dft, 6, "log ft uncertainty"))
-    intensity, dintensity = number(ibtext)
+    intensity, dintensity = number(ti_text)
     e_record[64:74] = list(field(intensity, 10, "TI"))
     e_record[74:76] = list(field(dintensity or "", 2, "DTI"))
     output.append("".join(e_record))
+    asymmetric = re.search(r"(\d+\.\d+)_\{-([0-9]+)\}\^\{\+([0-9]+)\}", logtext)
+    if asymmetric:
+        original, lower, upper = asymmetric.groups()
+        if (len(lower) > 2) != (len(upper) > 2):
+            output.append(f" 23MG cE LOGFT${original} {{I+{upper}-{lower}}} (2027GoAA).")
     if proton_intensity_comment:
         output.append(proton_intensity_comment)
     if Decimal(level_e) == Decimal("7785.32"):
@@ -233,15 +211,12 @@ def record_from_row(row: list[str], output: list[str]) -> None:
         for energy_text, ri_text_item in zip(eg, ri):
             gamma_e, gamma_de = number(energy_text)
             gamma_e, gamma_de = measurement_fields(gamma_e, gamma_de)
-            rel_i, drel_i = scaled_intensity(ri_text_item)
+            rel_i, drel_i = number(ri_text_item)
             gamma = ensdf_line("G", gamma_e, gamma_de or "")
             gamma[22:29] = list(field(rel_i, 7, "RI"))
-            gamma[29:31] = list(field(drel_i, 2, "DRI"))
+            gamma[29:31] = list(field(drel_i or "", 2, "DRI"))
             if r"\text{b}" in energy_text:
                 gamma[76] = "B"
-            if Decimal(level_e) == Decimal("6572.7") and Decimal(gamma_e) == Decimal("2684.5"):
-                MISPLACED_GAMMA = "".join(gamma)
-                continue
             gammas.append(gamma)
         gammas.sort(key=lambda line: Decimal("".join(line[9:19]).strip()))
         for gamma in gammas:
@@ -266,21 +241,6 @@ def main() -> None:
         if row[0].startswith(r"\("):
             if len(row) in {7, 10} and "J_i" not in row[0]:
                 record_from_row(row, output)
-    if MISPLACED_GAMMA:
-        target_index = next(
-            i
-            for i, record in enumerate(output)
-            if len(record) == 80
-            and record[7] == "L"
-            and Decimal(record[9:19].strip()) == Decimal("6543.24")
-        )
-        insert_index = next(
-            i
-            for i in range(target_index + 1, len(output))
-            if len(output[i]) == 80 and output[i][7] in {"G", "L"}
-        )
-        output.insert(insert_index, MISPLACED_GAMMA)
-        print("Reassigned 2684.50-keV gamma to 6543.2-keV level by energy conservation.")
     output.insert(
         0,
         " 23MG c  Table II I(p) normalized to I(p)(869)+I(p)(898)=1.",
