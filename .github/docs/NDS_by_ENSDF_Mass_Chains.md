@@ -35,7 +35,7 @@
 | 32 | Nucl. Data Sheets 201, 1 (2025) | https://doi.org/10.1016/j.nds.2025.03.001 | Jun Chen |
 | 33 | Nucl. Data Sheets 199, 1 (2025) | https://doi.org/10.1016/j.nds.2025.01.001 | Jun Chen, Balraj Singh |
 | 34 | Nucl. Data Sheets 113, 1563 (2012) | https://doi.org/10.1016/j.nds.2012.06.001 | Ninel Nica, Balraj Singh |
-| 35 | Nucl. Data Sheets 112, 2715 (2011) | https://doi.org/10.1016/j.nds.2011.10.001 | Jun Chen, John Cameron, Balraj Singh |
+| 35 | Nucl. Data Sheets 211, 1 (2026) | https://doi.org/10.1016/j.nds.2026.05.001 | Lijie Sun, Jun Chen |
 | 36 | Nucl. Data Sheets 113, 1 (2012) | https://doi.org/10.1016/j.nds.2012.01.001 | Ninel Nica, John Cameron, Balraj Singh |
 | 37 | Nucl. Data Sheets 113, 365 (2012) | https://doi.org/10.1016/j.nds.2012.02.001 | John Cameron, Jun Chen, Balraj Singh et al. |
 | 38 | Nucl. Data Sheets 152, 1 (2018) | https://doi.org/10.1016/j.nds.2018.10.001 | Jun Chen |
@@ -166,10 +166,10 @@
 | 163 | Nucl. Data Sheets 111, 1211 (2010) | https://doi.org/10.1016/j.nds.2010.04.001 | Carl W. Reich, Balraj Singh |
 | 164 | Nucl. Data Sheets 147, 1 (2018) | https://doi.org/10.1016/j.nds.2018.01.001 | Balraj Singh, Jun Chen |
 | 165 | Nucl. Data Sheets 194, 460 (2024) | https://doi.org/10.1016/j.nds.2024.02.003 | Balraj Singh, Jun Chen |
-| 166 | Nucl. Data Sheets 109, 1103 (2008) | https://doi.org/10.1016/j.nds.2008.04.001 | Coral M. Baglin |
+| 166 | Nucl. Data Sheets 213, 1 (2026) | https://doi.org/10.1016/j.nds.2026.09.001 | M. Shamsuzzoha Basunia |
 | 167 | Nucl. Data Sheets 191, 1 (2023) | https://doi.org/10.1016/j.nds.2023.08.001 | Balraj Singh, Jun Chen |
 | 168 | Nucl. Data Sheets 111, 1807 (2010) | https://doi.org/10.1016/j.nds.2010.07.001 | Coral M. Baglin |
-| 169 | Nucl. Data Sheets 109, 2033 (2008) | https://doi.org/10.1016/j.nds.2008.08.001 | Coral M. Baglin |
+| 169 | Nucl. Data Sheets 209, 1 (2026) | https://doi.org/10.1016/j.nds.2026.02.001 | M. Shamsuzzoha Basunia |
 | 170 | Nucl. Data Sheets 153, 1 (2018) | https://doi.org/10.1016/j.nds.2018.11.001 | Coral M. Baglin, Elizabeth A. McCutchan, M. Shamsuzzoha Basunia et al. |
 | 171 | Nucl. Data Sheets 151, 334 (2018) | https://doi.org/10.1016/j.nds.2018.08.002 | Coral M. Baglin, Elizabeth A. McCutchan |
 | 172 | Nucl. Data Sheets 75, 199 (1995) | https://doi.org/10.1006/ndsh.1995.1025 | Balraj Singh |
@@ -220,7 +220,7 @@
 | 217 | Nucl. Data Sheets 147, 382 (2018) | https://doi.org/10.1016/j.nds.2018.01.002 | Filip G. Kondev, Elizabeth A. McCutchan, Balraj Singh et al. |
 | 218 | Nucl. Data Sheets 160, 405 (2019) | https://doi.org/10.1016/j.nds.2019.100524 | Balraj Singh, M. Shamsuzzoha Basunia, Murray Martin et al. |
 | 219 | Nucl. Data Sheets 175, 1 (2021) | https://doi.org/10.1016/j.nds.2021.06.001 | Shaofei Zhu, Elizabeth A. McCutchan |
-| 220 | Nucl. Data Sheets 112, 1115 (2011) | https://doi.org/10.1016/j.nds.2011.03.002 | Edgardo Browne, Jagdish K. Tuli |
+| 220 | Nucl. Data Sheets 212, 18 (2026) | https://doi.org/10.1016/j.nds.2026.08.002 | J. Chen, M.S. Basunia, P. Dimitriou, E.A. McCutchan, A. Negret, A.A. Alshammari, M.J. Kobra, A.H. Lopez Gonzales, A. Malinowski, S. Nagarajan, E.B. O'Sullivan, N. Palalani, N. Petrov, L. Rodrigues, B. Salmassian |
 | 221 | Nucl. Data Sheets 108, 883 (2007) | https://doi.org/10.1016/j.nds.2007.03.002 | Ashok Kumar Jain, Sukhjeet Singh, Suresh Kumar et al. |
 | 222 | Nucl. Data Sheets 192, 315 (2023) | https://doi.org/10.1016/j.nds.2023.10.002 | Balraj Singh, M. Shamsuzzoha Basunia, Jun Chen et al. |
 | 223 | Nucl. Data Sheets 93, 846 (2001) | https://doi.org/10.1006/ndsh.2001.0016 | Edgardo Browne |
