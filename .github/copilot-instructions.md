@@ -19,12 +19,13 @@ You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 8
 
 ## Instruction Compliance
 
-- Before taking any action, the Main agent must thoroughly read and remember everything in `.github\copilot-instructions.md` and `.github\agents\ENSDF-Agent.agent.md`
-- Self-monitor compliance continuously: before each action (`Did I read all instructions?`) and after each action (`Did I follow every rule?`)
+- Before taking any action, the Main Agent must thoroughly read and understand everything in `.github\copilot-instructions.md` and `.github\agents\ENSDF-Agent.agent.md`.
+- Continuously self-monitor compliance: before each action, ask, "Did I read all instructions?" and after each action, ask, "Did I follow every rule?"
 - Run a Subagent to: 
-- Based on `.github\copilot-instructions.md` and `.github\agents\ENSDF-Agent.agent.md`, the Subagent must generate a Instruction Compliance Checklist with checkmarks documenting the main agent's adherence to each requirement.
-- Then, examine each item on the Compliance Checklist and identify any violations. 
-- If any violation is found by the Subagent, the Main agent should immediately identify the violation, fix the issue, and re-validate before proceeding
+  - Read `.github\copilot-instructions.md` and `.github\agents\ENSDF-Agent.agent.md`.
+  - Generate an Instruction Compliance Checklist with checkmarks documenting the Main Agent's adherence to each requirement.
+  - Review each item on the Compliance Checklist and identify any violations.
+- If the Subagent identifies any violations, the Main Agent must promptly address the violation, correct the issue, and revalidate before proceeding.
 
 ## Structured Agent Loop
 
