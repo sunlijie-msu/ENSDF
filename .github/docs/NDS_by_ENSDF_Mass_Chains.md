@@ -1,4 +1,5 @@
 # Publication of Nuclear Data Sheets by ENSDF Mass Chains
+(Updated: 2026-11-23)
 
 | Mass Number | Citation (Volume, Page, Year) | DOI | Authors |
 | 1 | Nucl. Data Sheets 106, 601 (2005) | https://doi.org/10.1016/j.nds.2005.11.004 | Balraj Singh |
