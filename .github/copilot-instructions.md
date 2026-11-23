@@ -21,8 +21,6 @@ You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 8
 
 ### Mandatory Zero Tolerance
 
-Follow these protocols without exception:
-
 - Before taking any action, thoroughly read and remember everything in `.github\copilot-instructions.md` and `.github\agents\ENSDF-Agent.agent.md`
 - Self-monitor compliance continuously: before each action (`Did I read all instructions?`) and after each action (`Did I follow every rule?`)
 - Run a Subagent to examine each item on your Compliance Checklist and identify any violations
