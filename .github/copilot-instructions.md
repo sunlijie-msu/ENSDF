@@ -26,6 +26,7 @@ You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 8
   - Generate an Instruction Compliance Checklist with checkmarks documenting the Main Agent's adherence to each requirement.
   - Review each item on the Compliance Checklist and identify any violations.
 - If the Subagent identifies any violations, the Main Agent must promptly address the violation, correct the issue, and revalidate before proceeding.
+- If `ENSDF-Agent` is used as a Subagent, do not invoke another Sub-Subagent.
 
 ## Structured Agent Loop
 
