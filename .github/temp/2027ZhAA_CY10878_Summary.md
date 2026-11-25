@@ -1,6 +1,6 @@
-# 2027ZhAA CY10878 Reaction Chains
+# 2027ZhAA CY10878 Decay Chains
 
-| Reaction chain | Chain |
+| Decay chain | Chain |
 |---|---|
 | $\mathrm{ER}(^{244m}\mathrm{Md}) \xrightarrow{\mathrm{CE}} {}^{244}\mathrm{Md}\ \mathrm{g.s.} \xrightarrow{\alpha_{1}} {}^{240}\mathrm{Es}\ \mathrm{g.s.} \xrightarrow{\alpha_{2}} {}^{236}\mathrm{Bk}$ | 5, 15 |
 | $\mathrm{ER}(^{244}\mathrm{Md}\ \mathrm{g.s.}) \xrightarrow{\alpha_{1}} {}^{240m}\mathrm{Es} \xrightarrow{\mathrm{CE}} {}^{240}\mathrm{Es}\ \mathrm{g.s.} \xrightarrow{\alpha_{2}} {}^{236}\mathrm{Bk}$ | 1, 7, 14 |
