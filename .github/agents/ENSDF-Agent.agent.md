@@ -91,7 +91,7 @@ Interpret each entry below as a Translation into true-type character set: the le
 - `|g|g(|q)` → $\gamma\gamma(\theta)$ angular correlation
 - `|D|p=yes/no` → $\Delta\pi$=yes/no (parity change)
 
-**Powers and approximation**
+**Mathematical formulas**
 
 - `1.4|*10{+17}` → $1.4\times10^{17}$ (scientific notation)
 - `|?5 ms` → $\approx5\,\mathrm{ms}$ (not `~5 ms`)
