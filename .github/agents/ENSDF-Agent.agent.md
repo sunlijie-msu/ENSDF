@@ -54,7 +54,7 @@ Interpret each entry below as a Translation into true-type character set: the le
 - `|)` → $\rightarrow$ (right arrow), `|.` → $\propto$ (proportional), `||` → $|$ (vertical bar)
 - `~#` → $\otimes$ (tensor product)
 
-**Brackets and Parentheses:**
+**Brackets and Parentheses (rarely used):**
 
 - `|0` → $($ (left parenthesis), `|1` → $)$ (right parenthesis)
 - `|2` → $[$ (left bracket), `|3` → $]$ (right bracket)
@@ -66,19 +66,33 @@ Interpret each entry below as a Translation into true-type character set: the le
 
 #### Common Examples
 
-- `%(|e+|b{++})p` decay → $\%(\varepsilon+\beta^{+})p$ decay
+**Reactions**
+
 - `{+208}Pb({+36}S,{+35}S)` reaction → $^{208}\mathrm{Pb}(^{36}\mathrm{S},^{35}\mathrm{S})$ reaction
 - `{+32}S({+3}He,p|g){+34}Cl` reaction → $^{32}\mathrm{S}(^{3}\mathrm{He},p\gamma)^{34}\mathrm{Cl}$ reaction
-- `{+nat}Ni` means natural nickel
-- `|s(E({+3}He),|q)` → $\sigma(E(^{3}\mathrm{He}),\theta)$ angular distribution
-- `Zn{-3}P{-2}` → $\mathrm{Zn}_{3}\mathrm{P}_{2}$
-- `log {Ift}` → $\log ft$ (italicize `ft`)
+
+**Decay**
+
+- `%(|e+|b{++})p` decay → $\%(\varepsilon+\beta^{+})p$ decay
+- `|b{+-}n`, `%|b{+-}n` → $\beta^{-}$-delayed-neutron emission and branching ratio $\%\beta^{-}$
 - `|t|>10 fs` → $\tau\geq10\,\mathrm{fs}$ (lifetime $\geq10\,\mathrm{fs}$)
 - `|t>10 fs` → $\tau>10\,\mathrm{fs}$ (lifetime $>10\,\mathrm{fs}$)
-- `|b{+-}n`, `%|b{+-}n` → $\beta^{-}$-delayed-neutron emission and branching ratio $\%\beta^{-}$
 - `T{-1/2}` → $T_{1/2}$ (half-life)
+
+**Isotopes and compounds**
+
+- `{+nat}Ni` means natural nickel
+- `Zn{-3}P{-2}` → $\mathrm{Zn}_{3}\mathrm{P}_{2}$
+
+**Quantities and symbols**
+
+- `|s(E({+3}He),|q)` → $\sigma(E(^{3}\mathrm{He}),\theta)$ angular distribution
+- `log {Ift}` → $\log ft$ (italicize `ft`)
 - `|g|g(|q)` → $\gamma\gamma(\theta)$ angular correlation
 - `|D|p=yes/no` → $\Delta\pi$=yes/no (parity change)
+
+**Powers and approximation**
+
 - `1.4|*10{+17}` → $1.4\times10^{17}$ (scientific notation)
 - `|?5 ms` → $\approx5\,\mathrm{ms}$ (not `~5 ms`)
 
