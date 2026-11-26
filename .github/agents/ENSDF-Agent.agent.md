@@ -64,11 +64,6 @@ Interpret each entry below as a Translation into true-type character set: the le
 
 - `|7` → $\int$ (integral), `|8` → $\prod$ (product), `|9` → $\sum$ (summation)
 
-**Important Rules:**
-
-- Use `|?` for approximate values (renders as $\approx$).
-- Standalone `~` is prohibited for approximate values in ENSDF.
-
 #### Common Examples
 
 - `%(|e+|b{++})p` decay → $\%(\varepsilon+\beta^{+})p$ decay
@@ -85,7 +80,7 @@ Interpret each entry below as a Translation into true-type character set: the le
 - `|g|g(|q)` → $\gamma\gamma(\theta)$ angular correlation
 - `|D|p=yes/no` → $\Delta\pi$=yes/no (parity change)
 - `1.4|*10{+17}` → $1.4\times10^{17}$ (scientific notation)
-- `|?5 ms` → $\approx5\,\mathrm{ms}$
+- `|?5 ms` → $\approx5\,\mathrm{ms}$ (not `~5 ms`)
 
 #### General Language Style
 
