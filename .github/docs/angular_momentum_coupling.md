@@ -160,16 +160,22 @@ These reactions exchange nucleon type (n ↔ p), governed by the transferred ang
 
 ### G. Beta Decay Selection Rules
 
-For $\beta^-$ decay, $\beta^+$ decay, and electron capture, the electron or positron and the neutrino or antineutrino each have spin $s = 1/2$. Couple their spins to $S = 0$ (Fermi, antiparallel) or $S = 1$ (Gamow-Teller, parallel), then couple $S$ with the lepton orbital angular momentum $\ell$.
+For $\beta^-$ decay, $\beta^+$ decay, and electron capture, the electron or positron and the neutrino or antineutrino each have spin $s = 1/2$. Couple their spins electron–neutrino pair $\vec{S} = \vec{s}_e + \vec{s}_\nu$ to $S = 0$ (Fermi, antiparallel) or $S = 1$ (Gamow-Teller, parallel), then couple $S$ with the lepton orbital angular momentum $\ell$.
+
+**Total Angular Momentum** ($\vec{J}$):
 
 $$
-\Delta\pi = (-1)^\ell
+\vec{J}_f = \vec{J}_i + \vec{S} + \vec{\ell}
 $$
 
 Here, $\Delta J$ lists the possible total angular momentum changes from this vector coupling:
 
 $$
 \Delta J = |\ell - S|,\ldots,\ell + S.
+$$
+
+$$
+\Delta\pi = (-1)^\ell
 $$
 
 #### Designations
@@ -180,15 +186,15 @@ $$
 | $\ell$ | $S$ | $\Delta J$ | $\Delta\pi$ | $\Delta T$ | Transition |
 | ---: | ---: | :--- | :---: | :---: | :--- |
 | 0 | 0 | 0 | no | 0 | Allowed Fermi |
-| 0 | 1 | 0, 1 | no | 0, 1 | Allowed Gamow-Teller |
+| 0 | 1 | 0*, 1 | no | 0, 1 | Allowed Gamow-Teller |
 | 1 | 0 | 1 | yes | 0, 1, (2) | First-forbidden non-unique Fermi |
-| 1 | 1 | 0*, 1 | yes | 0, 1, (2) | First-forbidden non-unique Gamow-Teller |
+| 1 | 1 | 0, 1 | yes | 0, 1, (2) | First-forbidden non-unique Gamow-Teller |
 | 1 | 1 | 2 | yes | 0, 1, (2) | First-forbidden unique Gamow-Teller |
 | 2 | 0 | 2 | no | 0, 1, (2) | Second-forbidden non-unique Fermi |
 | 2 | 1 | (1), 2 | no | 0, 1, (2) | Second-forbidden non-unique Gamow-Teller |
 | 2 | 1 | 3 | no | 0, 1, (2) | Second-forbidden unique Gamow-Teller |
 
-* First-forbidden non-unique Gamow-Teller DeltaJ=0 cannot occur for $0^+ \to 0^-$ transitions.
+*Allowed Gamow-Teller if $\Delta J = 0$, it cannot be a $0^+ \to 0^+$ transition. $0^+ \to 0^+$ cannot be coupled via an $S = 1$ (Gamow-Teller) transition; only $S = 0$ (Fermi) is possible.
 
 #### Policies for Spin and Parity Assignments Based on $\log ft$ Values
 
@@ -204,7 +210,6 @@ Steffen Turkat et al., Atomic Data and Nuclear Data Tables 152, 101584 (2023), <
 #### Rules
 
 - A unique first-forbidden transition has the maximum angular momentum change for first-forbidden decay, $\Delta J = 2$. This requires $S = 1$, so unique first-forbidden transitions are purely Gamow-Teller, not Fermi.
-- $J_i = 0$ to $J_f = 0$ cannot be coupled via an $S = 1$ (Gamow-Teller) transition; only $S = 0$ (Fermi) is possible.
 - The table follows the requested $\Delta T$ classification. For standard one-body beta decay, the Fermi and Gamow-Teller isospin operator has rank 1, so the nuclear transition generally satisfies $\Delta T = 0$ or $1$, subject to the usual triangle-rule and endpoint restrictions. A transition with $\Delta T = 2$ requires a higher-rank or nonstandard charge-exchange operator and is shown in parentheses rather than as a standard beta-decay selection rule.
 
 The `angular_momentum_coupling.py` utility models reaction-channel coupling; it does not implement weak-decay Fermi/Gamow-Teller operators or forbiddenness. Do not model beta decay by entering an effective `Particle` spin-parity in that utility.
