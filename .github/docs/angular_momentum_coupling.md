@@ -160,60 +160,52 @@ These reactions exchange nucleon type (n ↔ p), governed by the transferred ang
 
 ### G. Beta Decay Selection Rules
 
-For $\beta^-$ decay, $\beta^+$ decay, and electron capture, the electron or positron and neutrino (or antineutrino) each have spin $s=1/2$. Couple their spins to $S=0$ (Fermi, antiparallel) or $S=1$ (Gamow-Teller, parallel), then couple $S$ with lepton orbital angular momentum $\ell$.
+For $\beta^-$ decay, $\beta^+$ decay, and electron capture, the electron or positron and the neutrino or antineutrino each have spin $s = 1/2$. Couple their spins to $S = 0$ (Fermi, antiparallel) or $S = 1$ (Gamow-Teller, parallel), then couple $S$ with the lepton orbital angular momentum $\ell$.
 
 $$
-\Delta\pi=(-1)^\ell
+\Delta\pi = (-1)^\ell
 $$
 
 Here, $\Delta J$ lists the possible total angular momentum changes from this vector coupling:
 
 $$
-\Delta J=|\ell-S|,\ldots,\ell+S.
+\Delta J = |\ell - S|,\ldots,\ell + S.
 $$
 
-**Designation:**
+#### Designations
 
-* Leptons coupled spins $S=0$ (Fermi, antiparallel), $S=1$ (Gamow-Teller, parallel)
-* Leptons carry off orbital angular momentum $\ell=0$ (Allowed), $\ell=1$ (First-forbidden), $\ell=2$ (Second-forbidden), etc.
+- Coupled lepton spins: $S = 0$ (Fermi, antiparallel) or $S = 1$ (Gamow-Teller, parallel).
+- Leptons (electrons / positrons / neutrinos) carry off orbital angular momentum: $\ell = 0$ (allowed), $\ell = 1$ (first-forbidden), $\ell = 2$ (second-forbidden), etc.
 
 | $\ell$ | $S$ | $\Delta J$ | $\Delta\pi$ | $\Delta T$ | Transition |
 | ---: | ---: | :--- | :---: | :---: | :--- |
 | 0 | 0 | 0 | no | 0 | Allowed Fermi |
 | 0 | 1 | 0, 1 | no | 0, 1 | Allowed Gamow-Teller |
-| 1 | 0 | 1 | yes | 0, 1, (2) | First-forbidden Non-Unique Fermi |
-| 1 | 1 | 0, 1 | yes | 0, 1, (2) | First-forbidden Non-Unique Gamow-Teller |
-| 1 | 1 | 2 | yes | 0, 1, (2) | First-forbidden Unique Gamow-Teller |
-| 2 | 0 | 2 | no | 0, 1, (2) | Second-forbidden Non-Unique Fermi |
-| 2 | 1 | 1, 2 | no | 0, 1, (2) | Second-forbidden Non-Unique Gamow-Teller |
-| 2 | 1 | 3 | no | 0, 1, (2) | Second-forbidden Unique Gamow-Teller |
+| 1 | 0 | 1 | yes | 0, 1, (2) | First-forbidden non-unique Fermi |
+| 1 | 1 | 0*, 1 | yes | 0, 1, (2) | First-forbidden non-unique Gamow-Teller |
+| 1 | 1 | 2 | yes | 0, 1, (2) | First-forbidden unique Gamow-Teller |
+| 2 | 0 | 2 | no | 0, 1, (2) | Second-forbidden non-unique Fermi |
+| 2 | 1 | (1), 2 | no | 0, 1, (2) | Second-forbidden non-unique Gamow-Teller |
+| 2 | 1 | 3 | no | 0, 1, (2) | Second-forbidden unique Gamow-Teller |
 
+* First-forbidden non-unique Gamow-Teller DeltaJ=0 cannot occur for $0^+ \to 0^-$ transitions.
 
-**Application:**
+#### Policies for Spin and Parity Assignments Based on $\log ft$ Values
 
-* Policies for Spin and Parity Assignments Based on Log ft Values
-1. Realistically, we consider that minimum log ft values for first-forbidden non-unique transition for Z < 80 region are not <5.9, and those for the first-forbidden unique transitions not <8.5.
-
-2. If the log ft is definitely below 5.9, like the upper bound of log ft is still below 5.9, the corresponding β transition must be `Allowed`, and therefore, the possible Jπ values are 3/2+, 5/2+, 7/2+ for a 5/2+ parent.
-
-3. If log ft is close to 5.9 but the upper bound exceeds 5.9 (for example, log ft = 5.82+0.13−0.11), the corresponding β transition is `Possible Allowed`, and the Jπ should be put in parentheses like (3/2+, 5/2+, 7/2+).
-
-4. If the lower bound of log ft is greater than 5.9 and the upper bound is less than 7.4 (for example, log ft = 6.25+0.10−0.09), the corresponding β transition cannot be `first-forbidden unique`, and combining `Allowed` with `first-forbidden non-unique`, the Jπ options should be 3/2, 5/2, 7/2, with both +/- parity. 
-
-5. If log ft itself is a lower limit, the Jπ cannot be assigned solely via beta decay unless there is other supporting evidence, such as isospin or angular momentum from reaction measurements, etc. Therefore, Jπ should be omitted.
-
-Nuclear Data Sheets Policy page IV https://www.nndc.bnl.gov/nds/docs/NDSPolicies.pdf
-
-Steffen Turkat et al., Atomic Data and Nuclear Data Tables 152, 101584 (2023) https://doi.org/10.1016/j.adt.2023.101584
+Realistically, we consider that minimum log ft values for first-forbidden non-unique transition for Z < 80 region are not <5.9, and those for the first-forbidden unique transitions not <8.5.
+Steffen Turkat et al., Atomic Data and Nuclear Data Tables 152, 101584 (2023), <https://doi.org/10.1016/j.adt.2023.101584>.
+1. If $\log ft$ is definitely below 5.9, including its upper bound <5.9, the $\beta$ transition must be **allowed**. For a $5/2^+$ parent, the possible $J^\pi$ values are `3/2+,5/2+,7/2+`.
+2. If $\log ft$ is below 5.9 but its upper bound exceeds 5.9, such as $\log ft = 5.82^{+0.13}_{-0.11}$, the $\beta$ transition is `possible allowed`. Put the $J^\pi$ in parentheses: `(3/2+,5/2+,7/2+)`.
+3. If the lower bound of $\log ft$ exceeds 5.9 and the upper bound is below 7.4, such as $\log ft = 6.25^{+0.10}_{-0.09}$, the $\beta$ transition cannot be `first-forbidden unique`. Combining `allowed` and `first-forbidden non-unique` transitions gives $J^\pi$ values of `3/2,5/2,7/2`, with both `+/-` paritites.
+4. If $\log ft$ is a lower limit, $J^\pi$ cannot be assigned solely from $\beta$ decay without other supporting evidence, such as isospin or angular momentum from reaction measurements. Otherwise, omit $J^\pi$.
 
 
 
-**Rules:**
-* A unique first-forbidden transition is defined specifically by the maximum possible angular momentum change for a first-forbidden decay, which is $\Delta J = 2$. Because achieving an angular momentum change of $\Delta J = 2$ strictly requires the $S = 1$ state, unique first-forbidden transitions are purely Gamow-Teller. They cannot be Fermi transitions.
+#### Rules
 
-* $J_i = 0$ to $J_f = 0$ cannot be coupled via an $S=1$ (Gamow-Teller) transition; only $S=0$ (Fermi) is possible.
-
-* The table follows the requested $\Delta T$ classification. For standard one-body beta decay, the Fermi and Gamow-Teller isospin operator has rank 1, so the physical nuclear transition generally satisfies $\Delta T=0$ or $1$ (with the usual triangle-rule and endpoint restrictions); $\Delta T=2$ requires a higher-rank or nonstandard charge-exchange operator and is placed in parentheses rather than presented as a standard beta-decay selection rule.
+- A unique first-forbidden transition has the maximum angular momentum change for first-forbidden decay, $\Delta J = 2$. This requires $S = 1$, so unique first-forbidden transitions are purely Gamow-Teller, not Fermi.
+- $J_i = 0$ to $J_f = 0$ cannot be coupled via an $S = 1$ (Gamow-Teller) transition; only $S = 0$ (Fermi) is possible.
+- The table follows the requested $\Delta T$ classification. For standard one-body beta decay, the Fermi and Gamow-Teller isospin operator has rank 1, so the nuclear transition generally satisfies $\Delta T = 0$ or $1$, subject to the usual triangle-rule and endpoint restrictions. A transition with $\Delta T = 2$ requires a higher-rank or nonstandard charge-exchange operator and is shown in parentheses rather than as a standard beta-decay selection rule.
 
 The `angular_momentum_coupling.py` utility models reaction-channel coupling; it does not implement weak-decay Fermi/Gamow-Teller operators or forbiddenness. Do not model beta decay by entering an effective `Particle` spin-parity in that utility.
 
