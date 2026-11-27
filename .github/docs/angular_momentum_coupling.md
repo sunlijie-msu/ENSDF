@@ -181,12 +181,12 @@ $$
 | ---: | ---: | :--- | :---: | :---: | :--- |
 | 0 | 0 | 0 | no | 0 | Allowed Fermi |
 | 0 | 1 | 0, 1 | no | 0, 1 | Allowed Gamow-Teller |
-| 1 | 0 | 1 | yes | 0, 1, (2) | First-forbidden Fermi |
-| 1 | 1 | 0, 1, 2 | yes | 0, 1, (2) | First-forbidden Gamow-Teller |
-| 1 | 1 | 2 | yes | 0, 1, (2) | First-forbidden **Unique** Gamow-Teller |
-| 2 | 0 | 2 | no | 0, 1, (2) | Second-forbidden Fermi |
-| 2 | 1 | 1, 2, 3 | no | 0, 1, (2) | Second-forbidden Gamow-Teller |
-| 2 | 1 | 3 | no | 0, 1, (2) | Second-forbidden **Unique** Gamow-Teller |
+| 1 | 0 | 1 | yes | 0, 1, (2) | First-forbidden Non-Unique Fermi |
+| 1 | 1 | 0, 1 | yes | 0, 1, (2) | First-forbidden Non-Unique Gamow-Teller |
+| 1 | 1 | 2 | yes | 0, 1, (2) | First-forbidden Unique Gamow-Teller |
+| 2 | 0 | 2 | no | 0, 1, (2) | Second-forbidden Non-Unique Fermi |
+| 2 | 1 | 1, 2 | no | 0, 1, (2) | Second-forbidden Non-Unique Gamow-Teller |
+| 2 | 1 | 3 | no | 0, 1, (2) | Second-forbidden Unique Gamow-Teller |
 
 A unique first-forbidden transition is defined specifically by the maximum possible angular momentum change for a first-forbidden decay, which is $\Delta J = 2$. Because achieving an angular momentum change of $\Delta J = 2$ strictly requires the $S = 1$ state, unique first-forbidden transitions are purely Gamow-Teller. They cannot be Fermi transitions.
 
