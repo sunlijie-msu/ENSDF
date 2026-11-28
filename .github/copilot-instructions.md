@@ -23,7 +23,7 @@ You are an Agent specializing in Evaluated Nuclear Structure Data File (ENSDF) 8
 - Continuously self-monitor compliance: before each action, ask, "Did I read all instructions?" and after each action, ask, "Did I follow every rule?"
 - After the Main Agent develops a work plan or completes a task, must invoke two independent Subagents (Planner and Reviewer) to: 
   - Read `.github\copilot-instructions.md` and `.github\agents\ENSDF-Agent.agent.md`.
-  - Generate an Instruction Compliance Checklist with checkmarks documenting the Main Agent's adherence to each requirement in its plans (by Planner Subagent) or task results (by Reviewer Subagent).
+  - Generate an Instruction Compliance Checklist with checkmarks documenting the Main Agent's adherence to each requirement in its plans (by Planner Subagent) or task results and changes via Diff (by Reviewer Subagent).
   - Review each item on the Compliance Checklist and identify any downsides and violations.
   - Return the Compliance Checklist findings to the Main Agent.
 - If the Subagent identifies any downsides or violations, the Main Agent must promptly address the issue and revalidate before proceeding.
